@@ -1,0 +1,36 @@
+<obj id="pocEquipement.IAudioProfiles.{{nomAudioProfile}}" class-name="pocEquipement.IAudioProfiles" nom="{{nomAudioProfile}}">
+	  <fv nom="phonieIaCallHp1" enum="{{audioProfile.phonieIaCallHp1}}" />
+	  <fv nom="phonieIaCallHp2" enum="{{audioProfile.phonieIaCallHp2}}" />
+	  <fv nom="phonieIaCallHp3" enum="{{audioProfile.phonieIaCallHp3}}" />
+	  <fv nom="phonieIthCc" enum="{{audioProfile.phonieIthCc}}" />
+	  <fv nom="phonieIthCi" enum="{{audioProfile.phonieIthCi}}" />
+	  <fv nom="phonieRadioRrxCc" enum="{{audioProfile.phonieRadioRrxCc}}" />
+	  <fv nom="phonieRadioRxCi" enum="{{audioProfile.phonieRadioRxCi}}" />
+	  <fv nom="phonieRadioRxHp1" enum="{{audioProfile.phonieRadioRxHp1}}" />
+	  <fv nom="phonieRadioRxHp2" enum="{{audioProfile.phonieRadioRxHp2}}" />
+	  <fv nom="phonieRadioRxHp3" enum="{{audioProfile.phonieRadioRxHp3}}" />
+	  <fv nom="phonieRadioTxCplCc" enum="{{audioProfile.phonieRadioTxCplCc}}" />
+	  <fv nom="phonieRadioTxCplCi" enum="{{audioProfile.phonieRadioTxCplCi}}" />
+	  <fv nom="phonieRadioTxCplHp1" enum="{{audioProfile.phonieRadioTxCplHp1}}" />
+	  <fv nom="phonieRadioTxCplHp2" enum="{{audioProfile.phonieRadioTxCplHp2}}" />
+	  <fv nom="phonieRadioTxCplHp3" enum="{{audioProfile.phonieRadioTxCplHp3}}" />
+	  <fv nom="phonieRadioVsCc" enum="{{audioProfile.phonieRadioVsCc}}" />
+	  <fv nom="phonieRadioVsCi" enum="{{audioProfile.phonieRadioVsCi}}" />
+	  <fv nom="phonieRadioVsHp1" enum="{{audioProfile.phonieRadioVsHp1}}" />
+	  <fv nom="phonieRadioVsHp2" enum="{{audioProfile.phonieRadioVsHp2}}" />
+	  <fv nom="phonieRadioVsHp3" enum="{{audioProfile.phonieRadioVsHp3}}" />
+	  <fv nom="phonieRejeuCc" enum="{{audioProfile.phonieRejeuCc}}" />
+	  <fv nom="phonieRejeuCi" enum="{{audioProfile.phonieRejeuCi}}" />
+	  <fv nom="phonieRejeuHp1" enum="{{audioProfile.phonieRejeuHp1}}" />
+	  <fv nom="phonieRejeuHp2" enum="{{audioProfile.phonieRejeuHp2}}" />
+	  <fv nom="phonieRejeuHp3" enum="{{audioProfile.phonieRejeuHp3}}" />
+	  <fv nom="phonieTelephonCc" enum="{{audioProfile.phonieTelephonCc}}" />
+	  <fv nom="phonieTelephonCi" enum="{{audioProfile.phonieTelephonCi}}" />
+	  <fv nom="phonieTelephonHp1" enum="{{audioProfile.phonieTelephonHp1}}" />
+	  <fv nom="phonieTelephonHp2" enum="{{audioProfile.phonieTelephonHp2}}" />
+	  <fv nom="phonieTelephonHp3" enum="{{audioProfile.phonieTelephonHp3}}" />
+	  <fv nom="ringtoneMedia" enum="{{audioProfile.ringtoneMedia}}" />
+	  <fv nom="telephonSimultaneousHandHead" enum="{{audioProfile.telephonSimultaneousHandHead}}" />
+
+	</obj>
+	

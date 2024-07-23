@@ -1,0 +1,2 @@
+{% set typeProfil='IProfilUtilisateur' %}
+{% include 'templ_0309_0310_gen_srsa.edcdc.shared.IProfilUtilisateur.xml' %}

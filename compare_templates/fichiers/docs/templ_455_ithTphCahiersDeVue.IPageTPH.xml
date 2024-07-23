@@ -1,0 +1,12 @@
+<obj id="ithTphCahiersDeVue.IPageTPH.{{nomPageTph}}" class-name="ithTphCahiersDeVue.IPageTPH" nom="{{nomPageTph}}">
+	  <fv nom="libelle1" val="{{pageTph.libelle1}}" />
+	  <fv nom="libelle2" val="{{pageTph.libelle2}}" />
+	  <fv nom="membres">
+{%- for touche in pageTph.listeTouches %}
+{% if touche.typeMembre != "" and touche.typeMembre != "" %}
+	    <a i="{{loop.index0}}" ref="{{touche.typeMembre}}.{{touche.nom}}" />
+{% endif %}
+{%- endfor %}
+	  </fv>
+	</obj>
+	

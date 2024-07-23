@@ -1,0 +1,20 @@
+	<obj id="mg2s.ISiteConfigExterne.{{nomSiteConfigExterne}}" class-name="mg2s.ISiteConfigExterne" nom="{{nomSiteConfigExterne}}">
+	  <fv nom="capaciteS" val="{{siteConfigExterne.capaciteS}}" />
+	  <fv nom="capaciteU" val="{{siteConfigExterne.capaciteU}}" />
+	  <fv nom="capaciteV" val="{{siteConfigExterne.capaciteV}}" />
+	  <fv nom="numId" val="{{siteConfigExterne.numid}}" />
+	  <fv nom="siteParts">
+{% for part in siteConfigExterne.get('siteParts', []) %}
+	    <a i="{{loop.index0}}">
+	      <obj id="mg2s.ISiteConfigExterne.siteConfExt1.siteParts.mg2s.IPartieSiteConfigExterne$mg2s.ISiteConfigExterne$siteParts.*$*.label_{{loop.index0}}" class-name="mg2s.IPartieSiteConfigExterne$mg2s.ISiteConfigExterne$siteParts.*$*" nom="label_{{loop.index0}}">
+	        <fv nom="type" enum="{{part}}"/>
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="trigramme" val="{{siteConfigExterne.trigramme}}" />
+	  
+	  <fv nom="typeSite" enum="{{siteConfigExterne.typeSiteExterne}}" />
+
+	</obj>
+	

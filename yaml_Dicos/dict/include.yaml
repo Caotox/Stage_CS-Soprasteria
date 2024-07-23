@@ -1,0 +1,28 @@
+C3650-48TS:
+  description: "Cisco Catalyst 3650 48-Port Switch"
+  ports: 48
+  model: "C3650-48TS"
+  softwareVersion: "IOS XE 3.6.6E"
+  stackable: true
+  toto:
+        t1: 1
+        t2: aqaaa
+        t3 : 6
+
+C3650-24TS:
+  description: "Cisco Catalyst 3650 24-Port Switch"
+  ports: 24
+  model: "C3650-24TS"
+  softwareVersion: "IOS XE 3.6.6E"
+  stackable: true
+  
+C3650-98TS:
+  description2: "Cisco Catalyst 3650 98-Port Switch"
+  ports2: 98
+  model2: "C3650-48TS"
+  softwareVersion2: "IOS XE 3.6.6E"
+  stackable2: true
+  toto2:
+        t1: 7497247
+        t2: bmw
+        t3 : 2879497824

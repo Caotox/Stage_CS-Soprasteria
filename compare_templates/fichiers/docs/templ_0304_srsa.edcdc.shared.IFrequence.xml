@@ -1,0 +1,8 @@
+<obj id="srsa.edcdc.shared.IFrequence.{{nomItem}}" class-name="srsa.edcdc.shared.IFrequence" nom="{{nomItem}}">
+{% if item.eqf %}
+	  <fv nom="eqf" ref="{{item.eqf}}" />
+{% endif %}
+	  <fv nom="frequence" val="{{item.frequence}}" />
+	  <fv nom="identifiant" val="{{item.identifiant}}" />
+	</obj>
+	

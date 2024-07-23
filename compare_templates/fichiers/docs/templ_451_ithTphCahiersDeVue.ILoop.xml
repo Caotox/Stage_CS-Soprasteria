@@ -1,0 +1,8 @@
+<obj id="ithTphCahiersDeVue.ILoop.{{nomBoucle}}" class-name="ithTphCahiersDeVue.ILoop" nom="{{nomBoucle}}">
+	  <fv nom="libelle1" val="{{boucle.libelle1}}" />
+	  <fv nom="libelle2" val="{{boucle.libelle2}}" />
+	  <fv nom="number" val="{{boucle.numeroITH}}" />
+	  <fv nom="security" enum="{{boucle.bclSecurite}}" />
+
+	</obj>
+	

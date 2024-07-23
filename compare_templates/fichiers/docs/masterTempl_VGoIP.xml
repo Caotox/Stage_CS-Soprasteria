@@ -1,0 +1,6 @@
+{% for key,vgoip in configCMoIP.listeVgoipEnr.items() -%}
+{% include 'templ_vgoipEnr.xml' %}
+{% endfor %}
+{% for key,vgoip in configCMoIP.listeVgoipRejeu.items() -%}
+{% include 'templ_vgoipRejeu.xml' %}
+{% endfor %}

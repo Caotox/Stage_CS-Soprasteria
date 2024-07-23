@@ -1,0 +1,44 @@
+﻿Programme :
+Script de génération d'une conf de travail (GenerConfDeTravail.sh). La « conf de travial » est une configuration réduite de la configuration technique d’un CDC permettant aux officiers fonction radio et téléphone de travailler en hors ligne sur les plans radio ou la conf téléphone.
+
+Utilité : 
+Le script va parcourir un fichier XML (3_configuration.xml d’un CEX) puis en créer un nouveau ne contenant que les classes (attribut "class-name") choisis par l'utilisateur. 
+A ce nouveau fichier, le script va ajouter le contenu des fichiers XML de la configuration TEL et de la configuration Radio.
+Le rendu sera alors un fichier XML conforme et utilisable.
+Le script utilise des commandes bash ainsi qu'un programme python.
+
+Utilisation : 
+Ce script prend 5 arguments et fonctionne comme suit :
+Argument 1 : nom du programme. Exemple : GenerConfDeTravail.sh
+Argument 2 : nom du fichier de conf. Exemple : 3_configuration.xml
+Argument 3 : Trigramme pour l’affichage : Exemple : MD0
+Argument 4 : nom du fichier de la conf tel. Exemple : MDO-tel.xml
+Argument 5 : nom du fichier de la conf radio. Exemple : MDO-radio.xml
+Argument 6 : nom du fichier final xml voulu (après concaténation des 3 fichiers). Exemple : nouvelle_conf_de_travail.xml
+Argument  7 : nom du fichier contenant les « class-names »  des objets à extraire du fichier de conf.
+
+Exemple d'utilisation :
+./GenerConfDeTravail.sh 3_configuration.xml  MD0 MDO-tel.xml MDO-radio.xml nouvelle_conf_de_travail.xml classe-name-Conf-de-travail.txt
+
+Le fichier renverra alors un fichier xml nouvelle_conf_de_travail.xml
+
+Il utilise un programme python qui peut être utilisé pour parcourir et ne garder que certaines classes souhaitées par l'utilisateur. 
+La syntaxe est alors la suivante : 
+Argument 1 : nom du programme. Exemple : v2-xml-Parser.py
+Argument 2 : nom de la conf xml à parcourir. Exemple : MDO-Conf.xml
+Argument 3 : nom souhaité pour le nouveau fichier renvoyé. Exemple : nouvelle_conf.xml
+Argument 4 : nom du fichier texte contenant les classes à inclure. Exemple : classes.txt
+
+Exemple d'utilisation :
+python v2-xml-Parser MDO-Conf.xml nouvelle_conf.xml classes.txt
+
+Conditions de fonctionnement du programme : 
+Le fichier .txt ne doit pas avoir de retour à la ligne.
+Ne fonctionne que sur des machines avec une version python 3.4.5 ou ultérieure. Actuellement, le script et le programme python sont lancés sur des clients de supervision.
+
+Les class-names :
+  classe-name-Conf-de-travail.txt : fichier contenant les « class-names »  des objets à garder pour réaliser le fichier de configuration de travail.
+  classe-name-CEX.txt : fichier contenant les « class-names »  des objets pour extraire tous les équipements d’un CEX.
+.
+  classe-name-CerCie.txt : fichier contenant les « class-names »  des objets pour extraire tous les équipements  des CER et CEX distants.
+  classe-name-Config-Externe.txt : fichier contenant les « class-names »  des objets pour extraire la config Externe et les sites.

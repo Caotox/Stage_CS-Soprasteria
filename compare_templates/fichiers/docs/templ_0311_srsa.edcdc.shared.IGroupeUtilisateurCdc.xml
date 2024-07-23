@@ -1,0 +1,9 @@
+<obj id="srsa.edcdc.shared.IGroupeUtilisateurCdc.{{nomItem}}" class-name="srsa.edcdc.shared.IGroupeUtilisateurCdc" nom="{{nomItem}}">
+	  <fv nom="identifiant" val="{{item.identifiant}}" />
+	  <fv nom="dispositionProfilsClavier">
+{% for ssItem in item.get('dispositionProfilsClavier', []) %}
+	    <a i="{{loop.index0}}" ref="srsa.edcdc.shared.IProfilUtilisateur.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	</obj>
+	

@@ -1,0 +1,13 @@
+<obj id="srsa.edcdc.shared.IToc.{{nomItem}}" class-name="srsa.edcdc.shared.IToc" nom="{{nomItem}}">
+{% for nomSsItem, ssItem in item.regions.items() %}
+	  <fv nom="centre{{loop.index}}">
+{% for element in ssItem %}
+{% if element %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteConfigExterne.{{element}}"/>
+{% endif %}
+{% endfor %}
+	  </fv>
+{% endfor %}
+	  <fv nom="identifiant" val="{{item.identifiant}}" />
+	</obj>
+	

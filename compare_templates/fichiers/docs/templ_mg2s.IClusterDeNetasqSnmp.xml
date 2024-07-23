@@ -1,0 +1,273 @@
+<obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}" class-name="mg2s.IClusterDeNetasqSnmp" nom="{{nomCluster}}">
+	  <fv nom="adresseIPScriptAudit" val="{{cluster.adresseIPScriptAudit}}" />
+	  <fv nom="alarmeCpuState">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeCpuState.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeCpuState.Etat charge CPU" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeCpuState" nom="Etat charge CPU">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatAdministratif">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatAdministratif.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatAdministratif.Etat administratif" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatAdministratif" nom="Etat administratif">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatConfigurationAppliquee">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatConfigurationAppliquee.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatConfigurationAppliquee.Etat conf. appliquée" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatConfigurationAppliquee" nom="Etat conf. appliquée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	      <fv nom="faultLabel" val="Alarme non utilisée" />
+	      <fv nom="graviteAlarme" enum="TERMINE" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatDerniereConfigAppliquee">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatDerniereConfigAppliquee.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatDerniereConfigAppliquee.Etat Dernière conf. appliquée" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatDerniereConfigAppliquee" nom="Etat Dernière conf. appliquée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	      <fv nom="faultLabel" val="Alarme non utilisée" />
+	      <fv nom="graviteAlarme" enum="TERMINE" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLicence">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLicence.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLicence.Etat licence" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLicence" nom="Etat licence">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLigneVie.Etat ligne de vie" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLigneVie" nom="Etat ligne de vie">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_Antivirus">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_Antivirus.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_Antivirus.Alarme Etat logiciel Antivirus" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_Antivirus" nom="Alarme Etat logiciel Antivirus">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_ASQ">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_ASQ.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_ASQ.Alarme Etat logiciel ASQ" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_ASQ" nom="Alarme Etat logiciel ASQ">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_BIRD">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_BIRD.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_BIRD.Alarme Etat logiciel BIRD" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_BIRD" nom="Alarme Etat logiciel BIRD">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_Corosync">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_Corosync.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_Corosync.Alarme Etat logiciel Corosync" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_Corosync" nom="Alarme Etat logiciel Corosync">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_EVENT">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_EVENT.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_EVENT.Alarme Etat logiciel EVENT" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_EVENT" nom="Alarme Etat logiciel EVENT">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_LOG">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_LOG.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_LOG.Alarme Etat logiciel LOG" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_LOG" nom="Alarme Etat logiciel LOG">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_NTP">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_NTP.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_NTP.Alarme Etat logiciel NTP" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_NTP" nom="Alarme Etat logiciel NTP">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLogiciel_RACOON">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeEtatLogiciel_RACOON.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_RACOON.Alarme Etat logiciel RACOON" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeEtatLogiciel_RACOON" nom="Alarme Etat logiciel RACOON">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMemStateReal">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeMemStateReal.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeMemStateReal.Etat mémoire vive" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeMemStateReal" nom="Etat mémoire vive">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeNombreChiffreurActif">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeNombreChiffreurActif.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeNombreChiffreurActif.Nombre de chiffreur actif" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeNombreChiffreurActif" nom="Nombre de chiffreur actif">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeTemperature">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.alarmeTemperature.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeTemperature.Temperature" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp$alarmeTemperature" nom="Temperature">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="" />
+	  <fv nom="cheminScriptAudit" val="{{global.cheminScriptAudit}}" />
+	  {% for nomChiffreur in ["Chiffreur1", "Chiffreur2"] %}
+	  <!-- {{nomChiffreur}}   {{cluster[nomChiffreur]['nom']}} -->
+	  {% set chiffreur = cluster[nomChiffreur] %}
+	  {% include 'templ_mg2s.IClusterDeNetasqSnmp.netasq.xml' %}
+	  {% endfor %}
+	  <!-- fin -->
+	  <fv nom="cmoipLocal" ref="{{serveurPIU}}" />
+	  <fv nom="commentaire" val="{{cluster.commentaire}}" />
+	  <fv nom="coreNumber" val="1" />
+	  <fv nom="cpuLoadAlertLevel" val="70" />
+	  <fv nom="cpuLoadCriticalLevel" val="80" />
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueSite" val="true" />
+	  <fv nom="delaiAlerteAvertissement" val="30" />
+	  <fv nom="delaiAlerteCritique" val="5" />
+	  <fv nom="eqId" val="{{cluster.eqId}}" />
+	  <fv nom="eqtType" enum="{{cluster.eqtType}}" />
+
+	  <fv nom="etatInit" enum="1" />
+
+	  <fv nom="etatLicence">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.etatLicence.mg2s.IScriptExecuteurChiffreur$mg2s.IClusterDeNetasqSnmp$etatLicence.script_licence" class-name="mg2s.IScriptExecuteurChiffreur$mg2s.IClusterDeNetasqSnmp$etatLicence" nom="script_licence">
+	      <fv nom="commandeSupervision" val="D:\\tmp\\check_cert.bat" />
+	      <fv nom="nrpeSupervisionHandler" ref="{{global.nrpeSupervisionHandler}}" />
+	    </obj>
+	  </fv>
+	  {% for nomPort, port in cluster.listePorts.items() %}
+	  <fv nom="{{nomPort}}">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomPort}}.port.IPortNetasqSnmp$mg2s.IClusterDeNetasqSnmp${{nomPort}}.1" class-name="port.IPortNetasqSnmp$mg2s.IClusterDeNetasqSnmp${{nomPort}}" nom="{{port.nom}}">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomPort}}.port.IPortNetasqSnmp$mg2s.IClusterDeNetasqSnmp${{nomPort}}.1.alarmeEtatPort.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp${{nomPort}}.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp${{nomPort}}.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="{{port.internalName}}" />
+	      <fv nom="nomCourt" val="{{port.nomCourt}}" />
+	      <fv nom="nonUtilise" val="{{port.nonUtilise}}" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  {% endfor %}
+	  <fv nom="flagCpuLoadPercent" val="false" />
+	  <fv nom="flagLicence" val="{{cluster.flagLicence}}" />
+	  <fv nom="flagLogicielAntivirus" val="{{cluster.flagLogicielAntivirus}}" />
+	  <fv nom="flagLogicielBird" val="{{cluster.flagLogicielBird}}" />
+	  <fv nom="flagLogicielCorosync" val="{{cluster.flagLogicielCorosync}}" />
+	  <fv nom="flagLogicielRacoon" val="{{cluster.flagLogicielRacoon}}" />
+	  <fv nom="flagTemperature" val="{{cluster.flagTemperature}}" />
+	  <fv nom="hostName" val="{{cluster.hostName}}" />
+	  <fv nom="infobulle" val="{{cluster.infobulle}}" />
+	  <fv nom="integrityChecker" ref="{{global.integrityChecker}}" />
+	  <fv nom="intervalLifelineErreur" val="1000" />
+	  <fv nom="intervalLifelineOk" val="1000" />
+	  <fv nom="IntervalPollingErreur" val="1000" />
+	  <fv nom="ipAddressExterne" val="{{cluster.ipAddrSupervHost}}" />
+	  <fv nom="ipAddressSupervisedHost" val="{{cluster.ipAddressSupervisedHost}}" />
+	  <fv nom="listeliaisonsVPN">
+	    <a i="0" ref="mg2s.ILiaisonVpnSnmp.MIL-00"/>
+	  </fv>
+	  <fv nom="logiqueDeComportement" enum="1" />
+
+	  <fv nom="maxTryNumber" val="5" />
+	  <fv nom="maxTryNumberLifeLine" val="4" />
+	  <fv nom="maxVarbindsPerPduRequest" val="20" />
+	  <fv nom="memAlertLevel" val="70" />
+	  <fv nom="memCriticalLevel" val="95" />
+	  <fv nom="nbrTestAvantBasculeIP" val="2" />
+	  <fv nom="necessiteMaintenanceScript1" val="false" />
+	  <fv nom="necessiteMaintenanceScript2" val="false" />
+	  <fv nom="necessiteMaintenanceScript3" val="false" />
+	  <fv nom="necessiteMaintenanceScript4" val="false" />
+	  <fv nom="nomCourt" val="{{cluster.nomCourt}}" />
+	  <fv nom="nomScript1" val="Script 1" />
+	  <fv nom="nomScript2" val="Script 2" />
+	  <fv nom="nomScript3" val="Script 3" />
+	  <fv nom="nomScript4" val="Script 4" />
+	  {% if cluster.parentLogique1 %}
+	  <fv nom="parentLogique1" ref="{{cluster.parentLogique1}}" />
+	  {% endif %}
+	  {% if cluster.parentLogique2 %}
+	  <fv nom="parentLogique2" ref="{{cluster.parentLogique2}}" />
+	  {% endif %}
+	  <fv nom="parentPhysique" val="{{cluster.parentPhysique}}" />
+	  <fv nom="poidsLogiciel_Antivirus" val="{{cluster.poidsLogiciel_Antivirus}}" />
+	  <fv nom="poidsLogiciel_ASQ" val="{{cluster.poidsLogiciel_ASQ}}" />
+	  <fv nom="poidsLogiciel_BIRD" val="{{cluster.poidsLogiciel_BIRD}}" />
+	  <fv nom="poidsLogiciel_Corosync" val="{{cluster.poidsLogiciel_Corosync}}" />
+	  <fv nom="poidsLogiciel_EVENT" val="{{cluster.poidsLogiciel_EVENT}}" />
+	  <fv nom="poidsLogiciel_LOG" val="{{cluster.poidsLogiciel_LOG}}" />
+	  <fv nom="poidsLogiciel_NTP" val="{{cluster.poidsLogiciel_NTP}}" />
+	  <fv nom="poidsLogiciel_RACOON" val="{{cluster.poidsLogiciel_RACOON}}" />
+	  <fv nom="portSnmp" val="161" />
+	  <fv nom="portTrapSnmp" val="-1" />
+	  <fv nom="script1" val="/sysca/etc/adm_script1.sh" />
+	  <fv nom="script2" val="/sysca/etc/adm_script2.sh" />
+	  <fv nom="script3" val="/sysca/etc/adm_script3.sh" />
+	  <fv nom="script4" val="/sysca/etc/adm_script4.sh" />
+	  <fv nom="targetEquipmentIP" val="{{cluster.targetEquipmentIP}}" />
+	  <fv nom="tempAlertLevel" val="10" />
+	  <fv nom="tempCriticalLevel" val="50" />
+	  <fv nom="tempoLifeline" val="" />
+	  <fv nom="ticksPerSecond" val="100" />
+	  <fv nom="timeout" val="1000" />
+	  <fv nom="timeoutLancerScript1" val="22000" />
+	  <fv nom="timeoutLancerScript2" val="22000" />
+	  <fv nom="timeoutLancerScript3" val="22000" />
+	  <fv nom="timeoutLancerScript4" val="22000" />
+	  <fv nom="timeoutLifeLine" val="400" />
+	  <fv nom="timeoutVPN" val="1000" />
+	  <fv nom="typeEquipement" val="N/A" />
+	  <fv nom="typeOS" enum="RESEAU" />
+
+	  <fv nom="virusChecker" ref="{{global.virusChecker}}" />
+	  <fv nom="workflowActivationPartiel" val="true" />
+	</obj>
+	
+	<obj id="mg2s.ILiaisonVpnSnmp.MIL-00" class-name="mg2s.ILiaisonVpnSnmp" nom="MIL-00">
+	  <fv nom="alarmeEtatLiaisonVPN">
+	    <obj id="mg2s.ILiaisonVpnSnmp.MIL-00.alarmeEtatLiaisonVPN.mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="critique" val="false"/>
+	  <fv nom="critiqueSite" val="false"/>
+	  <fv nom="DestinationVNP" val="109.250.110.1"/>
+	  <fv nom="etatInit" enum="1"/>
+	  <fv nom="nomCourt" val="MIL"/>
+	  <fv nom="parentPhysique" val="yuyu"/>
+	  <fv nom="SourceVPN" val="109.250.110.1"/>
+	  <fv nom="typeEquipement" val="N/A"/>
+	</obj>

@@ -1,0 +1,32 @@
+<obj id="ithTphAnnuaire.IRole.{{nomRole}}" class-name="ithTphAnnuaire.IRole" nom="{{nomRole}}">
+	  <fv nom="forwardImm" val="{{role.forwardImm}}" />
+{% if role.gfuRelatifPreferentielRole %}
+	  <fv nom="gfuRelatifPreferentielRole" enum="{{role.gfuRelatifPreferentielRole}}" />
+{% endif %}
+
+	  <fv nom="identifiantUriSip" val="{{role.identifiantUriSip}}" />
+	  <fv nom="libelleInformatif" val="{{role.libelleInformatif}}" />
+	  <fv nom="numberPstn" val="{{role.numberPstn}}" />
+	  <fv nom="numeroATS" val="{{role.numeroATS}}" />
+	  <fv nom="numeroIth" val="{{role.numeroIth}}" />
+	  <fv nom="numeroPNIA" val="{{role.numeroPNIA}}" />
+	  <fv nom="numeroTph" val="{{role.numeroTph}}" />
+{% for overflow in role.overflows %}
+	  <fv nom="overflow{{loop.index}}" val="{{overflow}}" />
+{% endfor %}
+	  <fv nom="overflowBusy" val="{{role.overflowBusy}}" />
+	  <fv nom="overflowNa" val="{{role.overflowNa}}" />
+{% if role.permissionGfuAccessRole %}
+	  <fv nom="permissionGfuAccessRole" ref="{{role.permissionGfuAccessRole}}" />
+{% endif %}
+	  <fv nom="priorityExpl" enum="{{role.priorityExpl}}" />
+
+	  <fv nom="priorityImpl" enum="{{role.priorityImpl}}" />
+
+	  <fv nom="text1" val="{{role.libelle1}}" />
+	  <fv nom="text2" val="{{role.libelle2}}" />
+	  <fv nom="typeMembre" val="role" />
+	  <fv nom="typeRole" ref="ithTphAnnuaire.ITypeRole.{{role.typeRole}}" />
+	  <fv nom="vpoipOwner" ref="pocEquipement.IVPoIP.{{role.vpoipOwner}}" />
+	</obj>
+	

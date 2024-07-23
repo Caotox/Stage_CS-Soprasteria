@@ -1,0 +1,304 @@
+<obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}" class-name="serveurs.IServeurUCGeneriqueCie" nom="{{ucGenServeur.nom}}">
+	  <!-- date : 2023-11-27 16:20:13
+	  	dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-11-21_srsaip_2.1.0-p1
+	  	squelette : srsa-ip-skeleton-cmoip.xml
+	  	sw_cmoip_version : CMoIP-srsaip 2.1.0-p1
+	  	fichier : templ_1404serveurs.IServeurUCGeneriqueCie.xml
+	  	classe : 1404 === serveurs.IServeurUCGeneriqueCie -->
+  
+	    <!--
+	    valeur de l'énumeration eqtType : 
+			MCR_RS1G(MCR_RS1G);MCR_RS2G(MCR_RS2G);MCR_MCSx1G(MCR_MCSx1G);MCR_MCSx2G(MCR_MCSx2G);MCR_MCSg1G(MCR_MCSg1G);MCR_MCSg2G(MCR_MCSg2G);
+			MCR_MCSc1G(MCR_MCSc1G);MCR_MCSc2G(MCR_MCSc2G);MCR_MCSr1G(MCR_MCSr1G);MCR_MCSr2G(MCR_MCSr2G);
+			SFARcex(SFARcex);SFARcer(SFARcer);VRoIP(VRoIP);VPoIP(VPoIP);MIAe(MIAe);
+			LTR(LTR);TTR(TTR);DIF(DIF);SDIF(SDIF);
+			ADMCENTRAL(ADMCENTRAL);ADMLOCAL(ADMLOCAL);ADMCNMO(ADMCNMO);CLTASP(CLTASP);
+			VGoIP(VGoIP);TSoIP(TSoIP);
+			SrvNTP(SrvNTP);SW4507(SW4507);SW2960x(SW2960x);SW3850(SW3850);RT2911(RT2911);RT3945(RT3945);
+			NQu70s(NQu70s);NQu30s(NQu30s);NQu150s(NQu150s);SN300(SN300);SN200(SN200);SN210(SN210);SN310(SN310);SN510(SN510); 
+	    valeur de l'énumeration etatInit : 1(En service);2(Non géré);
+	    valeur de l'énumeration logiqueDeComportement : 1(Normale);2(Probable si 2 HS);3(Probable si 1 sur 2 HS);
+	    valeur de l'énumeration typeInventaire : 1(Date d'installation);2(Numero de serie);3(Numero de serie et Date d'installation);
+	    valeur de l'énumeration typeOS : SEDUCS(SEDUCS);LDB(LDB);RESEAU(RESEAU);CENTOS(CENTOS);
+	  -->
+
+	  <fv nom="adresseIPScriptAudit" val="{{ucGenServeur.adresseIPScriptAudit}}"/>
+	  <fv nom="alarmeBatterieControleurRaid">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeBatterieControleurRaid.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeBatterieControleurRaid.Alarme état batterie contrôleur RAID" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeBatterieControleurRaid" nom="Alarme état batterie contrôleur RAID">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCarteNtp">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeCarteNtp.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCarteNtp.Alarme carte NTP" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCarteNtp" nom="Alarme carte NTP">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCarteTemp">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeCarteTemp.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCarteTemp.Etat température en entrée" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCarteTemp" nom="Etat température en entrée">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCpuState">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeCpuState.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCpuState.Etat charge CPU" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCpuState" nom="Etat charge CPU">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCpuTemp">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeCpuTemp.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCpuTemp.Etat température CPU" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeCpuTemp" nom="Etat température CPU">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatAdministratif">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatAdministratif.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatAdministratif.Etat administratif" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatAdministratif" nom="Etat administratif">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatDisqueRaid">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatDisqueRaid.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatDisqueRaid.Alarme état RAID" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatDisqueRaid" nom="Alarme état RAID">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatLigneVie.Alarme état ligne de vie serveur" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatLigneVie" nom="Alarme état ligne de vie serveur">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatOccupationDisque">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatOccupationDisque.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatOccupationDisque.Etat occupation disque racine" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatOccupationDisque" nom="Etat occupation disque racine">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatOccupationTmp">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatOccupationTmp.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatOccupationTmp.Etat occupation partition tmp" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatOccupationTmp" nom="Etat occupation partition tmp">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatOccupationVar">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatOccupationVar.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatOccupationVar.Etat occupation partition var" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatOccupationVar" nom="Etat occupation partition var">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRedondance">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeEtatRedondance.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatRedondance.Etat redondance alimentation" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeEtatRedondance" nom="Etat redondance alimentation">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeHwClockSynchro">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeHwClockSynchro.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeHwClockSynchro.Etat synchro. horaire" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeHwClockSynchro" nom="Etat synchro. horaire">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeHwFansStatus">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeHwFansStatus.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeHwFansStatus.Etat ventilateurs" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeHwFansStatus" nom="Etat ventilateurs">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMemStateReal">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmeMemStateReal.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeMemStateReal.Etat mémoire vive" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmeMemStateReal" nom="Etat mémoire vive">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmePileBios">
+	    <obj id="serveurs.IServeurUCGeneriqueCie.{{ucGenServeur.nom}}.alarmePileBios.mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmePileBios.Alarme état pile du BIOS" class-name="mil.IPropertyBasedAlarmObject$serveurs.IServeurUCGeneriqueCie$alarmePileBios" nom="Alarme état pile du BIOS">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val=""/>
+	  <fv nom="cheminScriptAudit" val="/{{ucGenServeur.cheminScriptAudit}}"/>
+	  <fv nom="cmoipDistant" ref="{{ucGenServeur.cmoipDistant}}"/>		<!-- hiérarchie -->
+	  <fv nom="commentaire" val="{{ucGenServeur.commentaire}}"/>
+	  <fv nom="cpuLoadAlertLevel" val="{{ucGenServeur.cpuLoadAlertLevel}}"/>
+	  <fv nom="cpuLoadCriticalLevel" val="{{ucGenServeur.cpuLoadCriticalLevel}}"/>
+	  <fv nom="critique" val="{{ucGenServeur.critique}}"/>
+	  <fv nom="critiqueAlarme" val="{{ucGenServeur.critiqueAlarme}}"/>
+	  <fv nom="critiqueSite" val="{{ucGenServeur.critiqueSite}}"/>
+	  <fv nom="eqId" val="{{ucGenServeur.eqId}}"/>
+	  <fv nom="eqtType" enum="{{ucGenServeur.eqtType}}"/>
+	  <fv nom="etatInit" enum="1"/>
+
+	  <!--    Liste des ports Ethernet   -->
+	  {% for nomPort, port in ucGenServeur.listePorts.items() %}
+	  <fv nom="{{nomPort}}">
+	        <obj id="" class-name="" nom="{{port.nom}}">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="" class-name="" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="{{port.internalName}}" />
+	      <fv nom="nomCourt" val="{{port.nomCourt}}" />
+	      <fv nom="nonUtilise" val="{{port.nonUtilise}}" />
+		  {% if port.portReference %}
+	      <fv nom="portReference" ref="{{port.portReference}}" />
+		  {% endif %}
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  {% endfor %}
+
+	  <fv nom="flagEtatBatterieRaid" val="{{ucGenServeur.flagEtatBatterieRaid}}"/>
+	  <fv nom="flagEtatPresenceCarteNTP" val="true"/>
+	  <fv nom="flagEtatRaid" val="{{ucGenServeur.flagEtatRaid}}"/>
+	  <fv nom="flagEtatTempEntree" val="{{ucGenServeur.flagEtatTempEntree}}"/>
+	  <fv nom="flagEtatVentilateurs" val="{{ucGenServeur.flagEtatVentilateurs}}"/>
+	  <fv nom="hostName" val="{{ucGenServeur.hostname}}"/>
+	  <fv nom="infobulle" val="{{ucGenServeur.infobulle}}"/>
+	  <fv nom="integrityChecker" ref="{{global.integrityChecker}}"/>
+	  <fv nom="intervalLifelineErreur" val="1000"/>
+	  <fv nom="intervalLifelineOk" val="1000"/>
+	  <fv nom="ipAddressSupervisedHost" val="{{ucGenServeur.adresseIP}}"/>
+	  <fv nom="isSnmpDate" val="{{ucGenServeur.isSnmpDate}}"/>
+	  <fv nom="isSnmpNumSer" val="{{ucGenServeur.isSnmpNumSer}}"/>
+	  <!--    Logiciel HR   -->
+	  <fv nom="logicielHrTable">
+	    {% for process in ucGenServeur.logicielsHr %}
+	    <a i="{{loop.index0}}">
+		{% include 'genTempl_propDynProcessHr.xml' %}
+	    </a>
+		{% endfor %}
+	  </fv>
+
+	  <!--    Logiciel PR   -->
+	  <fv nom="logicielPrTable">
+	    {% for process in ucGenServeur.logicielsPr %}
+	    <a i="{{loop.index0}}">
+	    {% include 'genTempl_propDynProcessPr.xml' %}
+	    </a>
+		{% endfor %}
+	  </fv>
+	  <fv nom="logiqueDeComportement" enum="{{ucGenServeur.logiqueDeComportement}}"/>
+	  <fv nom="maxTryNumberLifeLine" val="2"/>
+	  <fv nom="memAlertLevel" val="{{ucGenServeur.memAlertLevel}}"/>
+	  <fv nom="memCriticalLevel" val="{{ucGenServeur.memCriticalLevel}}"/>
+	  <fv nom="nbrTestAvantBasculeIP" val="2"/>
+	  <fv nom="necessiteMaintenanceScript1" val="{{global.necessiteMaintenanceScript1}}"/>
+	  <fv nom="necessiteMaintenanceScript2" val="{{global.necessiteMaintenanceScript2}}"/>
+	  <fv nom="necessiteMaintenanceScript3" val="{{global.necessiteMaintenanceScript3}}"/>
+	  <fv nom="necessiteMaintenanceScript4" val="{{global.necessiteMaintenanceScript4}}"/>
+	  <fv nom="necessiteMaintenanceScriptArret" val="{{global.necessiteMaintenanceScriptArret}}"/>
+	  <fv nom="necessiteMaintenanceScriptArretLogiciels" val="false"/>
+	  <fv nom="necessiteMaintenanceScriptStartLogiciels" val="false"/>
+	  <fv nom="nomCourt" val="{{ucGenServeur.nomCourt}}"/>
+	  <fv nom="nomDuScan" val="{{global.nomDuScan}}"/>
+	  <fv nom="nomDuStop" val="{{global.nomDuStop}}"/>
+	  <fv nom="nomIntegrity" val="{{ucGenServeur.nomIntegrity}}"/>
+	  <fv nom="nomLogiqueDistant" val="{{ucGenServeur.nomLogiqueDistant}}"/>
+	  <fv nom="nomScript1" val="{{global.nomScript1}}"/>
+	  <fv nom="nomScript2" val="{{global.nomScript2}}"/>
+	  <fv nom="nomScript3" val="{{global.nomScript3}}"/>
+	  <fv nom="nomScript4" val="{{global.nomScript4}}"/>
+	  <fv nom="nomScriptPhoto" val="{{global.nomScriptPhoto}}"/>
+	  <fv nom="nomStartAllSoft" val="Démarrer logiciels"/>
+	  <fv nom="nomStopAllSoft" val="Arrêter logiciels"/>
+	  <fv nom="operationEnCoursAntivirus" val="{{ucGenServeur.operationEnCoursAntivirus}}"/>
+	  <fv nom="operationEnCoursIntegrity" val="{{ucGenServeur.operationEnCoursIntegrity}}"/>
+	  {% if ucGenServeur.parentLogique1 %}
+	  <fv nom="parentLogique1" ref="{{ucGenServeur.parentLogique1}}" />
+	  {% endif %}
+	  {% if ucGenServeur.parentLogique1 %}
+	  <fv nom="parentLogique2" ref="{{ucGenServeur.parentLogique2}}" />
+	  {% endif %}
+	  <fv nom="parentPhysique" val="{{ucGenServeur.parentPhysique}}" />
+
+	  <!--    Partitions   -->
+	  <fv nom="Partition">
+	    {% for partition in ucGenServeur.partitions %}
+	    <a i="{{loop.index0}}">
+		{% include 'genTempl_propDynPartition.xml' %}
+	    </a>
+		{% endfor %}
+	  </fv>
+
+	  <!--    Propriétés dynamiques etat opérationnel   -->
+	  <fv nom="ProprieteDynamiqueEtatOperationnel">
+	    {% for propDyn in ucGenServeur.proprietesEtatOper %}
+	    <a i="{{loop.index0}}">
+		{% include 'genTempl_propDynPropOper.xml' %}
+	    </a>
+		{% endfor %}
+	  </fv>
+
+	  <!--    Propriétés dynamiques etat technique   -->
+	  <fv nom="ProprieteDynamiqueEtatTechnique">
+	    {% for propDyn in ucGenServeur.proprietesEtatTech %}
+	    <a i="{{loop.index0}}">
+		{% include 'genTempl_propDynPropTech.xml' %}
+	    </a>
+		{% endfor %}
+	  </fv>
+
+	  <!--    Propriétés dynamiques information   -->
+	  <fv nom="ProprieteDynamiqueInformation">
+	    {% for propDyn in ucGenServeur.proprietesEtatInfo %}
+	    <a i="{{loop.index0}}">
+		{% include 'genTempl_propDynPropInfo.xml' %}
+	    </a>
+		{% endfor %}
+	  </fv>
+
+	  <fv nom="site" ref="{{configCMoIP.nomSiteLocal}}"/>
+	  <fv nom="storageAlertLevel" val="{{ucGenServeur.storageAlertLevel}}"/>
+	  <fv nom="storageCriticalLevel" val="{{ucGenServeur.storageCriticalLevel}}"/>
+	  <fv nom="surveillanceMibSeducs" val="{{ucGenServeur.surveillanceMibSeducs}}"/>
+	  <fv nom="tempCritical" val="{{ucGenServeur.tempCritical}}"/>
+	  <fv nom="tempMaxAlarm" val="{{ucGenServeur.tempMaxAlarm}}"/>
+	  <fv nom="tempoLifeline" val="{{ucGenServeur.tempoLifeline}}"/>
+	  <fv nom="ticksPerSecond" val="100"/>
+	  <fv nom="timeoutAntivirus" val="100{{global.timeoutAntivirus}}00"/>
+	  <fv nom="timeoutIntegrite" val="{{global.timeoutIntegrite}}"/>
+	  <fv nom="timeoutInventaire" val="{{ucGenServeur.timeoutInventaire}}"/>
+	  <fv nom="timeoutLancerScript1" val="{{global.timeoutLancerScript1}}"/>
+	  <fv nom="timeoutLancerScript2" val="{{global.timeoutLancerScript2}}"/>
+	  <fv nom="timeoutLancerScript3" val="{{global.timeoutLancerScript3}}"/>
+	  <fv nom="timeoutLancerScript4" val="{{global.timeoutLancerScript4}}"/>
+	  <fv nom="timeoutScriptPhoto" val="{{global.timeoutScriptPhoto}}"/>
+	  <fv nom="timeoutStartAllSoft" val="10000"/>
+	  <fv nom="timeoutStop" val="10000"/>
+	  <fv nom="timeoutStopAllSoft" val="{{global.timeoutStop}}"/>
+	  <fv nom="typeEquipement" val="{{ucGenServeur.typeEquipement}}"/>
+	  <fv nom="typeInventaire" enum="{{ucGenServeur.typeInventaire}}"/>
+	  <fv nom="typeOS" enum="{{ucGenServeur.typeOS}}"/>
+	  <fv nom="virusChecker" ref="{{global.virusChecker}}"/>
+	</obj>
+	

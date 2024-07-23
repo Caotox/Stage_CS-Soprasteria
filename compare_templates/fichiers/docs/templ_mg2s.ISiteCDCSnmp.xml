@@ -1,0 +1,60 @@
+<obj id="mg2s.ISiteCDCSnmp.{{nomSite}}" class-name="mg2s.ISiteCDCSnmp" nom="{{nomSite}}">
+	  <fv nom="alarmeEtatDisponibilite">
+	    <obj id="mg2s.ISiteCDCSnmp.{{nomSite}}.alarmeEtatDisponibilite.mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatDisponibilite.Alarme Etat disponibilité site CEX" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatDisponibilite" nom="Alarme Etat disponibilité site CEX">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatEnregistrementOps">
+	    <obj id="mg2s.ISiteCDCSnmp.{{nomSite}}.alarmeEtatEnregistrementOps.mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatEnregistrementOps.Etat d'enregistrement du site CDC (vue opérationnelle)" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatEnregistrementOps" nom="Etat d'enregistrement du site CDC (vue opérationnelle)">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatEnregistrementTech">
+	    <obj id="mg2s.ISiteCDCSnmp.{{nomSite}}.alarmeEtatEnregistrementTech.mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatEnregistrementTech.Etat d'enregistrement du site CDC (vue technique)" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatEnregistrementTech" nom="Etat d'enregistrement du site CDC (vue technique)">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatExploitation">
+	    <obj id="mg2s.ISiteCDCSnmp.{{nomSite}}.alarmeEtatExploitation.mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatExploitation.Etat exploitation du site" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatExploitation" nom="Etat exploitation du site">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceRnis">
+	    <obj id="mg2s.ISiteCDCSnmp.{{nomSite}}.alarmeEtatRessourceRnis.mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatRessourceRnis.Alarme Etat ressource RNIS" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCDCSnmp$alarmeEtatRessourceRnis" nom="Alarme Etat ressource RNIS">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="chiffreurSite" ref="null" />
+	  <fv nom="comportement" enum="1" />
+
+	  <fv nom="critique" val="true" />
+	  <fv nom="farSite" ref="{{referenceFarLocale}}" />
+	  <fv nom="nomCourt" val="{{site.nomCourt}}" />
+	  <fv nom="nomCourtOps" val="{{site.nomCourtOps}}" />
+	  <fv nom="numid" val="{{site.numid}}" />
+	  <fv nom="RefClusterVRoIP" ref="mg2s.IVRoIPClusterSnmp.{{site.RefClusterVRoIP}}" />
+	  <fv nom="region" val="{{site.region}}" />
+	  <fv nom="ressourceRNISMax" val="{{site.ressourceRNISMax}}" />
+	  <fv nom="ressourceRNISSeuil" val="{{site.ressourceRNISSeuil}}" />
+	  <fv nom="siteInfobulle" val="{{site.siteInfobulle}}" />
+	  <fv nom="tabCexNbVcOcc">
+{% for element in site.get('tabCerNbVcOcc', []) %}
+	    <a i="loop.index0">
+	      <obj id="mg2s.ISiteCDCSnmp.{{nomSite}}.tabCexNbVcOcc.site.IVoieParCentre$mg2s.ISiteCDCSnmp$tabCexNbVcOcc.*$*.{{element}}" class-name="site.IVoieParCentre$mg2s.ISiteCDCSnmp$tabCexNbVcOcc.*$*" nom="{{element}}">
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="trigramme" val="{{site.trigramme}}" />
+	</obj>
+	

@@ -1,0 +1,12 @@
+{% for cluster in configCMoIP.listeVroip.values() -%}
+{% include 'templ_mg2s.IVRoIPClusterSnmp.xml' %}
+{% for cote in cluster.listeVroipCotes.values() -%}
+{% include 'templ_mg2s.IVRoIPCoteSnmp.xml' %}
+{% endfor %}
+{% for noeud in cluster.listeVroipNoeud.values() -%}
+{% include 'templ_mg2s.IVRoIPNoeudSnmp.xml' %}
+{% endfor %}
+{% for serveur in cluster.listeVroipServeurs.values() -%}
+{% include 'templ_mg2s.IVRoIPServeurSnmp.xml' %}
+{% endfor %}
+{% endfor %}

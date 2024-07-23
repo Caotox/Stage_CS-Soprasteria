@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations version="2">
+  <configuration tag="Configuration Squelette" description="Conf outils servant de référence pour connaître l&apos;ensemble de propriété disponnible sur chaque objet, configuration non fonctionnel." nom="Conf. Applicable 02/07/2024 12:10:09.745">
+    <groupe-object-model>
+    <obj id="template2" class-name="cmoip.ICMoIPDistant">
+        <fv nom="status" val="inactive"/> <!-- Difference here -->
+        <fv nom="ipAddress" val="192.168.0.1"/>
+        <fv nom="port" val="9090"/> <!-- Difference here -->
+    </obj>
+</groupe-object-model>
+</configuration>
+</configurations>

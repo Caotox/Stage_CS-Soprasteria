@@ -1,0 +1,85 @@
+<!-- date : 2023-09-07 20:33:30 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-08-21_srsaip_2.1.0-rc2-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : CMoIP-srsaip 2.1.0-RC2-SNAPSHOT -->
+<!-- fichier : templ_613reseau.IStackOf2SwitchSnmp.xml -->
+<!-- classe : 613 === reseau.IStackOf2SwitchSnmp -->
+
+<obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}" class-name="reseau.IStackOf2SwitchSnmp" nom="{{nomStack}}">
+	  <fv nom="adresseIPScriptAudit" val="{{stack.adresseIPScriptAudit}}"/>
+	  <fv nom="alarmeEtatAdministratif">
+	    <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.alarmeEtatAdministratif.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatAdministratif.Etat administratif" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatAdministratif" nom="Etat administratif">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatLigneVie.Etat ligne de vie" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatLigneVie" nom="Etat ligne de vie">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="{{stack.altIpAddressSupervisedHost}}"/>
+	  <fv nom="cheminScriptAudit" val="{{stack.cheminScriptAudit}}"/>
+	  <fv nom="cmoipLocal" ref="{{serveurPIU}}"/>
+	  <fv nom="commentaire" val="{{stack.commentaire}}"/>
+	  <fv nom="critique" val="false"/>
+	  <fv nom="critiqueSite" val="false"/>
+	  <fv nom="eqId" val="0"/>
+	  <fv nom="eqtType" enum="{{stack.eqtType}}"/>
+	  <!-- valeur de l'énumeration : MCR_RS1G(MCR_RS1G);MCR_RS2G(MCR_RS2G);MCR_MCSx1G(MCR_MCSx1G);MCR_MCSx2G(MCR_MCSx2G);MCR_MCSg1G(MCR_MCSg1G);MCR_MCSg2G(MCR_MCSg2G);MCR_MCSc1G(MCR_MCSc1G);MCR_MCSc2G(MCR_MCSc2G);MCR_MCSr1G(MCR_MCSr1G);MCR_MCSr2G(MCR_MCSr2G);SFARcex(SFARcex);SFARcer(SFARcer);VRoIP(VRoIP);VPoIP(VPoIP);MIAe(MIAe);LTR(LTR);TTR(TTR);DIF(DIF);SDIF(SDIF);ADMCENTRAL(ADMCENTRAL);ADMLOCAL(ADMLOCAL);ADMCNMO(ADMCNMO);CLTASP(CLTASP);VGoIP(VGoIP);TSoIP(TSoIP);SrvNTP(SrvNTP);SW4507(SW4507);SW2960x(SW2960x);SW3850(SW3850);RT2911(RT2911);RT3945(RT3945);NQu70s(NQu70s);NQu30s(NQu30s);NQu150s(NQu150s);SN300(SN300);SN200(SN200);SN210(SN210);SN310(SN310);SN510(SN510); -->
+	  <fv nom="etatInit" enum="1"/>
+	  <!-- valeur de l'énumeration : 1(En service);2(Non géré); -->
+	  <fv nom="flagAlimentation1" val="{{global.flagAlimentation1}}"/>
+	  <fv nom="flagAlimentation2" val="{{global.flagAlimentation2}}"/>
+	  <fv nom="FlagCauseDesactivation" val="{{global.FlagCauseDesactivation}}"/>
+	  <fv nom="flagVentilateur1" val="{{global.flagVentilateur1}}"/>
+	  <fv nom="flagVentilateur2" val="{{global.flagVentilateur2}}"/>
+	  <fv nom="flagVentilateur3" val="{{global.flagVentilateur3}}"/>
+	  <fv nom="hostName" val="{{stack.hostName}}"/>
+	  <fv nom="infobulle" val="{{stack.infobulle}}"/>
+	  <fv nom="intervalLifelineErreur" val="1000"/>
+	  <fv nom="intervalLifelineOk" val="1000"/>
+	  <fv nom="IntervalPollingErreur" val="1000"/>
+	  <fv nom="ipAddressSupervisedHost" val="{{stack.adresseIP}}"/>
+	  <fv nom="isSnmpDate" val="false"/>
+	  <fv nom="isSnmpNumSer" val="false"/>
+	  <fv nom="logiqueDeComportement" enum="1"/>
+	  <!-- valeur de l'énumeration : 1(Normale);2(Probable si 2 HS);3(Probable si 1 sur 2 HS); -->
+	  <fv nom="maxTryNumber" val="5"/>
+	  <fv nom="maxTryNumberLifeLine" val="4"/>
+	  <fv nom="maxVarbindsPerPduRequest" val="20"/>
+	  <fv nom="nbrTestAvantBasculeIP" val="2"/>
+	  <fv nom="necessiteMaintenanceScriptEnregistrement" val="{{global.necessiteMaintenanceScriptEnregistrement}}"/>
+	  <fv nom="nomCourt" val="{{stack.nomCourt}}"/>
+	  <fv nom="nomScriptEnregistrement" val="{{global.nomScriptEnregistrement}}"/>
+	  {% if stack.parentLogique1 %}
+	  <fv nom="parentLogique1" ref="{{stack.parentLogique1}}"/>
+	  {% endif %}
+	  {% if stack.parentLogique2 %}
+	  <fv nom="parentLogique2" ref="{{stack.parentLogique2}}"/>
+	  {% endif %}
+	  <fv nom="parentPhysique" val="{{stack.localisation}}"/>
+	  <fv nom="portSnmp" val="161"/>
+	  <fv nom="portTrapSnmp" val="-1"/>
+	  <fv nom="scriptEnregistrement" val="{{global.scriptEnregistrement}}"/>
+
+	  {% for idSwitch,switch in stack.listeSwitchs.items() %}
+	  {% include 'templ_613_reseau.IStackOf2SwitchSnmp-switch.xml' %}
+	  {% endfor %}
+
+	  <fv nom="targetEquipmentIP" val="{{stack.targetEquipmentIP}}"/>
+	  <fv nom="tempoLifeline" val=""/>
+	  <fv nom="timeout" val="1000"/>
+	  <fv nom="timeoutEnregistrement" val="{{global.timeoutEnregistrement}}"/>
+	  <fv nom="timeoutInventaire" val="{{global.timeoutInventaire}}"/>
+	  <fv nom="timeoutLifeLine" val="400"/>
+	  <fv nom="typeEquipement" val="N/A"/>
+	  <fv nom="typeInventaire" enum="2"/>
+	  <!-- valeur de l'énumeration : 1(Date d'installation);2(Numero de serie);3(Numero de serie et Date d'installation); -->
+	  <fv nom="typeOS" enum="{{global.typeOS}}"/>
+	  <!-- valeur de l'énumeration : SEDUCS(SEDUCS);LDB(LDB);RESEAU(RESEAU);CENTOS(CENTOS); -->
+	</obj>
+	

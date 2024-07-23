@@ -1,0 +1,88 @@
+<!-- date : 2023-09-14 10:13:18 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_411pocConfiguration.IParametresGeneraux.xml -->
+<!-- classe : 411 === pocConfiguration.IParametresGeneraux -->
+
+<obj id="pocConfiguration.IParametresGeneraux.{{nomItem}}" class-name="pocConfiguration.IParametresGeneraux" nom="{{nomItem}}">
+	  <fv nom="burstPeriod" val="{{item.burstPeriod}}"/>
+	  <fv nom="burstThreshold" val="{{item.burstThreshold}}"/>
+	  <fv nom="centreLocal" val="{{siteLocal}}"/>
+	  <fv nom="cyclicRepetition" val="{{item.cyclicRepetition}}"/>
+	  <fv nom="defaultScreenBrightness" val="{{item.defaultScreenBrightness}}"/>
+	  <fv nom="diffusionSav" enum="{{item.diffusionSav}}"/>
+	  <fv nom="enregistrementIp" ref="pocConfiguration.IEnregIpTsoipSettingsConf.{{item.enregistrementIp}}"/>
+	  <fv nom="etatVoieLorsAffectation" enum="{{item.etatVoieLorsAffectation}}"/>
+	  <fv nom="gigueRadio" val="{{item.gigueRadio}}"/>
+	  <fv nom="gigueTelephone" val="{{item.gigueTelephone}}"/>
+	  <fv nom="libelleAbsencePoInit" val="{{item.libelleAbsencePoInit}}"/>
+	  <fv nom="maxScreenBrightness" val="{{item.maxScreenBrightness}}"/>
+	  <fv nom="minScreenBrightness" val="{{item.minScreenBrightness}}"/>
+	  <fv nom="modeAffichagePagesTOV" enum="{{item.modeAffichagePagesTOV}}"/>
+	  <fv nom="modePageRubriqueITh" val="{{item.modePageRubriqueITh}}"/>
+	  <fv nom="modePageRubriqueRdo" val="{{item.modePageRubriqueRdo}}"/>
+	  <fv nom="modePageRubriqueTph" val="{{item.modePageRubriqueTph}}"/>
+	  <fv nom="phonieLevels" ref="pocConfiguration.ILevelsVpoip.{{item.phonieLevels}}"/>
+	  <fv nom="radioRtpPacketSize" enum="{{item.radioRtpPacketSize}}"/>
+	  <fv nom="screenSaverClosedPosition" val="{{item.screenSaverClosedPosition}}"/>
+	  <fv nom="screenSaverOpenedPosition" val="{{item.screenSaverOpenedPosition}}"/>
+	  <fv nom="tagDscpAutre" enum="{{item.tagDscpAutre}}"/>
+	  <fv nom="tagDscpEnregistrement" enum="{{item.tagDscpEnregistrement}}"/>
+	  <fv nom="tagDscpSigRadio" enum="{{item.tagDscpSigRadio}}"/>
+	  <fv nom="tagDscpSigTelephone" enum="{{item.tagDscpSigTelephone}}"/>
+	  <fv nom="tagDscpVoieRadio" enum="{{item.tagDscpVoieRadio}}"/>
+	  <fv nom="tagDscpVoieTelephone" enum="{{item.tagDscpVoieTelephone}}"/>
+	  <fv nom="telRtpPacketSize" enum="{{item.telRtpPacketSize}}"/>
+	  <fv nom="tgvDetU" val="{{item.tgvDetU}}"/>
+	  <fv nom="tgvDetV" val="{{item.tgvDetV}}"/>
+	  <fv nom="typeAlternat" enum="{{item.typeAlternat}}"/>
+	  <fv nom="volumeDefautBell" val="{{item.volumeDefautBell}}"/>
+	  <fv nom="volumeDefautCasque" val="{{item.volumeDefautCasque}}"/>
+	  <fv nom="volumeDefautCombine" val="{{item.volumeDefautCombine}}"/>
+	  <fv nom="volumeDefautEcouteVoiesDetresse" val="{{item.volumeDefautEcouteVoiesDetresse}}"/>
+	  <fv nom="volumeDefautEcouteVoiesRadio" val="{{item.volumeDefautEcouteVoiesRadio}}"/>
+	  <fv nom="volumeDefautHpInterphone" val="{{item.volumeDefautHpInterphone}}"/>
+	  <fv nom="volumeDefautHpRadio" val="{{item.volumeDefautHpRadio}}"/>
+	  <fv nom="volumeDefautInterphone" val="{{item.volumeDefautInterphone}}"/>
+	  <fv nom="volumeDefautRadio" val="{{item.volumeDefautRadio}}"/>
+	  <fv nom="volumeDefautTelBoucle" val="{{item.volumeDefautTelBoucle}}"/>
+	  <fv nom="volumeDefautTelephone" val="{{item.volumeDefautTelephone}}"/>
+	  <fv nom="volumeMaxBell" val="{{item.volumeMaxBell}}"/>
+	  <fv nom="volumeMaxCasque" val="{{item.volumeMaxCasque}}"/>
+	  <fv nom="volumeMaxCombine" val="{{item.volumeMaxCombine}}"/>
+	  <fv nom="volumeMaxHpInterphone" val="{{item.volumeMaxHpInterphone}}"/>
+	  <fv nom="volumeMaxInterphone" val="{{item.volumeMaxInterphone}}"/>
+	  <fv nom="volumeMaxTelBoucle" val="{{item.volumeMaxTelBoucle}}"/>
+	  <fv nom="volumeMaxTelephone" val="{{item.volumeMaxTelephone}}"/>
+	  <fv nom="volumeMinBell" val="{{item.volumeMinBell}}"/>
+	  <fv nom="volumeMinCasque" val="{{item.volumeMinCasque}}"/>
+	  <fv nom="volumeMinCombine" val="{{item.volumeMinCombine}}"/>
+	  <fv nom="volumeMinHpInterphone" val="{{item.volumeMinHpInterphone}}"/>
+	  <fv nom="volumeMinInterphone" val="{{item.volumeMinInterphone}}"/>
+	  <fv nom="volumeMinTelBoucle" val="{{item.volumeMinTelBoucle}}"/>
+	  <fv nom="volumeMinTelephone" val="{{item.volumeMinTelephone}}"/>
+	</obj>
+	<!-- valeur de l'énumeration diffusionSav: 0(Non);1(Oui); -->
+
+<!-- valeur de l'énumeration etatVoieLorsAffectation: 1(Attente);2(Ecoute);3(Trafic); -->
+
+<!-- valeur de l'énumeration modeAffichagePagesTOV: 1(Rubrique et pages numérotées);2(Pages avec libellés); -->
+
+<!-- valeur de l'énumeration radioRtpPacketSize: 10(10);20(20);30(30); -->
+
+<!-- valeur de l'énumeration tagDscpAutre: EF(EF);AF11(AF11);AF12(AF12);AF13(AF13);AF21(AF21);AF22(AF22);AF23(AF23);AF31(AF31);AF32(AF32);AF33(AF33);AF41(AF41);AF42(AF42);AF43(AF43);CS0(CS0);CS1(CS1);CS2(CS2);CS3(CS3);CS4(CS4);CS5(CS5);CS6(CS6);CS7(CS7);DEFAULT(DEFAULT); -->
+
+<!-- valeur de l'énumeration tagDscpEnregistrement: EF(EF);AF11(AF11);AF12(AF12);AF13(AF13);AF21(AF21);AF22(AF22);AF23(AF23);AF31(AF31);AF32(AF32);AF33(AF33);AF41(AF41);AF42(AF42);AF43(AF43);CS0(CS0);CS1(CS1);CS2(CS2);CS3(CS3);CS4(CS4);CS5(CS5);CS6(CS6);CS7(CS7);DEFAULT(DEFAULT); -->
+
+<!-- valeur de l'énumeration tagDscpSigRadio: EF(EF);AF11(AF11);AF12(AF12);AF13(AF13);AF21(AF21);AF22(AF22);AF23(AF23);AF31(AF31);AF32(AF32);AF33(AF33);AF41(AF41);AF42(AF42);AF43(AF43);CS0(CS0);CS1(CS1);CS2(CS2);CS3(CS3);CS4(CS4);CS5(CS5);CS6(CS6);CS7(CS7);DEFAULT(DEFAULT); -->
+
+<!-- valeur de l'énumeration tagDscpSigTelephone: EF(EF);AF11(AF11);AF12(AF12);AF13(AF13);AF21(AF21);AF22(AF22);AF23(AF23);AF31(AF31);AF32(AF32);AF33(AF33);AF41(AF41);AF42(AF42);AF43(AF43);CS0(CS0);CS1(CS1);CS2(CS2);CS3(CS3);CS4(CS4);CS5(CS5);CS6(CS6);CS7(CS7);DEFAULT(DEFAULT); -->
+
+<!-- valeur de l'énumeration tagDscpVoieRadio: EF(EF);AF11(AF11);AF12(AF12);AF13(AF13);AF21(AF21);AF22(AF22);AF23(AF23);AF31(AF31);AF32(AF32);AF33(AF33);AF41(AF41);AF42(AF42);AF43(AF43);CS0(CS0);CS1(CS1);CS2(CS2);CS3(CS3);CS4(CS4);CS5(CS5);CS6(CS6);CS7(CS7);DEFAULT(DEFAULT); -->
+
+<!-- valeur de l'énumeration tagDscpVoieTelephone: EF(EF);AF11(AF11);AF12(AF12);AF13(AF13);AF21(AF21);AF22(AF22);AF23(AF23);AF31(AF31);AF32(AF32);AF33(AF33);AF41(AF41);AF42(AF42);AF43(AF43);CS0(CS0);CS1(CS1);CS2(CS2);CS3(CS3);CS4(CS4);CS5(CS5);CS6(CS6);CS7(CS7);DEFAULT(DEFAULT); -->
+
+<!-- valeur de l'énumeration telRtpPacketSize: 10(10);20(20);30(30); -->
+
+<!-- valeur de l'énumeration typeAlternat: S(S);F(F); -->

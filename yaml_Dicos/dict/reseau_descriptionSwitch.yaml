@@ -1,0 +1,78 @@
+C3650:
+  cheminScriptAudit: /usr/libexec/action-cmoip/Auditer_version.sh
+  configSwitchs:
+    switch1:
+      textMibSwitch: Switch 1     # pour stack générique : ne pas modifier sans vérification dans la MIB
+      nbPortsFast: 52
+      nbPortsStack: 2
+      indexChargeCPU: 11
+      indexSwitch: 1000
+    switch2:
+      textMibSwitch: Switch 2     # pour stack générique : ne pas modifier sans vérification dans la MIB
+      nbPortsFast: 16
+      nbPortsGiga: 0
+      nbPortsStack: 2
+      indexChargeCPU: 12
+      indexSwitch: 2000
+      indexChargeCPU: 11
+      indexSwitch: 2000
+    switch3:
+      textMibSwitch: ''     # à ne pas modifier sans vérification dans la MIB ('' pour indiquer qu'iln'y a pas de switch)
+    switch4:
+      textMibSwitch: ''     # à ne pas modifier sans vérification dans la MIB ('' pour indiquer qu'iln'y a pas de switch)
+
+C2960X-24TS-L:
+  nbPortsFast:  24
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C2960X-24TS-L
+  __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }
+
+C2960CX-8TC-L:
+  nbPortsFast: 8
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C2960CX-8TC-L
+  __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }
+
+C3650-48TS:
+  nbPortsFast: 52
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C3650-48TSL
+  __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }
+
+C3650-24TS:
+  nbPortsFast: 52
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C3650-24TS
+  __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }
+
+C3850-12S-S:
+  nbPortsFast: 52
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C3850-12S-S
+  __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }
+
+C2960CX-8TC-L:
+  nbPortsFast: 52
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C2960CX-8TC-L
+  __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }
+
+C2960X-48TS-L:
+  nbPortsFast: 52
+  nbPortsGiga:  4
+  nbPortsStack: 2
+  reference:    C2960X-48TS-L
+  # __Inclure__:  { fichier: reseau_configPorts.yaml,     cle: standard }
+  __Inclure__:  { fichier: reseau_configTextEnMib.yaml, cle: standard }

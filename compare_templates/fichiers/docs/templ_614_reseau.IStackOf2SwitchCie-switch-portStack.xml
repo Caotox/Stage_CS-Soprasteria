@@ -1,0 +1,34 @@
+	      <fv nom="{{nomPort}}">
+	        <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.switch1.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.{{nomPort}}.port.IPortOfStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.Port01" class-name="port.IPortOfStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}" nom="Port01">
+	          <fv nom="alarmeEtatPort">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.switch1.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.{{nomPort}}.port.IPortOfStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.Port01.alarmeEtatPort.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.alarmeEtatPort" nom="Etat port">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="commentaire" val="{{port.commentaire}}"/>
+	          <fv nom="etatInit" enum="1"/>
+			  <!-- valeur de l'énumeration : 1(En service);2(Non géré);3(Hors service); -->
+			  {% if port.indexSaisie %}
+	          <fv nom="indexSaisie" val="{{port.indexSaisie}}"/>
+			  {% endif %}
+	          <fv nom="indexSaisieHide" val="0"/>
+	          <fv nom="internalName" val="eth1"/>
+	          <fv nom="nomCourt" val="{{port.nomCourt}}"/>
+	          <fv nom="nonUtilise" val="{{port.nonUtilise}}"/>
+	          <fv nom="owner" ref="reseau.IStackOf2SwitchCie.{{nomStack}}.switch1.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}"/>
+			  {% if port.portReference %}
+	          <fv nom="portReference" ref="{{port.portReference}}"/>
+			  {% endif %}
+	          <fv nom="rechercheIndex" val="false"/>
+	          <fv nom="Script">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.switch1.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.{{nomPort}}.port.IPortOfStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.Port01.Script.control.IAbstractScriptActionSwitchPort$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.Script.label" class-name="control.IAbstractScriptActionSwitchPort$reseau.IStackOf2SwitchCie$switch1.{{nomPort}}.Script" nom="label">
+	              <fv nom="nomLancerScriptClosePort" val="Fermeture"/>
+	              <fv nom="nomScriptFindMacAdress" val="Apprentissage de l’adresse MAC"/>
+	            </obj>
+	          </fv>
+	          <fv nom="sousType" enum="eth"/>
+			  <!-- valeur de l'énumeration : eth(Eth);fastethernet(Fast Ethernet);S0(S0);E1(E1);T2(T2);comSerie(ComSerie);PER(PER);TOR(TOR);BF(BF);FO(FO);stationtor(Station tor);j2ky(j2ky);T2_SYNCHRO(T2_SYNCHRO);T2_DREX(T2_DREX);T2_TPH(T2_TPH);T2_RNIS(T2_RNIS);E1-MCS-CI-CD(E1-MCS-CI-CD);E1-MCS-CEX-CI(E1-MCS-CEX-CI);E1-RS-RS(E1-RS-RS);E1-RS-MCS(E1-RS-MCS);E1-RS-VG(E1-RS-VG);E1-RT-CI-CD(E1-RT-CI-CD); -->
+	        </obj>
+	      </fv>

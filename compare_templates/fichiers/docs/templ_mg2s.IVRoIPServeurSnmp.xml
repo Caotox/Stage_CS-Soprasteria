@@ -1,0 +1,355 @@
+<obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}" class-name="mg2s.IVRoIPServeurSnmp" nom="{{serveur.nom}}">
+	  <fv nom="adresseIPScriptAudit" val="{{serveur.adresseIPScriptAudit}}" />
+	  <fv nom="alarmeBatterieControleurRaid">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeBatterieControleurRaid.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeBatterieControleurRaid.Alarme état batterie contrôleur RAID" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeBatterieControleurRaid" nom="Alarme état batterie contrôleur RAID">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCarteNtp">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeCarteNtp.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCarteNtp.Alarme carte NTP" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCarteNtp" nom="Alarme carte NTP">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCarteTemp">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeCarteTemp.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCarteTemp.Etat température en entrée" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCarteTemp" nom="Etat température en entrée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCpuState">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeCpuState.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCpuState.Etat charge CPU" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCpuState" nom="Etat charge CPU">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCpuTemp">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeCpuTemp.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCpuTemp.Etat température CPU" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeCpuTemp" nom="Etat température CPU">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatAdministratif">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatAdministratif.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatAdministratif.Etat administratif" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatAdministratif" nom="Etat administratif">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatDisqueRaid">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatDisqueRaid.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatDisqueRaid.Alarme état RAID" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatDisqueRaid" nom="Alarme état RAID">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatLigneVie.Alarme état ligne de vie serveur" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatLigneVie" nom="Alarme état ligne de vie serveur">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatOccupationDisque">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatOccupationDisque.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatOccupationDisque.Etat occupation disque racine" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatOccupationDisque" nom="Etat occupation disque racine">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatOccupationTmp">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatOccupationTmp.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatOccupationTmp.Etat occupation partition tmp" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatOccupationTmp" nom="Etat occupation partition tmp">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatOccupationVar">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatOccupationVar.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatOccupationVar.Etat occupation partition var" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatOccupationVar" nom="Etat occupation partition var">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRedondance">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeEtatRedondance.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatRedondance.Etat redondance alimentation" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeEtatRedondance" nom="Etat redondance alimentation">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeHwClockSynchro">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeHwClockSynchro.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeHwClockSynchro.Etat synchro. horaire" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeHwClockSynchro" nom="Etat synchro. horaire">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeHwFansStatus">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeHwFansStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeHwFansStatus.Etat ventilateurs" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeHwFansStatus" nom="Etat ventilateurs">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMemStateReal">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeMemStateReal.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeMemStateReal.Etat mémoire vive" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeMemStateReal" nom="Etat mémoire vive">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmePileBios">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmePileBios.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmePileBios.Alarme état pile du BIOS" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmePileBios" nom="Alarme état pile du BIOS">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipServerCorosyncStatus">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeVroipServerCorosyncStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerCorosyncStatus.Etat Corosync" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerCorosyncStatus" nom="Etat Corosync">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipServerNtpdStatus">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeVroipServerNtpdStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerNtpdStatus.Etat NTPD" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerNtpdStatus" nom="Etat NTPD">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipServerPacemakerStatus">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeVroipServerPacemakerStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerPacemakerStatus.Etat Pacemaker" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerPacemakerStatus" nom="Etat Pacemaker">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipServerRsyslogStatus">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.alarmeVroipServerRsyslogStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerRsyslogStatus.Etat Rsyslog" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp$alarmeVroipServerRsyslogStatus" nom="Etat Rsyslog">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="" />
+	  <fv nom="cheminScriptAudit" val="{{global.cheminScriptAudit}}" />
+	  <fv nom="cmoipLocal" ref="{{serveurPIU}}" />
+	  <fv nom="commentaire" val="{{serveur.commentaire}}" />
+	  <fv nom="cpuLoadAlertLevel" val="70" />
+	  <fv nom="cpuLoadCriticalLevel" val="80" />
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueAlarme" val="false" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="eqId" val="0" />
+	  <fv nom="eqtType" enum="VRoIP" />
+
+	  <fv nom="etatInit" enum="1" />
+
+{%- for keyPort, port in serveur.listePortsEth.items() %}
+	  <fv nom="{{port.nomCmoip}}">
+	    <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.{{port.nomCmoip}}.port.IPortEthernetSnmp$mg2s.IVRoIPServeurSnmp${{port.nomCmoip}}.en0" class-name="port.IPortEthernetSnmp$mg2s.IVRoIPServeurSnmp${{port.nomCmoip}}" nom="en0">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="mg2s.IVRoIPServeurSnmp.{{serveur.nom}}.{{port.nomCmoip}}.port.IPortEthernetSnmp$mg2s.IVRoIPServeurSnmp${{port.nomCmoip}}.en0.alarmeEtatPort.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp${{port.nomCmoip}}.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPServeurSnmp${{port.nomCmoip}}.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="{{port.internalName}}" />
+	      <fv nom="nomCourt" val="{{port.nomCourt}}" />
+	      <fv nom="nonUtilise" val="{{port.nonUtilise}}" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+{%- endfor %}
+	  <fv nom="flagCpuLoadPercent" val="false" />
+	  <fv nom="flagDskPercentRoot" val="false" />
+	  <fv nom="flagDskPercentTmp" val="false" />
+	  <fv nom="flagDskPercentVar" val="false" />
+	  <fv nom="flagEtatBatterieRaid" val="true" />
+	  <fv nom="flagEtatPresenceCarteNTP" val="true" />
+	  <fv nom="flagEtatRaid" val="true" />
+	  <fv nom="flagEtatTempEntree" val="true" />
+	  <fv nom="flagEtatVentilateurs" val="true" />
+	  <fv nom="flagMemBuffer" val="false" />
+	  <fv nom="flagMemCached" val="false" />
+	  <fv nom="flagMemTotalFree" val="false" />
+	  <fv nom="hostName" val="{{serveur.hostName}}" />
+	  <fv nom="infobulle" val="{{serveur.infobulle}}" />
+	  <fv nom="integrityChecker" ref="{{global.integrityChecker}}" />
+	  <fv nom="intervalLifelineErreur" val="1000" />
+	  <fv nom="intervalLifelineOk" val="1000" />
+	  <fv nom="IntervalPollingErreur" val="1000" />
+	  <fv nom="ipAddressSupervisedHost" val="{{serveur.adrIpSuperv}}" />
+	  <fv nom="isSnmpDate" val="true" />
+	  <fv nom="isSnmpNumSer" val="false" />
+<!--    Logiciel HR   -->
+	      <fv nom="logicielHrTable">
+{% for process in serveur.logicielsHr %}
+	        <a i="{{loop.index0}}">
+{% include 'gengenTempl_propDynProcessHr.xml' %}
+	        </a>
+{% endfor %}
+	      </fv>
+<!--    Logiciel PR   -->
+	      <fv nom="logicielPrTable">
+{% for process in serveur.logicielsPr %}
+	        <a i="{{loop.index0}}">
+{% include 'gengenTempl_propDynProcessPr.xml' %}
+	        </a>
+{% endfor %}
+	      </fv>
+	  <fv nom="logiqueDeComportement" enum="1" />
+
+	  <fv nom="listeCertificat">
+{%- for cert in serveur.listeCertificats %}
+	    <a i="{{loop.index0}}" ref="securite.ICertificat.{{cert}}"/>
+{%- endfor %}
+	  </fv>
+	  <fv nom="listeCRL">
+{%- for crl in serveur.listeCrl %}
+	  <a i="{{loop.index0}}" ref="securite.ICertificatRevocationList.{{crl}}"/>
+{%- endfor %}
+	  </fv>
+
+	  <fv nom="maxTryNumber" val="5" />
+	  <fv nom="maxTryNumberLifeLine" val="4" />
+	  <fv nom="maxVarbindsPerPduRequest" val="20" />
+	  <fv nom="memAlertLevel" val="70" />
+	  <fv nom="memCriticalLevel" val="95" />
+	  <fv nom="nbrTestAvantBasculeIP" val="2" />
+	  <fv nom="necessiteMaintenanceScript1" val="false" />
+	  <fv nom="necessiteMaintenanceScript2" val="false" />
+	  <fv nom="necessiteMaintenanceScript3" val="false" />
+	  <fv nom="necessiteMaintenanceScript4" val="false" />
+	  <fv nom="necessiteMaintenanceScriptArret" val="false" />
+	  <fv nom="necessiteMaintenanceScriptArretLogiciels" val="false" />
+	  <fv nom="necessiteMaintenanceScriptStartLogiciels" val="false" />
+{% if serveur.noeudHeberge1 != "" %}
+	  <fv nom="noeudHeberge1" ref="mg2s.IVRoIPNoeudSnmp.{{serveur.noeudHeberge1}}"/>
+{% endif %}
+{% if serveur.noeudHeberge2 != "" %}
+	  <fv nom="noeudHeberge2" ref="mg2s.IVRoIPNoeudSnmp.{{serveur.noeudHeberge2}}"/>
+{% endif %}
+	  <fv nom="nomCourt" val="{{serveur.nomCourt}}" />
+	  <fv nom="nomDuScan" val="Scan antivirus" />
+	  <fv nom="nomDuStop" val="Arrêter" />
+	  <fv nom="nomIntegrity" val="Scan d'intégrité" />
+	  <fv nom="nomScript1" val="Script 1" />
+	  <fv nom="nomScript2" val="Script 2" />
+	  <fv nom="nomScript3" val="Script 3" />
+	  <fv nom="nomScript4" val="Script 4" />
+	  <fv nom="nomScriptPhoto" val="Prendre une photo" />
+	  <fv nom="nomStartAllSoft" val="Démarrer logiciels" />
+	  <fv nom="nomStopAllSoft" val="Arrêter logiciels" />
+	  <fv nom="operationEnCoursAntivirus" val="false" />
+	  <fv nom="operationEnCoursIntegrity" val="false" />
+{% if serveur.parentLogique1 %}
+	      <fv nom="parentLogique1" ref="{{serveur.parentLogique1}}" />
+{% endif %}
+{% if serveur.parentLogique2 %}
+	      <fv nom="parentLogique2" ref="{{serveur.parentLogique2}}" />
+{% endif %}
+	  <fv nom="parentPhysique" val="{{serveur.localisation}}" />
+	      <fv nom="Partition">
+{% for partition in serveur.partitions %}
+	        <a i="{{loop.index0}}">
+{% include 'genTempl_propDynPartition.xml' %}
+	        </a>
+{% endfor %}
+	      </fv>
+	  <fv nom="poidsLogicielCorosync" val="true" />
+	  <fv nom="poidsLogicielNTP" val="true" />
+	  <fv nom="poidsLogicielPacemaker" val="true" />
+	  <fv nom="poidsLogicielRsyslog" val="false" />
+	  <fv nom="port_idrac">
+	    <obj id="mg2s.IVRoIPServeurSnmp.SGS-UC-Snmp.port_idrac.port.IPortIDrac$mg2s.IVRoIPServeurSnmp$port_idrac.label" class-name="port.IPortIDrac$mg2s.IVRoIPServeurSnmp$port_idrac" nom="label">
+	      <fv nom="commentaire" val="" />
+	      <fv nom="nomCourt" val="iDrac" />
+	      <fv nom="nomOwner" val="" />
+	    </obj>
+	  </fv>
+	  <fv nom="portSnmp" val="161" />
+	  <fv nom="portTrapSnmp" val="-1" />
+<!--    Propriétés dynamiques etat opérationnel   -->
+	      <fv nom="ProprieteDynamiqueEtatOperationnel">
+{% for propDyn in serveur.proprietesEtatOper %}
+	        <a i="{{loop.index0}}">
+{% include 'gengenTempl_propDynPropOper.xml' %}
+	        </a>
+{% endfor %}
+	      </fv>
+<!--    Propriétés dynamiques etat technique   -->
+	      <fv nom="ProprieteDynamiqueEtatTechnique">
+{% for propDyn in serveur.proprietesEtatTech %}
+	        <a i="{{loop.index0}}">
+{% include 'gengenTempl_propDynPropTech.xml' %}
+	        </a>
+{% endfor %}
+	      </fv>
+<!--    Propriétés dynamiques information   -->
+	      <fv nom="ProprieteDynamiqueInformation">
+{% for propDyn in serveur.proprietesEtatInfo %}
+	        <a i="{{loop.index0}}">
+{% include 'gengenTempl_propDynPropInfo.xml' %}
+	        </a>
+{% endfor %}
+	      </fv>
+	  <fv nom="script1" val="/sysca/etc/adm_script1.sh" />
+	  <fv nom="script2" val="/sysca/etc/adm_script2.sh" />
+	  <fv nom="script3" val="/sysca/etc/adm_script3.sh" />
+	  <fv nom="script4" val="/sysca/etc/adm_script4.sh" />
+	  <fv nom="scriptPhoto" val="{{global.scriptPhoto}}" />
+	  <fv nom="scriptScanAntivirus" val="{{global.scriptScanAntivirus}}" />
+	  <fv nom="scriptScanIntegrity" val="{{global.scriptScanIntegrity}}" />
+	  <fv nom="scriptStartAllSoft" val="/sysca/etc/adm_demarrer_softs.sh" />
+	  <fv nom="scriptStop" val="/sysca/etc/adm_arreter.sh" />
+	  <fv nom="scriptStopAllSoft" val="/sysca/etc/adm_arreter_softs.sh" />
+	  <fv nom="site" ref="{{configCMoIP.nomSiteLocal}}" />
+	  <fv nom="storageAlertLevel" val="65" />
+	  <fv nom="storageCriticalLevel" val="95" />
+	  <fv nom="surveillanceMibSeducs" val="false" />
+	  <fv nom="targetEquipmentIP" val="{{serveur.targetEquipmentIP}}" />
+	  <fv nom="tempCritical" val="70" />
+	  <fv nom="tempMaxAlarm" val="50" />
+	  <fv nom="tempoLifeline" val="" />
+	  <fv nom="ticksPerSecond" val="100" />
+	  <fv nom="timeout" val="1000" />
+	  <fv nom="timeoutAntivirus" val="22000" />
+	  <fv nom="timeoutIntegrite" val="22000" />
+	  <fv nom="timeoutInventaire" val="" />
+	  <fv nom="timeoutLancerScript1" val="22000" />
+	  <fv nom="timeoutLancerScript2" val="22000" />
+	  <fv nom="timeoutLancerScript3" val="22000" />
+	  <fv nom="timeoutLancerScript4" val="22000" />
+	  <fv nom="timeoutLifeLine" val="400" />
+	  <fv nom="timeoutScriptPhoto" val="22000" />
+	  <fv nom="timeoutStartAllSoft" val="22000" />
+	  <fv nom="timeoutStop" val="22000" />
+	  <fv nom="timeoutStopAllSoft" val="22000" />
+	  <fv nom="typeEquipement" val="serveur VRoIP" />
+	  <fv nom="typeInventaire" enum="3" />
+
+	  <fv nom="typeOS" enum="SEDUCS" />
+
+	  <fv nom="virusChecker" ref="{{global.virusChecker}}" />
+	</obj>
+	

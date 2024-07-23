@@ -1,0 +1,13 @@
+<!-- a330_configurationExterne_manager -->
+
+{% for nomConfigExterne, configExterne in a330_configurationExterne_manager.get_IConfigExterne().items() -%}
+{% include 'templ_mg2s.IConfigExterne.xml' %}
+{% endfor %}
+
+{% for nomSiteConfigExterne, siteConfigExterne in a50_mg2s_iSite_manager.get_iSiteConfigExterne().items() -%}
+{% include 'templ_mg2s.ISiteConfigExterne.xml' %}
+{% endfor %}
+
+{% for nomZoneConfigExterne in a330_configurationExterne_manager.get_IZoneConfigExterne() -%}
+{% include 'templ_mg2s.IZoneConfigExterne.xml' %}
+{% endfor %}

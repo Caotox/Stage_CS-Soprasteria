@@ -1,0 +1,6 @@
+	<obj id="ithTphConfiguration.IGfu.{{nomGfu}}" class-name="ithTphConfiguration.IGfu" nom="{{nomGfu}}">
+{%- for gfuIndex in gfu.listeIndexGFU %}
+	  <fv nom="indexGfu{{loop.index0}}" ref="ithTphConfiguration.IGfuIndex.{{gfuIndex}}"/>
+{%- endfor %}
+	</obj>
+	

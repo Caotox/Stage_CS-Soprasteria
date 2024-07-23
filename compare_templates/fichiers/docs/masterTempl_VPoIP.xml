@@ -1,0 +1,6 @@
+{% for key, paramGenerauxPOC in configCMoIP.paramGenerauxPOC.items() -%}
+{% include 'templ_pocConfiguration.IParametresGeneraux.xml' %}
+{% endfor %}
+{% for key, modeEploitation in configCMoIP.modesExploitation.items() -%}
+{% include 'templ_modesExploitation.xml' %}
+{% endfor %}

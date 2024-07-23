@@ -1,0 +1,28 @@
+<obj id="srsa.edcdc.shared.IZoneTravail.{{nomItem}}" class-name="srsa.edcdc.shared.IZoneTravail" nom="{{nomItem}}">
+	  <fv nom="couvertureTypeMids" val="{{item.couvertureTypeMids}}" />
+	  <fv nom="couvertureTypeS" val="{{item.couvertureTypeS}}" />
+	  <fv nom="couvertureTypeU" val="{{item.couvertureTypeU}}" />
+	  <fv nom="couvertureTypeV" val="{{item.couvertureTypeV}}" />
+	  <fv nom="couvertureS">
+{% for ssItem in item.get('couvertureS', []) %}
+	    <a i="0" ref="mg2s.ISiteConfigExterne.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="couvertureU">
+{% for ssItem in item.get('couvertureU', []) %}
+	    <a i="0" ref="mg2s.ISiteConfigExterne.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="couvertureV">
+{% for ssItem in item.get('couvertureV', []) %}
+	    <a i="0" ref="mg2s.ISiteConfigExterne.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="idCentreIdVoieMids" val="{{item.idCentreIdVoieMids}}" />
+	  <fv nom="idCentreIdVoieS" val="{{item.idCentreIdVoieS}}" />
+	  <fv nom="idCentreIdVoieU" val="{{item.idCentreIdVoieU}}" />
+	  <fv nom="idCentreIdVoieV" val="{{item.idCentreIdVoieV}}" />
+	  <fv nom="identifiant" val="{{item.identifiant}}" />
+	  <fv nom="libelle" val="{{item.libelle}}" />
+	</obj>
+	

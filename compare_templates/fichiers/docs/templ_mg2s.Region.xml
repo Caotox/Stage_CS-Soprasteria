@@ -1,0 +1,28 @@
+<obj id="mg2s.Region.{{nomRegion}}" class-name="mg2s.Region" nom="{{nomRegion}}">
+	  <fv nom="tableauSitesCDC">
+{% for site in region.get('tableauSitesCDC', []) %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteCDCSnmp.{{site}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="tableauSitesCER">
+{% for site in region.get('tableauSitesCER', []) %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteCERSnmp.{{site}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="tableauSitesCC">
+{% for site in region.get('tableauSitesCC', []) %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteCCSnmp.{{site}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="tableauSitesCOSCA">
+{% for site in region.get('tableauSitesCOSCA', []) %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteCOSCASnmp.{{site}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="tableauSitesCMCC">
+{% for site in region.get('tableauSitesCMCC', []) %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteCMCCSnmp.{{site}}"/>
+{% endfor %}
+	  </fv>
+	</obj>
+	

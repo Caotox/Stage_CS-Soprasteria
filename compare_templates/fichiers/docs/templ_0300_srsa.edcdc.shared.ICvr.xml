@@ -1,0 +1,41 @@
+<!-- date : 2023-09-14 15:42:11 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_0300srsa.edcdc.shared.ICvr.xml -->
+<!-- classe : 0300 === srsa.edcdc.shared.ICvr -->
+
+<obj id="srsa.edcdc.shared.ICvr.{{nomItem}}" class-name="srsa.edcdc.shared.ICvr" nom="{{nomItem}}">
+	  <fv nom="aor" val="{{item.aor}}" />
+	  <fv nom="caracteristique1" val="{{item.caracteristique1}}" />
+	  <fv nom="caracteristique2" val="{{item.caracteristique2}}" />
+	  <fv nom="changementFrequence" val="{{item.changementFrequence}}" />
+	  <fv nom="choixCentreManuel" val="{{item.choixCentreManuel}}" />
+{% if item.cvr %}
+	  <fv nom="cvr" ref="{{item.cvr}}" />
+{% endif %}
+	  <fv nom="cvrAffectationDeVoie" val="{{item.cvrAffectationDeVoie}}" />
+	  <fv nom="cvrChoixCentre" val="{{item.cvrChoixCentre}}" />
+	  <fv nom="cvrCouplage" val="{{item.cvrCouplage}}" />
+	  <fv nom="cvrEcoute" val="{{item.cvrEcoute}}" />
+	  <fv nom="cvrSelFreq" val="{{item.cvrSelFreq}}" />
+	  <fv nom="cvrTrafic" val="{{item.cvrTrafic}}" />
+	  <fv nom="gestionCentre" val="{{item.gestionCentre}}" />
+	  <fv nom="lucarneEtat" val="{{item.lucarneEtat}}" />
+	  <fv nom="lucarneTempo" val="{{item.lucarneTempo}}" />
+	  <fv nom="masquageFrequenceTGV" val="{{item.masquageFrequenceTGV}}" />
+	  <fv nom="masquagePoInitiateur" val="{{item.masquagePoInitiateur}}" />
+	  <fv nom="natureCVR" enum="{{item.natureCVR}}" />
+<!-- valeur de l'énumeration : bic_mono(BIC_MONO);bic_multi(BIC_MULTI);dynamique(DYNAMIQUE);forcee(FORCEE);locale(LOCALE);meteor_mono(METEOR_MONO);meteor(METEOR);permanente(PERMANENTE); -->
+	  <fv nom="numLogique" val="{{item.numLogique}}" />
+	  <fv nom="pas833" val="{{item.pas833}}" />
+	  <fv nom="sav" val="{{item.sav}}" />
+	  <fv nom="savInterdit" val="{{item.savInterdit}}" />
+	  <fv nom="traficInterdit" val="{{item.traficInterdit}}" />
+	  <fv nom="typeCVR" enum="{{item.typeCVR}}" />
+<!-- valeur de l'énumeration : vhf(VHF);uhf(UHF);hf(HF);transec(TRANSEC);transec_ecoute(TRANSEC_ECOUTE);tous(TOUS_TYPES); -->
+	  <fv nom="typeMixage" enum="{{item.typeMixage}}" />
+<!-- valeur de l'énumeration : 1(HP);2(CASQUE);3(HP+CASQUE); -->
+	  <fv nom="vrPermanente" val="{{item.vrPermanente}}" />
+	</obj>
+	

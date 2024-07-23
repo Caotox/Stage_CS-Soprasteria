@@ -1,0 +1,8 @@
+	<obj id="ithTphConfiguration.IGfuIndex.{{nomGfuIndex}}" class-name="ithTphConfiguration.IGfuIndex" nom="{{nomGfuIndex}}">
+	  <fv nom="gfuAbsolu" val="{{gfuIndex.gfuAbsolu}}"/>
+	  <fv nom="restrictionAppelArrivee" enum="{{gfuIndex.restrictionAppelArrivee}}"/>
+
+	  <fv nom="restrictionAppelDepart" enum="{{gfuIndex.restrictionAppelDepart}}"/>
+
+	</obj>
+	

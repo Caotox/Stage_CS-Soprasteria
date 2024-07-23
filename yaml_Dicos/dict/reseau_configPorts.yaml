@@ -1,0 +1,23 @@
+standard:
+  infoPortsStack :
+    referencePort : "port.IPortOfStackOf2SwitchSnmp"
+    strIdent      : "portStack{numPort:d}"
+    strNom        : "gigaBit{numPort:02d}"
+    strInternal   : "StackSub-St{numSwitch}-{numPort}"
+    strCourt      : "st{numPort:02d}"
+  infoPortsFast :
+    premierPort   : 1
+    dernierPort   : 52
+    referencePort : "port.IPortSwitchInStackSnmp"
+    strIdent      : "fastEthernet{numPort:02d}"
+    strNom        : "fast{numPort:02d}"
+    strInternal   : "GigabitEthernet{numSwitch}/0/{numPort}"
+    strCourt      : "fa{numPort:02d}"
+  infoPortsGiga :
+    # premierPort   : 49    # dans un stack générique il n'y a pas de séparation entre port fast et giga
+    # dernierPort   : 52
+    referencePort : "port.IPortSwitchInStackSnmp"
+    strIdent      : "gigabitEthernet{numPort:02d}"
+    strNom        : "port{numPort:02d}"
+    strInternal   : "GigabitEthernet{numSwitch}/1/{numPort}"
+    strCourt      : "gb{numPort:02d}"

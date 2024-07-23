@@ -1,0 +1,109 @@
+<!--
+# prioriteCasque ; prioriteCasque2 ; prioriteMicroCasque ; prioriteMicroCasque2 ; prioritePedale :
+#   1(1);2(2);3(3);
+# etatVRdansTGV : 1(Attente);2(Ecoute);3(Trafic);
+-->
+
+<obj id="srsa.edcdc.shared.{{typeProfil}}.{{nomItem}}" class-name="srsa.edcdc.shared.{{typeProfil}}" nom="{{nomItem}}">
+	  <fv nom="atisDroit" val="{{item.atisDroit}}" />
+	  <fv nom="bipAltBloque" val="{{item.bipAltBloque}}" />
+	  <fv nom="bipChiffrementBloque" val="{{item.bipChiffrementBloque}}" />
+	  <fv nom="bipErreurAlt" val="{{item.bipErreurAlt}}" />
+	  <fv nom="bipMsgInfoSignSonore" val="{{item.bipMsgInfoSignSonore}}" />
+	  <fv nom="cabines">
+{% for ssItem in item.listeCabines %}
+	    <a i="{{loop.index0}}" ref="mg2s.ICabine.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="choixCentreDroit" val="{{item.choixCentreDroit}}" />
+	  <fv nom="couplageDroit" val="{{item.couplageDroit}}" />
+	  <fv nom="cvrSATURN" ref="srsa.edcdc.shared.ICvr.{{item.cvrSATURN}}" />
+	  <fv nom="cvrSaturnEcoute" ref="srsa.edcdc.shared.ICvr.{{item.cvrSaturnEcoute}}" />
+	  <fv nom="cvrUHF" ref="srsa.edcdc.shared.ICvr.{{item.cvrUHF}}" />
+	  <fv nom="cvrVHF" ref="srsa.edcdc.shared.ICvr.{{item.cvrVHF}}" />
+	  <fv nom="ecoutePoDroit" val="{{item.ecoutePoDroit}}" />
+	  <fv nom="evfInterdit" val="{{item.evfInterdit}}" />
+	  <fv nom="listeEqf">
+{% for ssItem in item.listeEqf %}
+	    <a i="{{loop.index0}}" ref="srsa.edcdc.shared.IEqfFixe.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="listePagesTOV">
+{% for ssItem in item.listePagesTOV %}
+	    <a i="{{loop.index0}}" ref="srsa.edcdc.shared.IPageTov.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="messageErreurAlt" val="{{item.messageErreurAlt}}" />
+	  <fv nom="numero" val="{{item.numero}}" />
+	  <fv nom="prioriteBouton" val="{{item.prioriteBouton}}" />
+	  <fv nom="prioriteCasque" enum="{{item.prioriteCasque}}" />
+
+	  <fv nom="prioriteCasque2" enum="{{item.prioriteCasque2}}" />
+
+	  <fv nom="prioriteMicroCasque" enum="{{item.prioriteMicroCasque}}" />
+
+	  <fv nom="prioriteMicroCasque2" enum="{{item.prioriteMicroCasque2}}" />
+
+	  <fv nom="prioritePedale" enum="{{item.prioritePedale}}" />
+
+	  <fv nom="profilCVR">
+{% if item.profilCVR %}
+{% for nomSsItem, ssItem in item.profilCVR.items() %}
+		<a i="{{loop.index0}}">
+	      <obj id="srsa.edcdc.shared.{{typeProfil}}.profil_1.profilCVRAssociees.srsa.edcdc.shared.ICVRAssocieeProfil$srsa.edcdc.shared.{{typeProfil}}$profilCVRAssociees.*$*.{{nomSsItem}}" class-name="srsa.edcdc.shared.ICVRAssocieeProfil$srsa.edcdc.shared.{{typeProfil}}$profilCVRAssociees.*$*" nom="{{nomSsItem}}">
+	        <fv nom="cvr" ref="srsa.edcdc.shared.ICvr.{{ssItem.cvr}}" />
+	        <fv nom="cvrAffectationDeVoie" val="{{ssItem.cvrAffectationDeVoie}}" />
+	        <fv nom="cvrChoixCentre" val="{{ssItem.cvrChoixCentre}}" />
+	        <fv nom="cvrCouplage" val="{{ssItem.cvrCouplage}}" />
+	        <fv nom="cvrEcoute" val="{{ssItem.cvrEcoute}}" />
+	        <fv nom="cvrSelFreq" val="{{ssItem.cvrSelFreq}}" />
+	        <fv nom="cvrTrafic" val="{{ssItem.cvrTrafic}}" />
+	      </obj>
+	    </a>
+{% endfor %}
+{% endif %}
+	</fv>
+	  <fv nom="profilCVRAssociees">
+{% for ssItem in item.profilCVRAssociees %}
+	    <a i="{{loop.index0}}">
+	      <obj id="srsa.edcdc.shared.{{typeProfil}}.profil_1.profilCVRAssociees.srsa.edcdc.shared.ICVRAssocieeProfil$srsa.edcdc.shared.{{typeProfil}}$profilCVRAssociees.*$*.{{ssItem.cvr}}" class-name="srsa.edcdc.shared.ICVRAssocieeProfil$srsa.edcdc.shared.{{typeProfil}}$profilCVRAssociees.*$*" nom="{{ssItem.cvr}}">
+	        <fv nom="cvr" ref="srsa.edcdc.shared.ICvr.{{ssItem.cvr}}" />
+	        <fv nom="droitCouplage" val="{{ssItem.droitCouplage}}" />
+	        <fv nom="droitEcoute" val="{{ssItem.droitEcoute}}" />
+	        <fv nom="droitEncryption" val="{{ssItem.droitEncryption}}" />
+	        <fv nom="droitMontage" val="{{ssItem.droitMontage}}" />
+	        <fv nom="droitSelectCenter" val="{{ssItem.droitSelectCenter}}" />
+	        <fv nom="droitSelectValFreq" val="{{ssItem.droitSelectValFreq}}" />
+	        <fv nom="droitTrafic" val="{{ssItem.droitTrafic}}" />
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="profilParDefaut" val="{{item.profilParDefaut}}" />
+	  <fv nom="raizDroit" val="{{item.raizDroit}}" />
+	  <fv nom="selFreqDroit" val="{{item.selFreqDroit}}" />
+	  <fv nom="tempoBlocageAlt" val="{{item.tempoBlocageAlt}}" />
+	  <fv nom="tempoFinAppelAvion" val="{{item.tempoFinAppelAvion}}" />
+	  <fv nom="tempoMessageFurtif" val="{{item.tempoMessageFurtif}}" />
+	  <fv nom="todDroit" val="{{item.todDroit}}" />
+	  <fv nom="voieDetDroit" val="{{item.voieDetDroit}}" />
+	  <fv nom="voieSavDroit" val="{{item.voieSavDroit}}" />
+	  <fv nom="voieTGV">
+{% for nomSsIetm, ssItem in item.voieTGV.items() %}
+	    <a i="{{loop.index0}}">
+	      <obj id="srsa.edcdc.shared.{{typeProfil}}.Profil-1.voieTGV.rdoConfiguration.IVoieEtat$srsa.edcdc.shared.{{typeProfil}}$voieTGV.*$*.{{nomSsItem}}" class-name="rdoConfiguration.IVoieEtat$srsa.edcdc.shared.{{typeProfil}}$voieTGV.*$*" nom="{{nomSsItem}}">
+	        <fv nom="etatVRdansTGV" enum="{{ssItem.etatVRdansTGV}}" />
+
+	        <fv nom="voieRadio" ref="{{ssItem.voieRadio}}" />
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="voyantErreurAlt" val="{{item.voyantErreurAlt}}" />
+	  <fv nom="zones">
+{% for ssItem in item.zones %}
+	    <a i="{{loop.index0}}" ref="srsa.edcdc.shared.IZoneTravail.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	</obj>
+	

@@ -1,0 +1,12 @@
+<!-- a130_mg2s.IFar -->
+
+{% set sitesReferences=a50_mg2s_iSite_manager.get_sitesReferences() %}
+
+{%- for nomItem, item in a130_mg2s_IFar_manager.get_IFarCexSnmp().items() -%}
+{% include 'templ_1301_mg2s.IFarCexSnmp.xml' %}
+{% endfor %}
+
+{%- for nomItem, item in a130_mg2s_IFar_manager.get_IFarCerSnmp().items() -%}
+{% include 'templ_1303_mg2s.IFarCerSnmp.xml' %}
+{% endfor %}
+

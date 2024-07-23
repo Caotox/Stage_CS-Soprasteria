@@ -1,0 +1,37 @@
+<!-- date : 2023-09-14 15:42:11 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_0312srsa.edcdc.IPlanRemplacement.xml -->
+<!-- classe : 0312 === srsa.edcdc.IPlanRemplacement -->
+
+<obj id="srsa.edcdc.IPlanRemplacement.{{nomItem}}" class-name="srsa.edcdc.IPlanRemplacement" nom="{{nomItem}}">
+	  <fv nom="sites">
+{% for ssItem in item.sites %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteConfigExterne.{{ssItem}}"/>
+{% endfor %}
+<!--type =  mg2s.ISiteConfigExterne  index-max = 70 -->
+	  </fv>
+	  <fv nom="voiesRadioBicMeteor">
+	    <a i="0" ref="null"/>
+<!--type =  srsa.edcdc.shared.IVoieBicMeteor  index-max = 17 -->
+	  </fv>
+	  <fv nom="voiesRadioPermanentes">
+{% for ssItem in item.voiesRadioPermanentes %}
+	    <a i="{{loop.index0}}" ref="srsa.edcdc.shared.IVoiePermanente.{{ssItem}}"/>
+{% endfor %}
+<!--type =  srsa.edcdc.shared.IVoiePermanente  index-max = 20 -->
+	  </fv>
+	  <fv nom="voiesRadioRepli">
+{% for ssItem in item.voiesRadioRepli %}
+	    <a i="{{loop.index0}}">
+	      <obj id="srsa.edcdc.IPlanRemplacement.{{nomItem}}.voiesRadioRepli.srsa.edcdc.shared.IVoieCdcAvecInitState$srsa.edcdc.IPlanRemplacement$voiesRadioRepli.*$*.label_{{loop.index0}}" class-name="srsa.edcdc.shared.IVoieCdcAvecInitState$srsa.edcdc.IPlanRemplacement$voiesRadioRepli.*$*" nom="label_{{loop.index0}}">
+	        <fv nom="etatVRdansTGV" enum="{{ssItem.etatVRdansTGV}}"/>
+<!-- valeur de l'énumeration : 1(A);2(E);3(T); -->
+	        <fv nom="voieRadioRepli" ref="srsa.edcdc.shared.IVoiePermanente.{{ssItem.voieRadioRepli}}"/>
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	</obj>
+	

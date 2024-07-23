@@ -1,0 +1,6 @@
+<obj id="ithTphCahiersDeVue.IRegleViewDefault.default" class-name="ithTphCahiersDeVue.IRegleViewDefault" nom="default">
+	  <fv nom="cahierDeVueIth" ref="ithTphCahiersDeVue.IViewITH.{{regle.cahierVueIth}}" />
+	  <fv nom="cahierDeVueTPh" ref="ithTphCahiersDeVue.IViewTPH.{{regle.cahierVueTph}}" />
+	  <fv nom="profilRdo" ref="rdoConfiguration.IProfilRadioCla2k.{{regle.profilRadio}}" />
+	</obj>
+	

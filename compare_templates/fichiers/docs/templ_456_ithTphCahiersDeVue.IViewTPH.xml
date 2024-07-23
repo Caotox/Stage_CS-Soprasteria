@@ -1,0 +1,13 @@
+<obj id="ithTphCahiersDeVue.IViewTPH.{{nomCahierTph}}" class-name="ithTphCahiersDeVue.IViewTPH" nom="{{nomCahierTph}}">
+	  <fv nom="conf">
+{% for bcle in cahierTph.listeConferences %}
+	    <a i="{{loop.index0}}" ref="ithTphCahiersDeVue.IConference.{{bcle}}" />
+{% endfor %}
+	  </fv>
+	  <fv nom="page">
+{% for page in cahierTph.listePagesTph %}
+	    <a i="{{loop.index0}}" ref="ithTphCahiersDeVue.IPageTPH.{{page}}" />
+{% endfor %}
+	  </fv>
+	</obj>
+	

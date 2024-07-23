@@ -1,0 +1,70 @@
+<obj id="ithTphConfiguration.IPlanNumerotation.{{nomPlan}}" class-name="ithTphConfiguration.IPlanNumerotation" nom="{{nomPlan}}">
+	  <fv nom="numeroPNIA" val="{{plan.plans.numeroPNIA}}" />
+	  <fv nom="planNumAbrege" val="{{plan.plans.planNumAbrege}}" />
+	  <fv nom="planNumATS" val="{{plan.plans.planNumATS}}" />
+	  <fv nom="planNumCeiText1" val="^.{1,10}$" />
+	  <fv nom="planNumCeiText1InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumCeiText2" val="^.{1,10}$" />
+	  <fv nom="planNumCeiText2InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumCorrespExtIth" val="XXXXX" />
+	  <fv nom="planNumCorrespExtIthInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumCorrespExtText1" val="^.{1,10}$" />
+	  <fv nom="planNumCorrespExtText1InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumCorrespExtText2" val="^.{1,10}$" />
+	  <fv nom="planNumCorrespExtText2InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumCorrespExtTph" val="XXXXX" />
+	  <fv nom="planNumCorrespExtTphInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumFx" val="XXXXX" />
+	  <fv nom="planNumGroupeIth" val="{{plan.plans.planNumGroupeIth}}" />
+	  <fv nom="planNumGroupeIthInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumGroupeText1" val="^.{1,10}$" />
+	  <fv nom="planNumGroupeText1InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumGroupeText2" val="^.{1,10}$" />
+	  <fv nom="planNumGroupeText2InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumGroupeTph" val="{{plan.plans.planNumGroupeTph}}" />
+	  <fv nom="planNumGroupeTphInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumGrpOverflow" val="XXXXX" />
+	  <fv nom="planNumGrpOverflowBusy" val="XXXXX" />
+	  <fv nom="planNumGrpOverflowBusyInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumGrpOverflowInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumGrpOverflowNa" val="XXXXX" />
+	  <fv nom="planNumGrpOverflowNaInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumLoopIth" val="{{plan.plans.planNumLogiqueBcl}}" />
+	  <fv nom="planNumLoopIthInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumLoopText1" val="^.{1,10}$" />
+	  <fv nom="planNumLoopText1InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumLoopText2" val="^.{1,10}$" />
+	  <fv nom="planNumLoopText2InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumPhysiqueBcl" val="{{plan.plans.planNumPhysiqueBcl}}" />
+	  <fv nom="planNumPhysiqueBclInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumPhysiqueIth" val="{{plan.plans.planNumPhysiqueIth}}" />
+	  <fv nom="planNumPhysiqueIthInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumPhysiqueTph" val="{{plan.plans.planNumPhysiqueTph}}" />
+	  <fv nom="planNumPhysiqueTphInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumRoleIth" val="{{plan.plans.planNumRoleIth}}" />
+	  <fv nom="planNumRoleIthInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumRoleOverflow" val="XXXXX" />
+	  <fv nom="planNumRoleOverflowBusy" val="XXXXX" />
+	  <fv nom="planNumRoleOverflowBusyInputRule" val="XXXXX" />
+	  <fv nom="planNumRoleOverflowInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumRoleOverflowNa" val="XXXXX" />
+	  <fv nom="planNumRoleOverflowNaInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="planNumRoleText1" val="^.{1,10}$" />
+	  <fv nom="planNumRoleText1InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumRoleText2" val="^.{1,10}$" />
+	  <fv nom="planNumRoleText2InputRule" val="Chaine de caracteres d'une longueur entre 1 et 10" />
+	  <fv nom="planNumRoleTph" val="{{plan.plans.planNumRoleTph}}" />
+	  <fv nom="planNumRoleTphInputRule" val="Nombre de 5 chiffres" />
+	  <fv nom="prefixeReseauPublic" val="{{plan.plans.prefixeReseauPublic}}" />
+	  <fv nom="prefixeReseauPublicInputRule" val="Nombre de 5 chiffres" />
+{%- for translation in plan.translations %}
+{%- if loop.index == 1 %}
+{%- set texte = "" %}
+{%- else %}
+{%- set  texte = loop.index %}
+{%- endif %}
+	  <fv nom="sequanceATranslater{{texte}}" val="{{translation.ancien}}"/>
+	  <fv nom="sequanceATranslaterValue{{texte}}" val="{{translation.nouveau}}"/>
+{%- endfor %}
+	</obj>
+	

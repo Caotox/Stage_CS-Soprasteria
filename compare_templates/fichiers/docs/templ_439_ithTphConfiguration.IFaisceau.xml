@@ -1,0 +1,19 @@
+<!-- date : 2023-09-14 10:13:18 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_439ithTphConfiguration.IFaisceau.xml -->
+<!-- classe : 439 === ithTphConfiguration.IFaisceau -->
+
+<obj id="ithTphConfiguration.IFaisceau.{{nomFaisceau}}" class-name="ithTphConfiguration.IFaisceau" nom="{{nomFaisceau}}">
+	  <fv nom="alarmeEtatFaisceau">
+	    <obj id="ithTphConfiguration.IFaisceau.{{nomFaisceau}}.alarmeEtatFaisceau.mil.IPropertyBasedAlarmObject$ithTphConfiguration.IFaisceau$alarmeEtatFaisceau.Etat d'alarme de l'état synthétique'" class-name="mil.IPropertyBasedAlarmObject$ithTphConfiguration.IFaisceau$alarmeEtatFaisceau" nom="Etat d'alarme de l'état synthétique'">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="commentaire" val="{{faisceau.commentaire}}"/>
+	  <fv nom="label" val="{{faisceau.label}}"/>
+	  <fv nom="restrictCallExternDA" val="{{faisceau.restrictCallExternDA}}"/>
+	</obj>

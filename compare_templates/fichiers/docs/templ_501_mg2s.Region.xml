@@ -1,0 +1,10 @@
+<!-- date : 2023-11-27 16:20:13 -->
+<!-- dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-11-21_srsaip_2.1.0-p1 -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : CMoIP-srsaip 2.1.0-p1 -->
+<!-- fichier : templ_501mg2s.Region.xml -->
+<!-- classe : 501 === mg2s.Region -->
+
+<obj id="mg2s.Region.label" class-name="mg2s.Region" nom="label">
+	</obj>
+	

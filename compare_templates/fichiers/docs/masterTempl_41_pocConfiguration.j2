@@ -1,0 +1,25 @@
+<!-- 41 pocConfiguration -->
+
+{% for nomItem, item in a41_pocConfiguration_manager.get_IParametresGeneraux().items() %}
+{% include 'templ_411_pocConfiguration.IParametresGeneraux.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a41_pocConfiguration_manager.get_IDSCPSettings().items() %}
+{% include 'templ_413_pocConfiguration.IDSCPSettings.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a41_pocConfiguration_manager.get_ILevelsVpoip().items() %}
+{% include 'templ_414_pocConfiguration.ILevelsVpoip.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a41_pocConfiguration_manager.get_IEnregIpTsoipSettingsConf().items() %}
+{% include 'templ_415_pocConfiguration.IEnregIpTsoipSettingsConf.xml' %}
+{% endfor %}
+
+<!-- a41_pocConfiguration_manager.get_IMission -->
+
+{% for nomItem, item in a41_pocConfiguration_manager.get_IMission().items() %}
+{% include 'templ_416_pocConfiguration.IMission.xml' %}
+{% endfor %}
+
+<!-- FIN 41 pocConfiguration -->

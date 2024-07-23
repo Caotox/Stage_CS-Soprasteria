@@ -1,0 +1,124 @@
+<obj id="pocConfiguration.ILevelsVpoip.{{nomItem}}" class-name="pocConfiguration.ILevelsVpoip" nom="{{nomItem}}">
+	  <fv nom="bcAttenuation" enum="{{item.bcAttenuation}}"/>
+
+	  <fv nom="commentaire" val="{{item.commentaire}}" />
+	  <fv nom="defaultAith" enum="{{item.defaultAith}}" />
+
+	  <fv nom="defaultAlarm" enum="{{item.defaultAlarm}}"/>
+
+	  <fv nom="defaultBell" enum="{{item.defaultBell}}" />
+
+	  <fv nom="defaultChannel" enum="{{item.defaultChannel}}"/>
+
+	  <fv nom="defaultHandset" enum="{{item.defaultHandset}}" />
+
+	  <fv nom="defaultHeadsetC" enum="{{item.defaultHeadsetC}}" />
+
+	  <fv nom="defaultHeadsetI" enum="{{item.defaultHeadsetI}}" />
+
+	  <fv nom="defaultIaCalls" enum="{{item.defaultIaCalls}}" />
+
+	  <fv nom="defaultIaCallsBeep" enum="{{item.defaultIaCallsBeep}}" />
+
+	  <fv nom="defaultInt" enum="{{item.defaultInt}}" />
+
+	  <fv nom="defaultIntercomC" enum="{{item.defaultIntercomC}}"/>
+
+	  <fv nom="defaultIntercomI" enum="{{item.defaultIntercomI}}"/>
+
+	  <fv nom="defaultLoop" enum="{{item.defaultLoop}}" />
+
+	  <fv nom="defaultLsRad" enum="{{item.defaultLsRad}}" />
+
+	  <fv nom="defaultRad" enum="{{item.defaultRad}}" />
+
+	  <fv nom="defaultTel" enum="{{item.defaultTel}}" />
+
+	  <fv nom="intercomSilent" enum="{{item.intercomSilent}}"/>
+
+	  <fv nom="maxAith" enum="{{item.maxAith}}" />
+
+	  <fv nom="maxAlarm" enum="{{item.maxAlarm}}"/>
+
+	  <fv nom="maxBell" enum="{{item.maxBell}}" />
+
+	  <fv nom="maxChannel" enum="{{item.maxChannel}}" />
+
+	  <fv nom="maxHandset" enum="{{item.maxHandset}}" />
+
+	  <fv nom="maxHeadsetC" enum="{{item.maxHeadsetC}}" />
+
+	  <fv nom="maxHeadsetI" enum="{{item.maxHeadsetI}}" />
+
+	  <fv nom="maxIaCalls" enum="{{item.maxIaCalls}}" />
+
+	  <fv nom="maxIaCallsBeep" enum="{{item.maxIaCallsBeep}}" />
+
+	  <fv nom="maxInt" enum="{{item.maxInt}}" />
+
+	  <fv nom="maxIntercomC" enum="{{item.maxIntercomC}}"/>
+
+	  <fv nom="maxIntercomI" enum="{{item.maxIntercomI}}"/>
+
+	  <fv nom="maxLoop" enum="{{item.maxLoop}}" />
+
+	  <fv nom="maxLsRad" enum="{{item.maxLsRad}}" />
+
+	  <fv nom="maxRad" enum="{{item.maxRad}}" />
+
+	  <fv nom="maxTel" enum="{{item.maxTel}}" />
+
+	  <fv nom="minAith" enum="{{item.minAith}}" />
+
+	  <fv nom="minAlarm" enum="{{item.minAlarm}}"/>
+
+	  <fv nom="minBell" enum="{{item.minBell}}" />
+
+	  <fv nom="minChannel" enum="{{item.minChannel}}" />
+
+	  <fv nom="minHandset" enum="{{item.minHandset}}" />
+
+	  <fv nom="minHeadsetC" enum="{{item.minHeadsetC}}" />
+
+	  <fv nom="minHeadsetI" enum="{{item.minHeadsetI}}" />
+
+	  <fv nom="minIaCalls" enum="{{item.minIaCalls}}" />
+
+	  <fv nom="minIaCallsBeep" enum="{{item.minIaCallsBeep}}" />
+
+	  <fv nom="minInt" enum="{{item.minInt}}" />
+
+	  <fv nom="minIntercomC" enum="{{item.minIntercomC}}"/>
+
+	  <fv nom="minIntercomI" enum="{{item.minIntercomI}}"/>
+
+	  <fv nom="minLoop" enum="{{item.minLoop}}" />
+
+	  <fv nom="minLsRad" enum="{{item.minLsRad}}" />
+
+	  <fv nom="minRad" enum="{{item.minRad}}" />
+
+	  <fv nom="minTel" enum="{{item.minTel}}" />
+
+	  <fv nom="niveauEnregCentralRad" enum="{{item.niveauEnregCentralRad}}"/>
+
+	  <fv nom="niveauEnregCentralTel" enum="{{item.niveauEnregCentralTel}}"/>
+
+	  <fv nom="niveauEnregLocalRad" enum="{{item.niveauEnregLocalRad}}"/>
+
+	  <fv nom="niveauEnregLocalTel" enum="{{item.niveauEnregLocalTel}}"/>
+
+	  <fv nom="radioMelAttenuation" enum="{{item.radioMelAttenuation}}"/>
+
+	  <fv nom="sidetoneAttenuationC" enum="{{item.sidetoneAttenuationC}}" />
+
+	  <fv nom="sidetoneAttenuationI" enum="{{item.sidetoneAttenuationI}}" />
+
+	  <fv nom="sidetoneAttenuationLs" enum="{{item.sidetoneAttenuationLs}}" />
+
+	  <fv nom="sidetoneAttenuationMax" enum="{{item.sidetoneAttenuationMax}}"/>
+
+	  <fv nom="sidetoneAttenuationMin" enum="{{item.sidetoneAttenuationMin}}"/>
+
+	</obj>
+	

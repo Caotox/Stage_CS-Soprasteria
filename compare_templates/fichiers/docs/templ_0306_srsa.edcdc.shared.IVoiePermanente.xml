@@ -1,0 +1,24 @@
+<obj id="srsa.edcdc.shared.IVoiePermanente.{{nomItem}}" class-name="srsa.edcdc.shared.IVoiePermanente" nom="{{nomItem}}">
+	  <fv nom="aor" val="{{item.aor}}" />
+	  <fv nom="bssEnabled" val="{{item.bssEnabled}}" />
+	  <fv nom="cvr" ref="srsa.edcdc.shared.ICvr.{{item.cvr}}" />
+	  <fv nom="frequence" ref="srsa.edcdc.shared.IFrequence.{{item.frequence}}" />
+	  <fv nom="mode" enum="{{item.mode}}" />
+
+	  <fv nom="nature" enum="{{item.nature}}" />
+
+	  <fv nom="numLogique" val="{{item.numLogique}}" />
+	  <fv nom="ordreCentres">
+{% for ssItem in item.ordreCentres %}
+	    <a i="{{loop.index0}}" ref="mg2s.ISiteConfigExterne.{{ssItem}}"/>
+{% endfor %}
+	  </fv>
+	  <fv nom="sidetone" enum="{{item.sidetone}}" />
+
+	  <fv nom="transmitMode" enum="{{item.transmitMode}}" />
+
+	  <fv nom="type" enum="{{item.type}}" />
+
+	  <fv nom="zone" ref="srsa.edcdc.shared.IZoneTravail.{{item.zone}}" />
+	</obj>
+	

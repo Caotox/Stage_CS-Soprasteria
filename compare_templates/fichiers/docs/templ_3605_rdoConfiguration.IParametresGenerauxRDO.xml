@@ -1,0 +1,7 @@
+<obj id="rdoConfiguration.IParametresGenerauxRDO.{{nomItem}}" class-name="rdoConfiguration.IParametresGenerauxRDO" nom="{{nomItem}}">
+	  <fv nom="maxGid" val="{{item.maxGid}}" />
+	  <fv nom="minGid" val="{{item.minGid}}" />
+	  <fv nom="nomDomaineSite" val="{{item.nomDomaineSite}}" />
+	  <fv nom="regleAor" val="{{item.regleAor}}" />
+	</obj>
+	

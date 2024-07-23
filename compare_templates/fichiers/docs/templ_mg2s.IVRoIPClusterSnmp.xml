@@ -1,0 +1,18 @@
+<obj id="mg2s.IVRoIPClusterSnmp.{{cluster.nom}}" class-name="mg2s.IVRoIPClusterSnmp" nom="{{cluster.nom}}">
+	  <fv nom="commentaire" val="{{cluster.commentaire}}" />
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="etatInit" enum="1" />
+
+	  <fv nom="hostName" val="{{cluster.hostName}}" />
+	  <fv nom="infobulle" val="{{cluster.infobulle}}" />
+	  <fv nom="nomCourt" val="{{cluster.nomCourt}}" />
+	  <fv nom="parentPhysique" val="{{cluster.localisation}}" />
+	  <fv nom="serveurVRoIP1" ref="mg2s.IVRoIPServeurSnmp.{{cluster.nomServeur1}}" />
+	  <fv nom="serveurVRoIP2" ref="mg2s.IVRoIPServeurSnmp.{{cluster.nomServeur2}}" />
+	  <fv nom="serveurVRoIP3" ref="mg2s.IVRoIPServeurSnmp.{{cluster.nomServeur3}}" />
+	  <fv nom="typeEquipement" val="ClusterVRoIP" />
+	  <fv nom="vroipA" ref="mg2s.IVRoIPCoteSnmp.{{cluster.nomCoteA}}" />
+	  <fv nom="vroipB" ref="mg2s.IVRoIPCoteSnmp.{{cluster.nomCoteB}}" />
+	</obj>
+	

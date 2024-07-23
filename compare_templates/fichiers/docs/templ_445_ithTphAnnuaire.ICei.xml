@@ -1,0 +1,16 @@
+<obj id="ithTphAnnuaire.ICei.{{nomCei}}" class-name="ithTphAnnuaire.ICei" nom="{{nomCei}}">
+	  <fv nom="correspondantDistant" ref="{{cei.corrDistant.type}}.{{cei.corrDistant.nom}}" />
+	  <fv nom="correspondantLocal" ref="{{cei.corrLocal.type}}.{{cei.corrLocal.nom}}" />
+	  <fv nom="identifiantUriSip" val="{{cei.identifiantUriSip}}" />
+	  <fv nom="indexGFU" ref="ithTphConfiguration.IGfuIndex.{{cei.indexGFU}}" />
+	  <fv nom="libelleInformatif" val="{{cei.libelleInfo}}" />
+	  <fv nom="numeroATS" val="{{cei.numeroATS}}" />
+	  <fv nom="numeroIth" val="{{cei.numeroIth}}" />
+	  <fv nom="numeroPNIA" val="{{cei.numeroPNIA}}" />
+	  <fv nom="priorite" enum="{{cei.priorite}}" />
+
+	  <fv nom="text1" val="{{cei.text1}}" />
+	  <fv nom="text2" val="{{cei.text2}}" />
+	  <fv nom="typeMembre" val="cei" />
+	</obj>
+	

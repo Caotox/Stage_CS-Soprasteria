@@ -1,0 +1,16 @@
+	          <obj id="" class-name="" nom="{{partition.nom}}">
+	            <fv nom="storageAlertLevel" val="{{partition.seuilAlerte}}"/>
+	            <fv nom="storageCriticalLevel" val="{{partition.seuilCritique}}"/>
+	            <fv nom="dskPathPartition" val="{{partition.texteMib}}"/>
+	            <fv nom="nomParamDynamiquePartition" val="{{partition.texteMibParamDyn}}"/>
+	            <fv nom="nomParamDynamiqueStatutPartition" val="{{partition.texteMibStatut}}"/>
+	            <fv nom="textMibStatutPartitionMaitre" val="{{partition.texteMaitre}}"/>
+	            <fv nom="textMibStatutPartitionEsclave" val="{{partition.texteEsclave}}"/>
+	            <fv nom="alarmeEtatOccupationCalculIntermediaire">
+	              <obj id="" class-name="" nom="alarme sur Etat d'occupation de la partition">
+	                <fv nom="alarmeActive" val="{{partition.alarmeActive}}"/>
+	                <fv nom="alarmAcousticalWarning" val="{{partition.alarmeSonore}}"/>
+	                <fv nom="alarmTimeDelay" val="0"/>
+	              </obj>
+	            </fv>
+	          </obj>

@@ -1,0 +1,8 @@
+<obj id="srsa.edcdc.shared.IEqfFixe.{{nomItem}}" class-name="srsa.edcdc.shared.IEqfFixe" nom="{{nomItem}}">
+	  <fv nom="code" val="{{item.code}}" />
+	  <fv nom="frequence" ref="srsa.edcdc.shared.IFrequence.{{item.frequence}}" />
+	  <fv nom="numLogique" val="{{item.numLogique}}" />
+	  <fv nom="typeEquivalence" val="{{item.typeEquivalence}}" />
+	  <fv nom="valFrequence" val="{{item.valFrequence}}" />
+	</obj>
+	

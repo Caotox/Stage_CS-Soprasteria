@@ -1,0 +1,47 @@
+<obj id="rdoConfiguration.IProfilRadioMg2s.{{nomItem}}" class-name="rdoConfiguration.IProfilRadioMg2s" nom="{{nomItem}}">
+	  <fv nom="atisDroit" val="{{item.atisDroit}}" />
+	  <fv nom="bipAltBloque" val="{{item.bipAltBloque}}" />
+	  <fv nom="bipErreurAlt" val="{{item.bipErreurAlt}}" />
+	  <fv nom="choixCentreDroit" val="{{item.choixCentreDroit}}" />
+	  <fv nom="couplageDroit" val="{{item.couplageDroit}}" />
+	  <fv nom="ecoutePoDroit" val="{{item.ecoutePoDroit}}" />
+	  <fv nom="messageErreurAlt" val="{{item.messageErreurAlt}}" />
+	  <fv nom="numero" val="{{item.numero}}" />
+	  <fv nom="profilCVR">
+{% for nomProfilCVR, profilCVR in item.profilCVR.items() %}
+		<a i="{{loop.index0}}">
+	      <obj id="rdoConfiguration.IProfilRadioMg2s.Profil-.profilCVR.rdoConfiguration.IProfilCvr$rdoConfiguration.IProfilRadioMg2s$profilCVR.*$*.{{nomProfilCVR}}" class-name="rdoConfiguration.IProfilCvr$rdoConfiguration.IProfilRadioMg2s$profilCVR.*$*" nom="{{nomProfilCVR}}">
+	        <fv nom="cvr" ref="{{profilCVR.cvr}}" />
+	        <fv nom="cvrAffectationDeVoie" val="{{profilCVR.cvrAffectationDeVoie}}" />
+	        <fv nom="cvrChoixCentre" val="{{profilCVR.cvrChoixCentre}}" />
+	        <fv nom="cvrCouplage" val="{{profilCVR.cvrCouplage}}" />
+	        <fv nom="cvrEcoute" val="{{profilCVR.cvrEcoute}}" />
+	        <fv nom="cvrSelFreq" val="{{profilCVR.cvrSelFreq}}" />
+	        <fv nom="cvrTrafic" val="{{profilCVR.cvrTrafic}}" />
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="profilParDefaut" val="{{item.profilParDefaut}}" />
+	  <fv nom="raizDroit" val="{{item.raizDroit}}" />
+	  <fv nom="selFreqDroit" val="{{item.selFreqDroit}}" />
+	  <fv nom="tempoBlocageAlt" val="{{item.tempoBlocageAlt}}" />
+	  <fv nom="tempoFinAppelAvion" val="{{item.tempoFinAppelAvion}}" />
+	  <fv nom="tempoMessageFurtif" val="{{item.tempoMessageFurtif}}" />
+	  <fv nom="todDroit" val="{{item.todDroit}}" />
+	  <fv nom="voieDetDroit" val="{{item.voieDetDroit}}" />
+	  <fv nom="voieSavDroit" val="{{item.voieSavDroit}}" />
+	  <fv nom="voieTGV">
+{% for nomVoieTGV, voieTGV in item.voieTGV.items() %}
+	    <a i="{{loop.index0}}">
+	      <obj id="rdoConfiguration.IProfilRadioMg2s.Profil-.voieTGV.rdoConfiguration.IVoieEtat$rdoConfiguration.IProfilRadioMg2s$voieTGV.*$*.{{nomVoieTGV}}" class-name="rdoConfiguration.IVoieEtat$rdoConfiguration.IProfilRadioMg2s$voieTGV.*$*" nom="{{nomVoieTGV}}">
+	        <fv nom="etatVRdansTGV" enum="{{voieTGV.etatVRdansTGV}}" />
+
+	        <fv nom="voieRadio" ref="{{voieTGV.voieRadio}}" />
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="voyantErreurAlt" val="{{item.voyantErreurAlt}}" />
+	</obj>
+	

@@ -1,0 +1,318 @@
+hw-swc-n-1:
+  adresseIP:            172.12.10.31
+  adresseIPScriptAudit: 172.13.10.31
+  targetEquipmentIP:    172.13.10.31
+  reference:    C2960X-24TS-L
+  eqtType: SW2960x
+  hostName: St2960
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  nbPortsStack: 2
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3650-48TS }
+      nom: hw-swcn-1_1
+      hostname: hw-swcn-1_1
+      nomCourt: cn1-1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+      toto:
+        t1: 1
+        t2: aqaaa
+    switch2:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3650-24TS }
+      nom: cometh-1_sw2
+      hostname: com1sw2
+      nomCourt: com1sw2
+      indexChargeCPU: 12
+      indexSwitch: 2000
+
+hw-swc-n-2:
+  adresseIP:            172.12.10.32
+  adresseIPScriptAudit: 172.13.10.32
+  targetEquipmentIP:    172.13.10.32
+  reference:    C2960X-24TS-L
+  eqtType: xx
+  hostName: xx
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: xxx
+  nomCourt: com2
+  typeEquipement: N/A
+  nbPortsStack: 2
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3650-48TS }
+      nom:      cometh-2_sw1
+      hostname: com2sw1
+      nomCourt: com2sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+    switch2:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3650-24TS }
+      nom:      cometh-2_sw2
+      hostname: com2sw2
+      nomCourt: com2sw2
+      indexChargeCPU: 12
+      indexSwitch: 2000
+
+hw-swl-hm19:
+  adresseIP:    172.12.10.63
+  adresseIPScriptAudit:   172.13.10.63
+  targetEquipmentIP:           172.13.10.63
+  reference:    'C3850-12S-S		C3850-12S-S'
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: hm19
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3850-12S-S }
+      nom: hw-swl-hm19_sw1
+      hostname: hw-swl-hm19_sw1
+      nomCourt: hm19sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+    switch2:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3850-12S-S }
+      nom: hw-swl-hm19_sw2
+      hostname: hw-swl-hm19_sw2
+      nomCourt: hm19sw2
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+hw-swl-a-n-1:
+  adresseIP:    172.12.10.21
+  adresseIPScriptAudit:   172.13.10.21
+  targetEquipmentIP:           172.13.10.21
+  reference:    C2960X-24TS-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960X-24TS-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+hw-swl-a-n-2:
+  adresseIP:    172.12.10.22
+  adresseIPScriptAudit:   172.13.10.22
+  targetEquipmentIP:           172.13.10.22
+  reference:    C2960X-24TS-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960X-24TS-L }
+
+hw-swl-v-n-1:
+  adresseIP:            172.12.10.11
+  adresseIPScriptAudit: 172.13.10.11
+  targetEquipmentIP:    172.13.10.11
+  reference:    C2960X-24TS-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960X-24TS-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+
+hw-swl-v-n-2:
+  adresseIP:    172.12.10.12
+  adresseIPScriptAudit:   172.13.10.12
+  targetEquipmentIP:           172.13.10.12
+  reference:    C2960X-24TS-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960X-24TS-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+hw-swc-mto-1:
+  adresseIP:    172.12.10.61
+  adresseIPScriptAudit:   172.13.10.61
+  targetEquipmentIP:           172.13.10.61
+  reference:    C3650-24TS
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3650-24TS }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+
+hw-swc-mto-2:
+  adresseIP:    172.12.10.62
+  adresseIPScriptAudit:   172.13.10.62
+  targetEquipmentIP:           172.13.10.62
+  reference:    C3650-24TS
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C3650-24TS }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+
+
+hw-swl-cigale:
+  adresseIP:    172.12.10.64
+  adresseIPScriptAudit:   172.13.10.64
+  targetEquipmentIP:           172.13.10.64
+  reference:    C2960X-24TS-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960X-24TS-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+hw-swl-bearn:
+  adresseIP:    172.12.10.65
+  adresseIPScriptAudit:   172.13.10.65
+  targetEquipmentIP:           172.13.10.65
+  reference:    C2960CX-8TC-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960CX-8TC-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+
+hw-swl-sim-est:
+  adresseIP:    172.12.10.66
+  adresseIPScriptAudit:   172.13.10.66
+  targetEquipmentIP:           172.13.10.66
+  reference:    C2960X-48TS-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960X-48TS-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+
+hw-swl-sim-ouest:
+  adresseIP:    172.12.10.67
+  adresseIPScriptAudit:   172.13.10.67
+  targetEquipmentIP:           172.13.10.67
+  reference:    C2960CX-8TC-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960CX-8TC-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+
+hw-swl-hm20:
+  adresseIP:    172.12.10.68
+  adresseIPScriptAudit:   172.13.10.68
+  targetEquipmentIP:           172.13.10.68
+  reference:    C2960CX-8TC-L
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  listeSwitchs:
+    switch1:
+      __Inclure__:  { fichier: reseau_descriptionSwitch.yaml, cle: C2960CX-8TC-L }
+      nom: cometh-1_sw1
+      hostname: com1sw1
+      nomCourt: com1sw1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+
+

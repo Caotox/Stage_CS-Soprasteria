@@ -1,0 +1,76 @@
+<obj id="reseau.IStackOf2SwitchSnmp.mil" class-name="reseau.IStackOf2SwitchSnmp" nom="{{nomStack}}">
+	  <fv nom="adresseIPScriptAudit" val="{{stack.adresseIPScriptAudit}}" />
+	  <fv nom="alarmeEtatAdministratif">
+	    <obj id="reseau.IStackOf2SwitchSnmp.mil.alarmeEtatAdministratif.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatAdministratif.Etat administratif" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatAdministratif" nom="Etat administratif">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="reseau.IStackOf2SwitchSnmp.mil.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatLigneVie.Etat ligne de vie" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp$alarmeEtatLigneVie" nom="Etat ligne de vie">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="" />
+	  <fv nom="cheminScriptAudit" val="{{global.cheminScriptAudit}}" />
+	  <fv nom="cmoipLocal" ref="{{serveurPIU}}" />
+	  <fv nom="commentaire" val="" />
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="eqId" val="0" />
+	  <fv nom="eqtType" enum="{{stack.eqtType}}" />
+
+	  <fv nom="etatInit" enum="1" />
+
+	  <fv nom="flagAlimentation1" val="true" />
+	  <fv nom="flagAlimentation2" val="true" />
+	  <fv nom="FlagCauseDesactivation" val="false" />
+	  <fv nom="flagVentilateur1" val="true" />
+	  <fv nom="flagVentilateur2" val="true" />
+	  <fv nom="flagVentilateur3" val="true" />
+	  <fv nom="hostName" val="{{stack.hostName}}" />
+	  <fv nom="infobulle" val="" />
+	  <fv nom="intervalLifelineErreur" val="1000" />
+	  <fv nom="intervalLifelineOk" val="1000" />
+	  <fv nom="IntervalPollingErreur" val="1000" />
+	  <fv nom="ipAddressSupervisedHost" val="{{stack.adresseIP}}" />
+	  <fv nom="isSnmpDate" val="false" />
+	  <fv nom="isSnmpNumSer" val="false" />
+	  <fv nom="logiqueDeComportement" enum="1" />
+
+	  <fv nom="maxTryNumber" val="5" />
+	  <fv nom="maxTryNumberLifeLine" val="4" />
+	  <fv nom="maxVarbindsPerPduRequest" val="20" />
+	  <fv nom="nbrTestAvantBasculeIP" val="2" />
+	  <fv nom="necessiteMaintenanceScriptEnregistrement" val="false" />
+	  <fv nom="nomCourt" val="{{stack.nomCourt}}" />
+	  <fv nom="nomScriptEnregistrement" val="Enregistrement" />
+{% if stack.parentLogique1 %}
+	      <fv nom="parentLogique1" ref="{{stack.parentLogique1}}" />
+{% endif %}
+{% if stack.parentLogique2 %}
+	      <fv nom="parentLogique2" ref="{{stack.parentLogique2}}" />
+{% endif %}
+	  <fv nom="parentPhysique" val="{{stack.localisation}}" />
+	  <fv nom="portSnmp" val="161" />
+	  <fv nom="portTrapSnmp" val="-1" />
+	  <fv nom="scriptEnregistrement" val="/usr/libexec/scripts-cmoip/enregistrement.sh" />
+{% for idSwitch,switch in stack.listeSwitchs.items() %}
+{% include 'genTempl_reseau.IStackOf2SwitchSnmp.switch.xml' %}
+{% endfor %}
+	  <fv nom="targetEquipmentIP" val="{{stack.targetEquipmentIP}}" />
+	  <fv nom="tempoLifeline" val="" />
+	  <fv nom="timeout" val="1000" />
+	  <fv nom="timeoutEnregistrement" val="22000" />
+	  <fv nom="timeoutInventaire" val="" />
+	  <fv nom="timeoutLifeLine" val="400" />
+	  <fv nom="typeEquipement" val="N/A" />
+	  <fv nom="typeInventaire" enum="2" />
+
+	  <fv nom="typeOS" enum="RESEAU" />
+
+	</obj>
+	

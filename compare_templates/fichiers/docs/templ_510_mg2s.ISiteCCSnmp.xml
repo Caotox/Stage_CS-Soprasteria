@@ -1,0 +1,29 @@
+<!-- date : 2023-11-27 16:20:13 -->
+<!-- dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-11-21_srsaip_2.1.0-p1 -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : CMoIP-srsaip 2.1.0-p1 -->
+<!-- fichier : templ_510mg2s.ISiteCCSnmp.xml -->
+<!-- classe : 510 === mg2s.ISiteCCSnmp -->
+
+<obj id="mg2s.ISiteCCSnmp.label" class-name="mg2s.ISiteCCSnmp" nom="label">
+	  <fv nom="alarmeEtatExploitation">
+	    <obj id="mg2s.ISiteCCSnmp.label.alarmeEtatExploitation.mil.IPropertyBasedAlarmObject$mg2s.ISiteCCSnmp$alarmeEtatExploitation.Etat exploitation du site" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCCSnmp$alarmeEtatExploitation" nom="Etat exploitation du site">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="comportement" enum="1"/>
+<!-- valeur de l'énumeration : 1(COMPORTEMENT1);2(COMPORTEMENT2);3(COMPORTEMENT3); -->
+	  <fv nom="critique" val="true"/>
+	  <fv nom="farSite" ref="null"/>
+	  <fv nom="nomCourt" val=""/>
+	  <fv nom="nomCourtOps" val=""/>
+	  <fv nom="numid" val="0"/>
+	  <fv nom="region" val=""/>
+	  <fv nom="ressourceRNISMax" val=""/>
+	  <fv nom="ressourceRNISSeuil" val=""/>
+	  <fv nom="siteInfobulle" val="Site abstrait"/>
+	  <fv nom="trigramme" val=""/>
+	</obj>
+	

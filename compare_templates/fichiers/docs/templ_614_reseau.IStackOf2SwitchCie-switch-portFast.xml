@@ -1,0 +1,77 @@
+	      <fv nom="fastEthernet01">
+	        <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1" class-name="port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01" nom="Port 1">
+	          <fv nom="alarmeCpsIfPortSecurityEnable">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.alarmeCpsIfPortSecurityEnable.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeCpsIfPortSecurityEnable.Etat sécurité pour alarme" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeCpsIfPortSecurityEnable" nom="Etat sécurité pour alarme">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeetatCauseDesactivation">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.alarmeetatCauseDesactivation.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeetatCauseDesactivation.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeetatCauseDesactivation" nom="mil-propertyBasedAlarmObject">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeEtatOperationnel">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.alarmeEtatOperationnel.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeEtatOperationnel.Etat opérationnel" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeEtatOperationnel" nom="Etat opérationnel">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeEtatPort">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.alarmeEtatPort.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeEtatPort" nom="Etat port">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="false"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	              <fv nom="faultLabel" val="Alarme non utilisée"/>
+	              <fv nom="graviteAlarme" enum="TERMINE"/>
+				  <!-- valeur de l'énumeration : PROBABLE(Probable);MAINTENANCE(Maintenance);ATTENTE_MAINTENANCE(Attente maintenance);CRITIQUE(Critique);MAJEUR(Majeur);INDISPONIBLE(Indisponible);MINEUR(Mineur);INDETERMINE(Indéterminé);INFO(Info);TERMINE(Terminé); -->
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeTraficBroadcast">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.alarmeTraficBroadcast.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeTraficBroadcast.Trafic broadcast" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeTraficBroadcast" nom="Trafic broadcast">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeTraficMulticast">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.alarmeTraficMulticast.{{nomStack}}.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeTraficMulticast.Trafic multicast" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.alarmeTraficMulticast" nom="Trafic multicast">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="commentaire" val="{{port.commentaire}}"/>
+	          <fv nom="etatInit" enum="1"/>
+			  <!-- valeur de l'énumeration : 1(En service);2(Non géré);3(Hors service); -->
+	          <fv nom="flagAddressMacIntrusion" val="{{port.flagAddressMacIntrusion}}"/>
+	          <fv nom="flagTraficBroadcast" val="{{port.flagTraficBroadcast}}"/>
+	          <fv nom="flagTraficMulticast" val="{{port.flagTraficMulticast}}"/>
+	          <fv nom="ifIndex" val=""/>
+			  {% if port.indexSaisie %}
+	          <fv nom="indexSaisie" val="{{port.indexSaisie}}"/>
+			  {% endif %}
+	          <fv nom="indexSaisieHide" val="10001"/>
+	          <fv nom="interdireVerrouillage" val="{{port.interdireVerrouillage}}"/>
+	          <fv nom="nomCourt" val="{{port.nomCourt}}"/>
+	          <fv nom="nonUtilise" val="{{port.nonUtilise}}"/>
+	          <fv nom="numeroDePortInterne" val="1"/>
+	          <fv nom="owner" ref="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}"/>
+			  {% if port.portReference %}
+	          <fv nom="portReference" ref="{{port.portReference}}"/>
+			  {% endif %}
+	          <fv nom="rechercheIndex" val="false"/>
+	          <fv nom="Script">
+	            <obj id="reseau.IStackOf2SwitchCie.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchCie$reseau.IStackOf2SwitchCie$switch1.{{switch.nom}}.fastEthernet01.port.IPortSwitchInStackCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Port 1.Script.control.IScriptActionSwitchPortCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Script.label" class-name="control.IScriptActionSwitchPortCie$reseau.IStackOf2SwitchCie$switch1.fastEthernet01.Script" nom="label">
+	              <fv nom="nomLancerScriptClosePort" val="Fermeture"/>
+	              <fv nom="nomScriptFindMacAdress" val="Apprentissage de l’adresse MAC"/>
+	            </obj>
+	          </fv>
+	          <fv nom="sousType" enum="eth"/>
+			  <!-- valeur de l'énumeration : eth(Eth);fastethernet(Fast Ethernet);S0(S0);E1(E1);T2(T2);comSerie(ComSerie);PER(PER);TOR(TOR);BF(BF);FO(FO);stationtor(Station tor);j2ky(j2ky);T2_SYNCHRO(T2_SYNCHRO);T2_DREX(T2_DREX);T2_TPH(T2_TPH);T2_RNIS(T2_RNIS);E1-MCS-CI-CD(E1-MCS-CI-CD);E1-MCS-CEX-CI(E1-MCS-CEX-CI);E1-RS-RS(E1-RS-RS);E1-RS-MCS(E1-RS-MCS);E1-RS-VG(E1-RS-VG);E1-RT-CI-CD(E1-RT-CI-CD); -->
+	        </obj>
+	      </fv>

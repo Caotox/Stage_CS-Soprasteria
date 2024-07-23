@@ -1,0 +1,9 @@
+<obj id="ithTphAnnuaire.ITelProfil.{{nomProfil}}" class-name="ithTphAnnuaire.ITelProfil" nom="{{nomProfil}}">
+	  <fv nom="dtmfVolume" val="{{profil.dtmfVolume}}" />
+	  <fv nom="flashHookPeriode" val="{{profil.flashHookPeriode}}" />
+	  <fv nom="idTelProfile" val="{{profil.idTelProfile}}" />
+	  <fv nom="inputGain" val="{{profil.inputGain}}" />
+	  <fv nom="nomProfilTel" val="{{profil.nomProfilTel}}" />
+	  <fv nom="voiceVolume" val="{{profil.voiceVolume}}" />
+	</obj>
+	

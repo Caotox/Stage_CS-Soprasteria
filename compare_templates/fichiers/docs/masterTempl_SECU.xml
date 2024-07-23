@@ -1,0 +1,16 @@
+{%- for cert in configCMoIP.listeCertificats -%}
+{% include 'templ_securite.ICertificat.xml' %}
+{% endfor %}
+{%- for crl in configCMoIP.listeCrl -%}
+{% include 'templ_securite.ICertificatRevocationList.xml' %}
+{% endfor %}
+{%- for cleS,serveurADPS in configCMoIP.listeServeursADPS.items() -%}
+{% include 'templ_mil.IAdpsServer.xml' %}
+{% endfor %}
+{%- for nomCluster,cluster in configCMoIP.parefeu.items() -%}
+{% include 'templ_mg2s.IClusterDeNetasqSnmp.xml' %}
+{% endfor %}
+
+{%- for nomCluster,cluster in configCMoIP.get("parefeuCie", {}).items() -%}
+{% include 'templ_mg2s.IClusterDeNetasqCie.xml' %}
+{% endfor %}

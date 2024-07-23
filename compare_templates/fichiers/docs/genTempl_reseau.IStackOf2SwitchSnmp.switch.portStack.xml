@@ -1,0 +1,30 @@
+	      <fv nom="{{nomPort}}">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.portStack1.port.IPortOfStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.Port01" class-name="port.IPortOfStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1" nom="{{nomPort}}">
+	          <fv nom="alarmeEtatPort">
+	            <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.portStack1.port.IPortOfStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.Port01.alarmeEtatPort.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.alarmeEtatPort" nom="Etat port">
+	              <fv nom="alarmAcousticalWarning" val="true" />
+	              <fv nom="alarmeActive" val="true" />
+	              <fv nom="alarmTimeDelay" val="0" />
+	            </obj>
+	          </fv>
+	          <fv nom="commentaire" val="{{port.commentaire}}" />
+	          <fv nom="etatInit" enum="1" />
+
+	          <fv nom="indexSaisie" val="1001" />
+	          <fv nom="indexSaisieHide" val="0" />
+	          <fv nom="internalName" val="{{port.internalName}}" />
+	          <fv nom="nomCourt" val="{{port.nomCourt}}" />
+	          <fv nom="nonUtilise" val="{{port.nonUtilise}}" />
+	          <fv nom="owner" ref="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1" />
+	          <!--<fv nom="portReference" ref="" />-->
+	          <fv nom="rechercheIndex" val="false" />
+	          <fv nom="Script">
+	            <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.portStack1.port.IPortOfStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.Port01.Script.control.IScriptActionSwitchPortMg2sSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.Script.label" class-name="control.IScriptActionSwitchPortMg2sSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.portStack1.Script" nom="label">
+	              <fv nom="nomLancerScriptClosePort" val="Fermeture" />
+	              <fv nom="nomScriptFindMacAdress" val="Apprentissage de l’adresse MAC" />
+	            </obj>
+	          </fv>
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>

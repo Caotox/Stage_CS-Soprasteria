@@ -1,0 +1,21 @@
+<!-- templ_admCmoipGeneriqueCluster.xml -->
+<!-- templ_cmoipSnmpCluster.xml -->
+{% for nomUcGenCluster,ucGenCluster in configCMoIP.ucGeneriques['clusters'].items() %}
+    {% if ucGenCluster.get("serveurPIU", false) %}
+        {% include 'templ_1401_serveurs.IClusterUCGeneriquePIU.xml' %}
+    {% else %}
+        {% include 'templ_1401_serveurs.IClusterUCGenerique.xml' %}
+    {% endif %}
+{% endfor %}
+{% for nomUcGenServeur,ucGenServeur in configCMoIP.ucGeneriques['serveurs'].items() -%}
+    {% if ucGenServeur.get("serveurPIU", false) %}
+        {% include 'templ_1403_serveurs.IServeurUCGeneriquePIUSnmp.xml' %}
+    {% else %}
+        {% include 'templ_1403_serveurs.IServeurUCGeneriqueSnmp.xml' %}
+    {% endif %}
+{% endfor %}
+
+<!-- UcGenerique CIE -->
+{% for nomUcGenServeur,ucGenServeur in configCMoIP.get("ucGeneriquesCie", {}).items() -%}
+        {% include 'templ_1404_serveurs.IServeurUCGeneriqueCie.xml' %}
+{% endfor %}

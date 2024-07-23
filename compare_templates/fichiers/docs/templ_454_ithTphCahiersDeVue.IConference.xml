@@ -1,0 +1,11 @@
+<obj id="ithTphCahiersDeVue.IConference.{{nomConference}}" class-name="ithTphCahiersDeVue.IConference" nom="{{nomConference}}">
+	  <fv nom="libelle1" val="{{conference.libelle1}}" />
+	  <fv nom="libelle2" val="{{conference.libelle2}}" />
+	  <fv nom="numConference" val="{{conference.numero}}" />
+      <fv nom="membreConf">
+{%- for role in conference.listeTouches %}
+	    <a i="{{loop.index0}}" ref="ithTphAnnuaire.IRole.{{role}}" />
+{%- endfor %}
+	  </fv>
+	</obj>
+	

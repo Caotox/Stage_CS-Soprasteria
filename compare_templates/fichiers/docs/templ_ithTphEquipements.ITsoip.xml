@@ -1,0 +1,81 @@
+<obj id="{{tsoipCluster.identifiantObjet}}" class-name="ithTphEquipements.ITsoip" nom="{{tsoipCluster.nom}}">
+	  <fv nom="alarmeEtatConfigurationAppliquee">
+	    <obj id="{{tsoipCluster.identifiantObjet}}.alarmeEtatConfigurationAppliquee.mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeEtatConfigurationAppliquee.Etat conf. appliquée" class-name="mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeEtatConfigurationAppliquee" nom="Etat conf. appliquée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	      <fv nom="faultLabel" val="Alarme non utilisée" />
+	      <fv nom="graviteAlarme" enum="TERMINE" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatDerniereConfigAppliquee">
+	    <obj id="{{tsoipCluster.identifiantObjet}}.alarmeEtatDerniereConfigAppliquee.mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeEtatDerniereConfigAppliquee.Etat Dernière conf. appliquée" class-name="mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeEtatDerniereConfigAppliquee" nom="Etat Dernière conf. appliquée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	      <fv nom="faultLabel" val="Alarme non utilisée" />
+	      <fv nom="graviteAlarme" enum="TERMINE" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="{{tsoipCluster.identifiantObjet}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeEtatLigneVie.Etat ligne de vie" class-name="mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeEtatLigneVie" nom="Etat ligne de vie">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeNbServeurMaitre">
+	    <obj id="{{tsoipCluster.identifiantObjet}}.alarmeNbServeurMaitre.mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeNbServeurMaitre.Nombre de serveurs maîtres dans le cluster TSOIP" class-name="mil.IPropertyBasedAlarmObject$ithTphEquipements.ITsoip$alarmeNbServeurMaitre" nom="Nombre de serveurs maîtres dans le cluster TSOIP">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="" />
+	  <fv nom="commentaire" val="{{tsoipCluster.commentaire}}" />
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="etatInit" enum="1" />
+
+	  <fv nom="hostName" val="{{tsoipCluster.hostName}}" />
+	  <fv nom="infobulle" val="{{tsoipCluster.infobulle}}" />
+	  <fv nom="intervalLifelineErreur" val="1000" />
+	  <fv nom="intervalLifelineOk" val="1000" />
+	  <fv nom="IntervalPollingErreur" val="1000" />
+	  <fv nom="ipAddressIPBX" val="{{tsoipCluster.ipAddressIPBX}}" />
+	  <fv nom="ipAddressSTCA" val="{{tsoipCluster.ipAddressSTCA}}" />
+	  <fv nom="ipAddressSupervisedHost" val="{{tsoipCluster.ipAddressSupervisedHost}}" />
+	  <fv nom="localDomain" val="{{tsoipCluster.localDomain}}" />
+	  <fv nom="logiqueDeComportement" enum="1" />
+
+	  <fv nom="maxTryNumber" val="5" />
+	  <fv nom="maxTryNumberLifeLine" val="4" />
+	  <fv nom="maxVarbindsPerPduRequest" val="20" />
+	  <fv nom="nbrTestAvantBasculeIP" val="2" />
+	  <fv nom="nomCourt" val="{{tsoipCluster.nomCourt}}" />
+	  {% if tsoipCluster.parentLogique1 %}
+	      <fv nom="parentLogique1" ref="{{tsoipCluster.parentLogique1}}" />
+	  {% endif %}
+	  {% if tsoipCluster.parentLogique2 %}
+	      <fv nom="parentLogique2" ref="{{tsoipCluster.parentLogique2}}" />
+	  {% endif %}
+	  <fv nom="parentPhysique" val="{{tsoipCluster.localisation}}" />
+	  <fv nom="portTrapSnmp" val="-1" />
+	  <fv nom="prefix" val="{{tsoipCluster.prefix}}" />
+	  <fv nom="qualify" val="yes" />
+	  <fv nom="qualifyfreqnotok" val="" />
+	  <fv nom="qualifyfreqok" val="" />
+	  <fv nom="tempoLifeline" val="" />
+	  <fv nom="timeout" val="1000" />
+	  <fv nom="timeoutLifeLine" val="400" />
+	  {% for nomTsoipServeur in ['tsoipServerPrincipal', 'tsoipServerSecondaire'] %}
+	    {#<!-- {{nomTsoipServeur}}   {{tsoipCluster[nomTsoipServeur]}}   {{tsoipCluster.nomTsoipServeur}} -->#}
+	    {% set tsoipServeur = tsoipCluster[nomTsoipServeur] %}
+	    {% include 'templ_ithTphEquipements.ITsoip.serveur.xml' %}
+	  {% endfor %}
+	  <fv nom="typeEquipement" val="{{tsoipCluster.typeEquip}}" />
+	  <fv nom="workflowActivationPartiel" val="true" />
+	</obj>
+	

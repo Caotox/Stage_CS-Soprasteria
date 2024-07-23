@@ -1,0 +1,38 @@
+<!-- date : 2023-11-27 16:20:13 -->
+<!-- dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-11-21_srsaip_2.1.0-p1 -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : CMoIP-srsaip 2.1.0-p1 -->
+<!-- fichier : templ_512cmoip.ICMoIPDistant.xml -->
+<!-- classe : 512 === cmoip.ICMoIPDistant -->
+
+<obj id="cmoip.ICMoIPDistant.{{nomSite}}" class-name="cmoip.ICMoIPDistant" nom="{{nomSite}}">
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="cmoip.ICMoIPDistant.{{nomSite}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$cmoip.ICMoIPDistant$alarmeEtatLigneVie.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$cmoip.ICMoIPDistant$alarmeEtatLigneVie" nom="mil-propertyBasedAlarmObject">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="{{site.altIpAddressSupervisedHost}}"/>
+	  <fv nom="etatCanal" enum="{{site.etatCanal}}"/>
+	  <!-- valeur de l'énumeration : 0(Fonctionnement nominal);1(Hors Service);
+	  2(Fonctionnement dégradé);3(Inconnu);4(Non supervisé);5(En maintenance); -->
+	  <fv nom="intervalleMessageDeVie" val="{{site.intervalleMessageDeVie}}"/>
+	  <fv nom="intervalLifelineErreur" val="{{site.intervalLifelineErreur}}"/>
+	  <fv nom="intervalLifelineOk" val="{{site.intervalLifelineOk}}"/>
+	  <fv nom="IntervalPollingErreur" val="{{site.IntervalPollingErreur}}"/>
+	  <fv nom="ipAddressSupervisedHost" val="{{site.ipAddressSupervisedHost}}"/>
+	  <fv nom="maxSimultaneousExec" val="{{site.maxSimultaneousExec}}"/>
+	  <fv nom="maxTryNumber" val="{{site.maxTryNumber}}"/>
+	  <fv nom="maxTryNumberLifeLine" val="{{site.maxTryNumberLifeLine}}"/>
+	  <fv nom="nbrTestAvantBasculeIP" val="{{site.nbrTestAvantBasculeIP}}"/>
+	  <fv nom="nomLogiqueDistant" val="{{site.nomLogiqueDistant}}"/>
+	  <fv nom="portHierarchie" val="{{site.portHierarchie}}"/>
+	  <fv nom="securedConnexion" val="{{site.securedConnexion}}"/>
+	  <fv nom="serveurHierarchie" val="{{site.serveurHierarchie}}"/>
+	  <fv nom="serveurPiuCie" ref="{{site.serveurPiuCie}}"/>
+	  <fv nom="tempoLifeline" val="{{site.tempoLifeline}}"/>
+	  <fv nom="timeOutExec" val="{{site.timeOutExec}}"/>
+	  <fv nom="timeOutHello" val="{{site.timeOutHello}}"/>
+	</obj>
+	

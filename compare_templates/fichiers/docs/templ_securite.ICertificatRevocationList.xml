@@ -1,0 +1,19 @@
+<obj id="securite.ICertificatRevocationList.{{crl.nom}}" class-name="securite.ICertificatRevocationList" nom="{{crl.nom}}">
+	  <fv nom="alarmeEtatCertificat">
+	    <obj id="securite.ICertificatRevocationList.{{crl.nom}}.alarmeEtatCertificat.mil.IPropertyBasedAlarmObject$securite.ICertificatRevocationList$alarmeEtatCertificat.ALARME_ETAT_VALIDITE" class-name="mil.IPropertyBasedAlarmObject$securite.ICertificatRevocationList$alarmeEtatCertificat" nom="ALARME_ETAT_VALIDITE">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="cheminCertificat" val="{{crl.chemin}}" />
+	  <fv nom="commandeSupervision" val="{{crl.checkCommande}}" />
+	  <fv nom="critique" val="false" />
+	  <fv nom="delaiAlerteAvertissement" val="{{crl.delaiAvertissement}}" />
+	  <fv nom="delaiAlerteCritique" val="{{crl.delaiCritique}}" />
+	  <fv nom="machineCible" ref="{{crl.cible}}" />
+	  <fv nom="nomCourt" val="{{crl.nomCourt}}" />
+	  <fv nom="nrpeSupervisionHandler" ref="{{global.nrpeSupervisionHandler}}" />
+	  <fv nom="ownerC" ref="" />
+	</obj>
+	

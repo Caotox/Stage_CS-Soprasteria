@@ -1,0 +1,54 @@
+<!-- ========== {{siteLocal}} ========== -->
+
+<!-- types de rôle -->
+{% if configCMoIP.listeTypesRole %}
+{% for nomTypeRole,typeRole in configCMoIP.listeTypesRole.items() -%}
+{% include 'templ_typesRole.xml' %}
+{% endfor %}
+{% endif %}
+
+<!-- rôles -->
+{% if configCMoIP.listeRoles %}
+{% for nomRole,role in configCMoIP.listeRoles.get(siteLocal, {}).items() -%}
+{% include 'templ_441_ithTphAnnuaire.IRole.xml' %}
+{% endfor %}
+{% endif %}
+
+<!-- groupes de rôles -->
+{% if configCMoIP.listeGroupesRoles %}
+{% for nomGroupe,groupe in configCMoIP.listeGroupesRoles.get(siteLocal, {}).items() -%}
+{% include 'templ_442_ithTphAnnuaire.IGroupe.xml' %}
+{% endfor %}
+{% endif %}
+
+<!-- groupes de rôles ITH -->
+{% if configCMoIP.listeGroupesIth %}
+{% for nomGroupe,groupe in configCMoIP.listeGroupesIth.items() -%}
+{% include 'templ_groupeIth.xml' %}
+{% endfor %}
+{% endif %}
+
+<!-- CEIs -->
+{% if configCMoIP.listeCeis %}
+{% for nomCei,cei in configCMoIP.listeCeis.items() -%}
+{% include 'templ_445_ithTphAnnuaire.ICei.xml' %}
+{% endfor -%}
+{% endif %}
+
+<!-- contacts externes ED137 -->
+{% if configCMoIP.listeContactsExtED137 %}
+{% for nomCeED137,ceED137 in configCMoIP.listeContactsExtED137.items() -%}
+{% if ceED137 != {} %}
+{% include 'templ_446_ithTphAnnuaire.IContactExterneED137.xml' %}
+{% endif %}
+{% endfor -%}
+{% endif %}
+
+<!-- FOAs -->
+{% if configCMoIP.listeFoas %}
+{% for nomFoa,foa in configCMoIP.listeFoas.get(siteLocal, {}).items() -%}
+{% if foa.siteLocal == true -%}
+{% include 'templ_foa.xml' %}
+{% endif -%}
+{% endfor -%}
+{% endif %}

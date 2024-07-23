@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations version="2">
+  <configuration tag="{{configInfo.tag}}" description="{{configInfo.description}}" nom="{{configInfo.nom}}">
+    <synoptiques>
+    </synoptiques>
+	<groupe-object-model>
+{% set serveurPIU = configCMoIP.serveurPIU %}
+<!-- ##### SERVEUR PIU = {{serveurPIU}} ##### -->
+{% set siteLocal = configCMoIP.nomSiteLocal %}
+		<!-- global = {{global}}  -->
+
+<!-- 03_configurationCDC  -->
+{% include 'masterTempl_03_configurationCDC.j2' %}
+
+<!-- 41_pocConfiguration  -->
+{% include 'masterTempl_41_pocConfiguration.j2' %}
+
+<!-- 42_pocEquipement -->
+{% include 'masterTempl_42_pocEquipement.j2' %}
+
+<!-- 43_IthTphConfiguration -->
+{% include 'masterTempl_43_IthTphConfiguration.j2' %}
+
+<!-- 44_annuaire -->
+{% include 'masterTempl_44_annuaire.xml' %}
+
+<!-- 45_cahierDeVue -->
+{% include 'masterTempl_45_cahierDeVue.xml' %}
+
+<!-- 50_mg2s.iSite.j2 -->
+{% include 'masterTempl_50_mg2s.iSite.j2' %}
+
+<!-- 130_mg2s.iSite.j2 -->
+{% include 'masterTempl_130_mg2s.iFar.j2' %}
+
+<!-- 180_mg2s.Protections.j2 -->
+{% include 'masterTempl_180_mg2s.Protections.j2' %}
+
+<!-- 330_configurationExterne -->
+{% include 'masterTempl_330_configurationExterne.j2' %}
+
+<!-- 360_rdoConfiguration -->
+{% include 'masterTempl_360_rdoConfiguration.j2' %}
+
+<!-- 43_IthTphConfiguration -->
+{% include 'masterTempl_TSoIP.xml' %}
+{% include 'masterTempl_VRoIP.xml' %}
+{% include 'masterTempl_VGoIP.xml' %}
+{% include 'masterTempl_CMoIP.xml' %}
+{% include 'masterTempl_VPoIP.xml' %}
+{% include 'masterTempl_NETWORK.xml' %}
+{% include 'masterTempl_RADIO.xml' %}
+{% include 'masterTempl_SECU.xml' %}
+{% include 'masterTempl_DIVERS.xml' %}
+
+	</groupe-object-model>
+  </configuration>
+</configurations>

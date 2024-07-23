@@ -1,0 +1,35 @@
+standard:
+  texteMibVentil1: FAN - T1 1
+  texteMibVentil2: FAN - T1 2
+  texteMibVentil3: FAN - T1 3
+  texteMibVentil4: ''
+  texteMibVentil5: ''
+  texteMibAlim1: Power Supply A
+  texteMibAlim2: ''
+  texteMibTemp1: Inlet Temp Sensor
+  texteMibTemp2: Outlet Temp Sensor
+  texteMibTemp3: HotSpot Temp Sensor
+  texteMibTemp4: ''
+  texteMibTemp5: ''
+  infoPortsStack :
+    referencePort : "port.IPortOfStackOf2SwitchSnmp"
+    strIdent      : "portStack{numPort:d}"
+    strNom        : "stack{numPort:02d}"
+    strInternal   : "StackSub-St{numSwitch}-{numPort}"
+    strCourt      : "st{numPort:02d}"
+  infoPortsFast :
+    premierPort   : 1
+    dernierPort   : 52
+    referencePort : "port.IPortSwitchInStackSnmp"
+    strIdent      : "fastEthernet{numPort:02d}"
+    strNom        : "fast{numPort:02d}"
+    strInternal   : "GigabitEthernet{numSwitch}/0/{numPort}"
+    strCourt      : "fa{numPort:02d}"
+  infoPortsGiga :
+    # premierPort   : 49    # dans un stack générique il n'y a pas de séparation entre port fast et giga
+    # dernierPort   : 52
+    referencePort : "port.IPortSwitchInStackSnmp"
+    strIdent      : "fastEthernet{numPort:02d}"
+    strNom        : "giga{numPort:02d}"
+    strInternal   : "GigabitEthernet{numSwitch}/1/{numPort}"
+    strCourt      : "gb{numPort:02d}"

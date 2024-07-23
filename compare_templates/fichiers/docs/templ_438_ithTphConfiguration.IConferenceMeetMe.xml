@@ -1,0 +1,13 @@
+<obj id="ithTphConfiguration.IConferenceMeetMe.{{nomConfMM}}" class-name="ithTphConfiguration.IConferenceMeetMe" nom="{{nomConfMM}}">
+	  <fv nom="commentaire" val="{{confMM.commentaire}}" />
+	  <fv nom="identifiantRole" val="{{confMM.idRole}}" />
+	  <fv nom="identifiantUriSip" val="{{confMM.identifiantUriSip}}" />
+	  <fv nom="label" val="{{confMM.label}}" />
+	  <fv nom="libelleInformatif" val="{{confMM.libInfo}}" />
+	  <fv nom="meetmeAttribute" val="{{confMM.meetmeAttribute}}" />
+	  <fv nom="numeroATS" val="{{confMM.numeroATS}}" />
+	  <fv nom="numeroPNIA" val="{{confMM.numeroPNIA}}" />
+	  <fv nom="numeroTph" val="{{confMM.numeroTph}}" />
+	  <fv nom="typeMembre" val="role" />
+	</obj>
+	

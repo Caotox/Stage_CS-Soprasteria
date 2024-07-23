@@ -1,0 +1,169 @@
+	  <fv nom="{{idSwitch}}">
+	    <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1" class-name="reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}" nom="{{switch.nom}}">
+	      <fv nom="agrFindMacAddress" val="apprentissage" />
+	      <fv nom="alarmeCpuState">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeCpuState.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeCpuState.Etat charge CPU" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeCpuState" nom="Etat charge CPU">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatAdministratif">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatAdministratif.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatAdministratif.Etat administratif" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatAdministratif" nom="Etat administratif">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatAlimentation1">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatAlimentation1.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatAlimentation1.Etat alimentation" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatAlimentation1" nom="Etat alimentation">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatAlimentation2">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatAlimentation2.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatAlimentation2.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatAlimentation2" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatLigneVie">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatLigneVie.Etat ligne de vie" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatLigneVie" nom="Etat ligne de vie">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatSwitch">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatSwitch.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatSwitch.Etat du switch" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatSwitch" nom="Etat du switch">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatTemperature1">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatTemperature1.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature1.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature1" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatTemperature2">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatTemperature2.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature2.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature2" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatTemperature3">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatTemperature3.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature3.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature3" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatTemperature4">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatTemperature4.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature4.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature4" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatTemperature5">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatTemperature5.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature5.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatTemperature5" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatVentilateur1">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatVentilateur1.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatVentilateur1.Etat ventilateur" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatVentilateur1" nom="Etat ventilateur">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatVentilateur2">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatVentilateur2.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatVentilateur2.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatVentilateur2" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatVentilateur3">
+	        <obj id="reseau.IStackOf2SwitchSnmp.mil.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.Switch 1.alarmeEtatVentilateur3.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatVentilateur3.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.alarmeEtatVentilateur3" nom="mil-propertyBasedAlarmObject">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="altIpAddressSupervisedHost" val="" />
+	      <fv nom="argClosePort" val="fermeture" />
+	      <fv nom="closePort" val="/usr/libexec/action-cmoip/action-port.sh" />
+	      <fv nom="commentaire" val="" />
+	      <fv nom="coreNumber" val="1" />
+	      <fv nom="cpuLoadAlertLevel" val="70" />
+	      <fv nom="cpuLoadCriticalLevel" val="80" />
+	      <fv nom="critique" val="false" />
+	      <fv nom="critiqueSite" val="false" />
+	      <fv nom="etatInit" enum="1" />
+
+{% for nomPort, port in switch.listePortsFast.items() %}
+{% include 'genTempl_reseau.IStackOf2SwitchSnmp.switch.portFast.xml' %}
+{% endfor %}
+	      <fv nom="findMacAddress" val="/usr/libexec/action-cmoip/findMacAddress.sh" />
+	      <fv nom="FlagCauseDesactivation" val="false" />
+	      <fv nom="flagCpuLoadPercent" val="false" />
+{% for nomPort, port in switch.listePortsGiga.items() %}
+{% include 'genTempl_reseau.IStackOf2SwitchSnmp.switch.portGiga.xml' %}
+{% endfor %}
+	      <fv nom="hostName" val="{{switch.hostname}}" />
+	      <fv nom="indexAlimentation1" val="1003" />
+	      <fv nom="indexAlimentation2" val="1002" />
+	      <fv nom="indexCapteurTemperature1" val="" />
+	      <fv nom="indexCapteurTemperature2" val="" />
+	      <fv nom="indexCapteurTemperature3" val="" />
+	      <fv nom="indexCapteurTemperature4" val="" />
+	      <fv nom="indexCapteurTemperature5" val="" />
+	      <fv nom="indexChargeCPU" val="" />
+	      <fv nom="indexSwitch" val="{{switch.indexSwitch}}" />
+	      <fv nom="indexVentilateur1" val="1003" />
+	      <fv nom="indexVentilateur2" val="1007" />
+	      <fv nom="indexVentilateur3" val="1007" />
+	      <fv nom="infobulle" val="" />
+	      <fv nom="intervalLifelineErreur" val="1000" />
+	      <fv nom="intervalLifelineOk" val="1000" />
+	      <fv nom="isSnmpDate" val="false" />
+	      <fv nom="isSnmpNumSer" val="true" />
+	      <fv nom="logiqueDeComportement" enum="1" />
+
+	      <fv nom="maxTryNumberLifeLine" val="2" />
+	      <fv nom="nbrTestAvantBasculeIP" val="2" />
+	      <fv nom="necessiteMaintenanceScriptClosePort" val="false" />
+	      <fv nom="necessiteMaintenanceScriptFindMacAddress" val="false" />
+	      <fv nom="nomCourt" val="{{switch.nomCourt}}" />
+	      <fv nom="owner" ref="reseau.IStackOf2SwitchSnmp.{{stack.nom}}" />
+{% if switch.parentLogique1 %}
+	      <fv nom="parentLogique1" ref="" />
+{% endif %}
+{% if switch.parentLogique2 %}
+	      <fv nom="parentLogique2" ref="" />
+{% endif %}
+{% for nomPort, port in switch.listePortsStack.items() %}
+{% include 'genTempl_reseau.IStackOf2SwitchSnmp.switch.portStack.xml' %}
+{% endfor %}
+	      <fv nom="targetEquipmentIP" val="{{switch.targetEquipmentIP}}" />
+	      <fv nom="temperatureAlertLevel" val="70" />
+	      <fv nom="temperatureCriticalLevel" val="80" />
+	      <fv nom="tempoLifeline" val="" />
+	      <fv nom="ticksPerSecond" val="100" />
+	      <fv nom="timeoutInventaire" val="" />
+	      <fv nom="timeoutLancerScriptClosePort" val="22000" />
+	      <fv nom="timeoutLancerScriptFindMacAddress" val="22000" />
+	      <fv nom="typeEquipement" val="N/A" />
+	      <fv nom="typeInventaire" enum="2" />
+
+	    </obj>
+	  </fv>

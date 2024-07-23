@@ -1,0 +1,142 @@
+	  <fv nom="{{nomChiffreur}}">
+	    <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}" class-name="mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}" nom="{{chiffreur.nom}}">
+	      <fv nom="alarmeOnline">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.alarmeOnline.mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.alarmeOnline.Online" class-name="mil.IPropertyBasedAlarmObject$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.alarmeOnline" nom="Online">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="true" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="altIpAddressSupervisedHost" val="" />
+	      <fv nom="ClusterDeNetasq" ref="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}" />
+	      <fv nom="commentaire" val="" />
+	      <fv nom="critique" val="false" />
+	      <fv nom="critiqueSite" val="false" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="hostName" val="{{chiffreur.hostName}}" />
+	      <fv nom="infobulle" val="{{chiffreur.infobulle}}" />
+	      <fv nom="intervalLifelineErreur" val="1000" />
+	      <fv nom="intervalLifelineOk" val="1000" />
+	      <fv nom="ipAddressSupervisedHost" val="{{chiffreur.ipAddressSupervisedHost}}" />
+	      <fv nom="isSnmpDate" val="false" />
+	      <fv nom="isSnmpNumSer" val="false" />
+	      <fv nom="maxTryNumberLifeLine" val="2" />
+	      <fv nom="nbrTestAvantBasculeIP" val="2" />
+	      <fv nom="nomCourt" val="{{chiffreur.nomCourt}}" />
+	      <fv nom="parentPhysique" val="{{chiffreur.parentPhysique}}" />
+	      <fv nom="portNonGere1">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere1.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere1.Port non géré 1" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere1" nom="Port non géré 1">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth0" />
+	          <fv nom="nomCourt" val="port 1" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere10">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere10.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere10.Port non géré 10" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere10" nom="Port non géré 10">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth9" />
+	          <fv nom="nomCourt" val="port 10" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere11">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere11.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere11.Port non géré 11" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere11" nom="Port non géré 11">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth10" />
+	          <fv nom="nomCourt" val="port 11" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere12">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere12.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere12.Port non géré 12" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere12" nom="Port non géré 12">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth11" />
+	          <fv nom="nomCourt" val="port 12" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere2">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere2.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere2.Port non géré 2" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere2" nom="Port non géré 2">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth1" />
+	          <fv nom="nomCourt" val="port 2" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere3">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere3.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere3.Port non géré 3" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere3" nom="Port non géré 3">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth2" />
+	          <fv nom="nomCourt" val="port 3" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere4">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere4.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere4.Port non géré 4" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere4" nom="Port non géré 4">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth3" />
+	          <fv nom="nomCourt" val="port 4" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere5">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere5.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere5.Port non géré 5" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere5" nom="Port non géré 5">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth4" />
+	          <fv nom="nomCourt" val="port 5" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere6">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere6.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere6.Port non géré 6" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere6" nom="Port non géré 6">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth5" />
+	          <fv nom="nomCourt" val="port 6" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere7">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere7.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere7.Port non géré 7" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere7" nom="Port non géré 7">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth6" />
+	          <fv nom="nomCourt" val="port 7" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere8">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere8.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere8.Port non géré 8" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere8" nom="Port non géré 8">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth7" />
+	          <fv nom="nomCourt" val="port 8" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="portNonGere9">
+	        <obj id="mg2s.IClusterDeNetasqSnmp.{{nomCluster}}.{{nomChiffreur}}.mg2s.IChiffreurActifPassifSnmp$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.{{chiffreur.nom}}.portNonGere9.port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere9.Port non géré 9" class-name="port.IPortNonGere$mg2s.IClusterDeNetasqSnmp${{nomChiffreur}}.portNonGere9" nom="Port non géré 9">
+	          <fv nom="commentaire" val="" />
+	          <fv nom="descriptionPort" val="eth8" />
+	          <fv nom="nomCourt" val="port 9" />
+	          <fv nom="sousType" enum="eth" />
+
+	        </obj>
+	      </fv>
+	      <fv nom="tempoLifeline" val="" />
+	      <fv nom="timeoutInventaire" val="" />
+	      <fv nom="typeEquipement" val="N/A" />
+	      <fv nom="typeInventaire" enum="3" />
+
+	    </obj>
+	  </fv>

@@ -1,0 +1,14 @@
+<obj id="ithTphAnnuaire.IContactExterneED137.{{nomCeED137}}" class-name="ithTphAnnuaire.IContactExterneED137" nom="{{nomCeED137}}">
+	  <fv nom="domain" val="{{ceED137.domaine}}" />
+	  <fv nom="identifiantUriSip" val="{{ceED137.identifiantUriSip}}" />
+	  <fv nom="libelleInformatif" val="{{nomCeED137}}." />
+	  <fv nom="numeroATS" val="{{ceED137.numeroATS}}" />
+	  <fv nom="numeroIth" val="{{ceED137.numeroIth}}" />
+	  <fv nom="numeroPNIA" val="{{ceED137.numeroPNIA}}" />
+	  <fv nom="numeroTph" val="{{ceED137.numeroTph}}" />
+	  <fv nom="shortNumber" val="{{ceED137.shortNumber}}" />
+	  <fv nom="text1" val="{{ceED137.text1}}" />
+	  <fv nom="text2" val="{{ceED137.text2}}" />
+	  <fv nom="typeMembre" val="contact" />
+	</obj>
+	

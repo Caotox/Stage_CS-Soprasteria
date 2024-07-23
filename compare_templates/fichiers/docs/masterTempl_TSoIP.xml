@@ -1,0 +1,19 @@
+{% for tsoipCluster in configCMoIP.listeTsoip.listeClusterTsoip.values() -%}
+{% include 'templ_ithTphEquipements.ITsoip.xml' %}
+{% endfor %}
+
+{% for nomGwStn, gwStn in configCMoIP.listeGatewaysStn.items() -%}
+{% include 'templ_ithTphEquipements.IGatewaySTN.xml' %}
+{% endfor %}
+
+{% for nomModuleStn, moduleStn in configCMoIP.listeModulesStn.items() -%}
+{% include 'templ_ithTphEquipements.IModuleSTNFXS.xml' %}
+{% endfor %}
+
+{% for nomLigneFxs, ligneFxs in configCMoIP.listeLignesFxs.items() -%}
+{% include 'templ_ithTphEquipements.ILigneFXS.xml' %}
+{% endfor %}
+
+{% for nomItem, item in configCMoIP.listeLignesFxo.items() -%}
+{% include 'templ_ithTphEquipements.ILigneFXO.xml' %}
+{% endfor %}

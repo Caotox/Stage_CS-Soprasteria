@@ -1,0 +1,47 @@
+<!-- date : 2023-11-27 16:20:13 -->
+<!-- dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-11-21_srsaip_2.1.0-p1 -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : CMoIP-srsaip 2.1.0-p1 -->
+<!-- fichier : templ_511mg2s.ISiteCCCie.xml -->
+<!-- classe : 511 === mg2s.ISiteCCCie -->
+
+<obj id="mg2s.ISiteCCCie.label" class-name="mg2s.ISiteCCCie" nom="label">
+	  <fv nom="alarmeEtatExploitation">
+	    <obj id="mg2s.ISiteCCCie.label.alarmeEtatExploitation.mil.IPropertyBasedAlarmObject$mg2s.ISiteCCCie$alarmeEtatExploitation.Etat exploitation du site" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCCCie$alarmeEtatExploitation" nom="Etat exploitation du site">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="cmoipDistant" ref="null"/>
+	  <fv nom="comportement" enum="1"/>
+<!-- valeur de l'énumeration : 1(COMPORTEMENT1);2(COMPORTEMENT2);3(COMPORTEMENT3); -->
+	  <fv nom="critique" val="true"/>
+	  <fv nom="farSite" ref="null"/>
+	  <fv nom="ipChiffreur" val="null"/>
+	  <fv nom="ipCmoip" val="null"/>
+	  <fv nom="ipSwitch" val="null"/>
+	  <fv nom="ipSwitch2" val="null"/>
+	  <fv nom="nomCourt" val=""/>
+	  <fv nom="nomCourtOps" val=""/>
+	  <fv nom="nomLogiqueDistant" val=""/>
+	  <fv nom="nomScriptLigneVieInterSite" val="ligne de vie inter-site"/>
+	  <fv nom="numid" val="0"/>
+	  <fv nom="region" val=""/>
+	  <fv nom="ressourceRNISMax" val=""/>
+	  <fv nom="ressourceRNISSeuil" val=""/>
+	  <fv nom="scriptLigneVieInterSite" val="/sysca/etc/script-inter-site.sh"/>
+	  <fv nom="siteInfobulle" val="Site abstrait"/>
+	  <fv nom="sitePIU">
+	    <obj id="mg2s.ISiteCCCie.label.sitePIU.mg2s.ISitePIUCie$mg2s.ISiteCCCie$sitePIU.label" class-name="mg2s.ISitePIUCie$mg2s.ISiteCCCie$sitePIU" nom="label">
+	      <fv nom="cmoipDistant" ref="null"/>
+	      <fv nom="nomLogiqueDistant" val=""/>
+	      <fv nom="typeSite" enum="null"/>
+<!-- valeur de l'énumeration : CDC(CDC);CEX_COSCA(CEX_COSCA);COSCA(COSCA);CEX_CMCC(CEX_CMCC);CMCC(CMCC);CER(CER);CE_CR(CE_CR); -->
+	    </obj>
+	  </fv>
+	  <fv nom="targetEquipmentIP" val="null"/>
+	  <fv nom="timeoutLancerScriptLigneVieInterSite" val="10000"/>
+	  <fv nom="trigramme" val=""/>
+	</obj>
+	

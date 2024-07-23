@@ -1,0 +1,31 @@
+{%- for key,centre in configCMoIP.listeCentres.items() -%}
+{% include 'templ_centres.xml' %}
+{% endfor %}
+{%- for key,ensChassis in configCMoIP.radioSwitch.items() -%}
+{% include 'templ_radioSwitch.xml' %}
+{% endfor %}
+{%- for key,profilRadio in configCMoIP.profilsRadio.items() -%}
+{% include 'templ_profilRadio.xml' %}
+{% endfor -%}
+{%- for key,tov in configCMoIP.listeTov.items() -%}
+{% include 'templ_tov.xml' %}
+{% endfor -%}
+{%- for key,equivFreq in configCMoIP.listeEquivFreq.items() -%}
+{% include 'templ_equivFrequences.xml' %}
+{% endfor -%}
+{%- for categorie in configCMoIP.listeCategories -%}
+{% include 'templ_categorieVoie.xml' %}
+{% endfor -%}
+{%- for key,voie in configCMoIP.listeVoies.items() -%}
+{% if voie.typeInterface == 'RdoInterfaceVR' -%}
+{% include 'templ_voies.xml' %}
+{% else %}
+{%- if voie.RdoInterfaceVR == 'IRejeu' -%}
+{% include 'templ_rejeu.xml' %}
+{% else -%}
+{%- if voie.RdoInterfaceVR == 'IHPveille' -%}
+{% include 'templ_hpVeille.xml' %}
+{% endif -%}
+{% endif -%}
+{% endif -%}
+{% endfor -%}

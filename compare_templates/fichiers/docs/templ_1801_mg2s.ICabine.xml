@@ -1,0 +1,53 @@
+<!-- date : 2023-10-31 10:04:03 -->
+<!-- dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_1801mg2s.ICabine.xml -->
+<!-- classe : 1801 === mg2s.ICabine -->
+
+<obj id="mg2s.ICabine.{{nomItem}}" class-name="mg2s.ICabine" nom="{{nomItem}}">
+	  <fv nom="alarmeEtatAlarme">
+	    <obj id="mg2s.ICabine.{{nomItem}}.alarmeEtatAlarme.mil.IPropertyBasedAlarmObject$mg2s.ICabine$alarmeEtatAlarme.Etat d'alarme de la zone" class-name="mil.IPropertyBasedAlarmObject$mg2s.ICabine$alarmeEtatAlarme" nom="Etat d'alarme de la zone">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="false"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	      <fv nom="faultLabel" val="Alarme non utilisée"/>
+	      <fv nom="graviteAlarme" enum="TERMINE"/>
+		  <!-- valeur de l'énumeration : PROBABLE(Probable);MAINTENANCE(Maintenance);ATTENTE_MAINTENANCE(Attente maintenance);CRITIQUE(Critique);MAJEUR(Majeur);INDISPONIBLE(Indisponible);MINEUR(Mineur);INDETERMINE(Indéterminé);INFO(Info);TERMINE(Terminé); -->
+	    </obj>
+	  </fv>
+	  <fv nom="alarmePassageForce">
+	    <obj id="mg2s.ICabine.{{nomItem}}.alarmePassageForce.mil.IPropertyBasedAlarmObject$mg2s.ICabine$alarmePassageForce.Etat indiquant un passage forcé du local" class-name="mil.IPropertyBasedAlarmObject$mg2s.ICabine$alarmePassageForce" nom="Etat indiquant un passage forcé du local">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="commentaire" val="{{item.commentaire}}"/>
+	  <fv nom="comportement" enum="{{item.comportement}}"/>
+	  <!-- valeur de l'énumeration : 1(COMPORTEMENT1);2(COMPORTEMENT2);3(COMPORTEMENT3); -->
+	  <fv nom="critique" val="{{item.critique}}"/>
+	  <fv nom="critiqueSite" val="{{item.critiqueSite}}"/>
+	  <fv nom="etatInit" enum="1"/>
+	  <!-- valeur de l'énumeration : 1(En service);2(Non géré); -->
+	  <fv nom="gdc" val="{{item.gdc}}"/>
+	  <fv nom="hostName" val="{{item.hostName}}"/>
+	  <fv nom="infobulle" val="{{item.infobulle}}"/>
+	  <fv nom="nomCourt" val="{{item.nomCourt}}"/>
+	  <fv nom="parentPhysique" val="{{item.parentPhysique}}"/>
+	  {% if item.peripherique %}
+	  <fv nom="peripherique" ref="{{item.peripherique}}"/>
+	  {% endif %}
+	  <fv nom="po1" ref="pocEquipement.IVPoIP.{{item.po1}}"/>
+	  <fv nom="po2" ref="pocEquipement.IVPoIP.{{item.po2}}"/>
+	  <fv nom="siteDuLocal" ref="{{item.siteDuLocal}}"/>
+	  <fv nom="tabEmplacements">
+	    {% for empl in item.tabEmplacements%}
+		<a i="{{loop.index0}}" ref="pocEquipement.IVPoIP.{{empl}}"/>
+		{% endfor %}
+		<!--type =  mil.IEquipementMilitaire  index-max = 50 -->
+	  </fv>
+	  <fv nom="typeEquipement" val="{{item.typeEquipement}}"/>
+	  <fv nom="zone" val="{{item.zone}}"/>
+	</obj>
+	

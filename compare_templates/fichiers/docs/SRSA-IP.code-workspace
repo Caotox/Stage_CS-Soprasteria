@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../GenConfCmoip/GenConfCmoip_prv"
+		},
+		{
+			"path": "../../../../squelettes_CMoIP/srsaip_squelettes"
+		},
+		{
+			"path": "../../../../../reglagesCompte"
+		},
+		{
+			"path": "../../../CSI"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,67 @@
+<obj id="mg2s.ISiteCERSnmp.{{nomSite}}" class-name="mg2s.ISiteCERSnmp" nom="{{nomSite}}">
+	  <fv nom="alarmeEtatDisponibilite">
+	    <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.alarmeEtatDisponibilite.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatDisponibilite.Alarme Etat disponibilité site CER" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatDisponibilite" nom="Alarme Etat disponibilité site CER">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatExploitation">
+	    <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.alarmeEtatExploitation.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatExploitation.Etat exploitation du site" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatExploitation" nom="Etat exploitation du site">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceRnis">
+	    <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.alarmeEtatRessourceRnis.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceRnis.Alarme Etat ressource RNIS" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceRnis" nom="Alarme Etat ressource RNIS">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceSaturn">
+	    <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.alarmeEtatRessourceSaturn.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceSaturn.Alarme Etat ressource Saturn" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceSaturn" nom="Alarme Etat ressource Saturn">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceUhf">
+	    <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.alarmeEtatRessourceUhf.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceUhf.Alarme Etat ressource UHF" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceUhf" nom="Alarme Etat ressource UHF">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceVhf">
+	    <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.alarmeEtatRessourceVhf.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceVhf.Alarme Etat ressource VHF" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERSnmp$alarmeEtatRessourceVhf" nom="Alarme Etat ressource VHF">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="comportement" enum="1" />
+
+	  <fv nom="critique" val="true" />
+	  <fv nom="farSite" ref="{{referenceFarLocale}}" />
+	  <fv nom="nomCourt" val="{{site.nomCourt}}" />
+	  <fv nom="nomCourtOps" val="{{site.nomCourtOps}}" />
+	  <fv nom="numid" val="{{site.numid}}" />
+	  <fv nom="region" val="{{site.region}}" />
+	  <fv nom="ressourceRNISMax" val="{{site.ressourceRNISMax}}" />
+	  <fv nom="ressourceRNISSeuil" val="{{site.ressourceRNISSeuil}}" />
+	  <fv nom="silencieuxEVF" val="50" />
+	  <fv nom="siteInfobulle" val="{{site.siteInfobulle}}" />
+	  <fv nom="tabCerNbVcOcc">
+{% for element in site.get('tabCerNbVcOcc', []) %}
+	    <a i="{{loop.index0}}">
+	      <obj id="mg2s.ISiteCERSnmp.{{nomSite}}.tabCerNbVcOcc.site.IVoieParCentre$mg2s.ISiteCERSnmp$tabCerNbVcOcc.*$*.{{element}}" class-name="site.IVoieParCentre$mg2s.ISiteCERSnmp$tabCerNbVcOcc.*$*" nom="{{element}}">
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="timeoutCreerSilencieux" val="{{site.get('timeoutCreerSilencieux', 10000)}}" />
+	  <fv nom="trigramme" val="{{site.trigramme}}" />
+	</obj>
+	

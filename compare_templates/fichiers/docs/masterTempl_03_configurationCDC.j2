@@ -1,0 +1,52 @@
+<!-- 03 configurationCDC -->
+
+{% for nomItem, item in a03_configurationCDC_manager.get_ICvr().items() %}
+{% include 'templ_0300_srsa.edcdc.shared.ICvr.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IToc().items() %}
+{% include 'templ_0301_srsa.edcdc.shared.IToc.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IPageTov().items() %}
+{% include 'templ_0302_srsa.edcdc.shared.IPageTov.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IZoneTravail().items() %}
+{% include 'templ_0303_srsa.edcdc.shared.IZoneTravail.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IFrequence().items() %}
+{% include 'templ_0304_srsa.edcdc.shared.IFrequence.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IEqfFixe().items() %}
+{% include 'templ_0305_srsa.edcdc.shared.IEqfFixe.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IVoiePermanente().items() %}
+{% include 'templ_0306_srsa.edcdc.shared.IVoiePermanente.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IProfilUtilisateur().items() %}
+{% include 'templ_0309_srsa.edcdc.shared.IProfilUtilisateur.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IProfilRepli().items() %}
+{% include 'templ_0310_srsa.edcdc.shared.IProfilRepli.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IGroupeUtilisateurCdc().items() %}
+{% include 'templ_0311_srsa.edcdc.shared.IGroupeUtilisateurCdc.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IPlanRemplacement().items() %}
+{% include 'templ_0312_srsa.edcdc.IPlanRemplacement.xml' %}
+{% endfor %}
+
+{% for nomItem, item in a03_configurationCDC_manager.get_IPlanRemplacementAActiver().items() %}
+{% include 'templ_0313_srsa.edcdc.IPlanRemplacementAActiver.xml' %}
+{% endfor %}
+
+
+<!-- FIN 03 configurationCDC -->

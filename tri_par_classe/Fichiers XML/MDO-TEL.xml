@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations version="3">
+  <configuration tag="MD0-CDC-v1.24.0-V4" description="SBT : suppression PO 5 et 36" nom="Conf. Applicable 15/05/2024 15:08:01.916">
+    <groupe-object-model>
+	<obj id="ICategorieCorresp.CategorieExt" class-name="ithTphAnnuaire.ICategorieCorresp" nom="CategorieExt">
+	</obj>
+	<obj id="ICei.CEI-LM0" class-name="ithTphAnnuaire.ICei" nom="CEI-LM0">
+	  <fv nom="correspondantDistant" ref-chpl="ICorrespExterne.POC_1_LM0"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-50"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="text1" val="POC1_LM0"/>
+	  <fv nom="text2" val="POC_50"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.POC17_TO_POC50" class-name="ithTphAnnuaire.ICei" nom="POC17_TO_POC50">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-50"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-17"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="text1" val="POC_50"/>
+	  <fv nom="text2" val="POC_17"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.POC39_TO_POC50" class-name="ithTphAnnuaire.ICei" nom="POC39_TO_POC50">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-50"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-39"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="text1" val="POC50"/>
+	  <fv nom="text2" val="POC39"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.POC50_TO_POC17" class-name="ithTphAnnuaire.ICei" nom="POC50_TO_POC17">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-17"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-50"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_17"/>
+	  <fv nom="text2" val="POC_50"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.POC50_TO_POC2" class-name="ithTphAnnuaire.ICei" nom="POC50_TO_POC2">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-02"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-50"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="text1" val="POC_2"/>
+	  <fv nom="text2" val="POC_50"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.POC50_TO_POC39" class-name="ithTphAnnuaire.ICei" nom="POC50_TO_POC39">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-39"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-50"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="text1" val="POC_39"/>
+	  <fv nom="text2" val="POC_50"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH17_TO_POC2" class-name="ithTphAnnuaire.ICei" nom="TPH17_TO_POC2">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-02"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-17"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_2"/>
+	  <fv nom="text2" val="POC_17"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH17_TO_POC39" class-name="ithTphAnnuaire.ICei" nom="TPH17_TO_POC39">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-39"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-17"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_39"/>
+	  <fv nom="text2" val="POC_17"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH2_TOPOC17" class-name="ithTphAnnuaire.ICei" nom="TPH2_TOPOC17">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-17"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-02"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC17"/>
+	  <fv nom="text2" val="POC_2"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH2_TO_GRP1" class-name="ithTphAnnuaire.ICei" nom="TPH2_TO_GRP1">
+	  <fv nom="correspondantDistant" ref-chpl="IGroupe.GRP_1"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-02"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="GRP_1"/>
+	  <fv nom="text2" val="POC_2"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH2_TO_POC39" class-name="ithTphAnnuaire.ICei" nom="TPH2_TO_POC39">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-39"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-02"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_39"/>
+	  <fv nom="text2" val="POC_2"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH2_TO_POC50" class-name="ithTphAnnuaire.ICei" nom="TPH2_TO_POC50">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-50"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-02"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_50"/>
+	  <fv nom="text2" val="POC_2"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH39_TO_POC17" class-name="ithTphAnnuaire.ICei" nom="TPH39_TO_POC17">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-17"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-39"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_17"/>
+	  <fv nom="text2" val="POC_39"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="ICei.TPH39_TO_POC2" class-name="ithTphAnnuaire.ICei" nom="TPH39_TO_POC2">
+	  <fv nom="correspondantDistant" ref-chpl="IRole.RO-02"/>
+	  <fv nom="correspondantLocal" ref-chpl="IRole.RO-39"/>
+	  <fv nom="indexGFU" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="text1" val="POC_2"/>
+	  <fv nom="text2" val="POC_39"/>
+	  <fv nom="typeMembre" val="cei"/>
+	</obj>
+	<obj id="IConference.CONF1" class-name="ithTphCahiersDeVue.IConference" nom="CONF1">
+	  <fv nom="libelle1" val="Conf S1"/>
+	  <fv nom="libelle2" val="Test S1"/>
+	  <fv nom="membreConf">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	    <a i="2" ref-chpl="IRole.RO-39"/>
+	    <a i="3" ref-chpl="IRole.RO-50"/>
+	    <a i="4" ref-chpl="ICorrespExterne.POC_7_LM0"/>
+	  </fv>
+	  <fv nom="numConference" val="0"/>
+	</obj>
+	<obj id="IConference.CONF2" class-name="ithTphCahiersDeVue.IConference" nom="CONF2">
+	  <fv nom="libelle1" val="Conf S2"/>
+	  <fv nom="libelle2" val="Test S2"/>
+	  <fv nom="membreConf">
+	    <a i="0" ref-chpl="IRole.RO-01"/>
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	    <a i="2" ref-chpl="IRole.RO-02"/>
+	  </fv>
+	  <fv nom="numConference" val="1"/>
+	</obj>
+	<obj id="IConference.CONF3" class-name="ithTphCahiersDeVue.IConference" nom="CONF3">
+	  <fv nom="libelle1" val="Conf S3"/>
+	  <fv nom="libelle2" val="Test S3"/>
+	  <fv nom="membreConf">
+	    <a i="0" ref-chpl="IRole.RO-01"/>
+	  </fv>
+	  <fv nom="numConference" val="2"/>
+	</obj>
+	<obj id="ICorrespExterne.POC_1_LM0" class-name="ithTphAnnuaire.ICorrespExterne" nom="POC_1_LM0">
+	  <fv nom="categorie" ref-chpl="ICategorieCorresp.CategorieExt"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="numeroTph" val="8112008501"/>
+	  <fv nom="text1" val="POC-1-LM0"/>
+	  <fv nom="typeMembre" val="correspondent"/>
+	</obj>
+	<obj id="ICorrespExterne.POC_7_LM0" class-name="ithTphAnnuaire.ICorrespExterne" nom="POC_7_LM0">
+	  <fv nom="categorie" ref-chpl="ICategorieCorresp.CategorieExt"/>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="numeroTph" val="8112008507"/>
+	  <fv nom="text1" val="POC-7-LM0"/>
+	  <fv nom="typeMembre" val="correspondent"/>
+	</obj>
+	<obj id="IGfu.cug_set_1" class-name="ithTphConfiguration.IGfu" nom="cug_set_1">
+	  <fv nom="indexGfu0" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="indexGfu1" ref-chpl="IGfuIndex.1"/>
+	  <fv nom="indexGfu2" ref-chpl="IGfuIndex.2"/>
+	</obj>
+	<obj id="IGfu.cug_set_2" class-name="ithTphConfiguration.IGfu" nom="cug_set_2">
+	  <fv nom="indexGfu0" ref-chpl="IGfuIndex.0"/>
+	  <fv nom="indexGfu1" ref-chpl="IGfuIndex.1"/>
+	  <fv nom="indexGfu2" ref-chpl="IGfuIndex.2"/>
+	  <fv nom="indexGfu3" ref-chpl="IGfuIndex.3"/>
+	  <fv nom="indexGfu4" ref-chpl="IGfuIndex.4"/>
+	  <fv nom="indexGfu5" ref-chpl="IGfuIndex.5"/>
+	</obj>
+	<obj id="IGfu.cug_set_3" class-name="ithTphConfiguration.IGfu" nom="cug_set_3">
+	  <fv nom="indexGfu6" ref-chpl="IGfuIndex.6"/>
+	  <fv nom="indexGfu7" ref-chpl="IGfuIndex.7"/>
+	  <fv nom="indexGfu8" ref-chpl="IGfuIndex.8"/>
+	</obj>
+	<obj id="IGfu.cug_set_4" class-name="ithTphConfiguration.IGfu" nom="cug_set_4">
+	  <fv nom="indexGfu10" ref-chpl="IGfuIndex.10"/>
+	  <fv nom="indexGfu11" ref-chpl="IGfuIndex.11"/>
+	  <fv nom="indexGfu9" ref-chpl="IGfuIndex.9"/>
+	</obj>
+	<obj id="IGfuIndex.0" class-name="ithTphConfiguration.IGfuIndex" nom="0">
+	  <fv nom="gfuAbsolu" val="ff00ff00"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.1" class-name="ithTphConfiguration.IGfuIndex" nom="1">
+	  <fv nom="gfuAbsolu" val="ff00ff01"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.10" class-name="ithTphConfiguration.IGfuIndex" nom="10">
+	  <fv nom="gfuAbsolu" val="ff00ff10"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.11" class-name="ithTphConfiguration.IGfuIndex" nom="11">
+	  <fv nom="gfuAbsolu" val="ff00ff11"/>
+	  <fv nom="restrictionAppelArrivee" enum="TRUE"/>
+	  <fv nom="restrictionAppelDepart" enum="TRUE"/>
+	</obj>
+	<obj id="IGfuIndex.2" class-name="ithTphConfiguration.IGfuIndex" nom="2">
+	  <fv nom="gfuAbsolu" val="ff00ff02"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.3" class-name="ithTphConfiguration.IGfuIndex" nom="3">
+	  <fv nom="gfuAbsolu" val="ff00ff03"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.4" class-name="ithTphConfiguration.IGfuIndex" nom="4">
+	  <fv nom="gfuAbsolu" val="ff00ff04"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.5" class-name="ithTphConfiguration.IGfuIndex" nom="5">
+	  <fv nom="gfuAbsolu" val="ff00ff05"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.6" class-name="ithTphConfiguration.IGfuIndex" nom="6">
+	  <fv nom="gfuAbsolu" val="ff00ff06"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.7" class-name="ithTphConfiguration.IGfuIndex" nom="7">
+	  <fv nom="gfuAbsolu" val="ff00ff07"/>
+	  <fv nom="restrictionAppelArrivee" enum="TRUE"/>
+	  <fv nom="restrictionAppelDepart" enum="TRUE"/>
+	</obj>
+	<obj id="IGfuIndex.8" class-name="ithTphConfiguration.IGfuIndex" nom="8">
+	  <fv nom="gfuAbsolu" val="ff00ff08"/>
+	  <fv nom="restrictionAppelArrivee" enum="FALSE"/>
+	  <fv nom="restrictionAppelDepart" enum="FALSE"/>
+	</obj>
+	<obj id="IGfuIndex.9" class-name="ithTphConfiguration.IGfuIndex" nom="9">
+	  <fv nom="gfuAbsolu" val="ff00ff09"/>
+	  <fv nom="restrictionAppelArrivee" enum="TRUE"/>
+	  <fv nom="restrictionAppelDepart" enum="TRUE"/>
+	</obj>
+	<obj id="IGroupe.GR-70-71" class-name="ithTphAnnuaire.IGroupe" nom="GR-70-71">
+	  <fv nom="libelleInformatif" val="Groupe4"/>
+	  <fv nom="listeRoles">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	  </fv>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="numeroTph" val="25404"/>
+	  <fv nom="text1" val="GR_70_71"/>
+	  <fv nom="typeMembre" val="groupe"/>
+	</obj>
+	<obj id="IGroupe.GR-71-72" class-name="ithTphAnnuaire.IGroupe" nom="GR-71-72">
+	  <fv nom="libelleInformatif" val="Groupe5"/>
+	  <fv nom="listeRoles">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	  </fv>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="numeroTph" val="25405"/>
+	  <fv nom="text1" val="GR_71_72"/>
+	  <fv nom="typeMembre" val="groupe"/>
+	</obj>
+	<obj id="IGroupe.GRP-5-36" class-name="ithTphAnnuaire.IGroupe" nom="GRP-5-36">
+	  <fv nom="listeRoles">
+	    <a i="0" ref-chpl="IRole.RO-05"/>
+	    <a i="1" ref-chpl="IRole.RO-36"/>
+	  </fv>
+	  <fv nom="numeroTph" val="25406"/>
+	  <fv nom="text1" val="GRP-5-36"/>
+	  <fv nom="typeMembre" val="groupe"/>
+	</obj>
+	<obj id="IGroupe.GRP_1" class-name="ithTphAnnuaire.IGroupe" nom="GRP_1">
+	  <fv nom="libelleInformatif" val="Groupe1"/>
+	  <fv nom="listeRoles">
+	    <a i="0" ref-chpl="IRole.RO-17"/>
+	    <a i="1" ref-chpl="IRole.RO-39"/>
+	    <a i="49" ref-chpl="IRole.RO-70"/>
+	  </fv>
+	  <fv nom="numeroIth" val="8888"/>
+	  <fv nom="numeroTph" val="25401"/>
+	  <fv nom="text1" val="GRP_17_39"/>
+	  <fv nom="typeMembre" val="groupe"/>
+	</obj>
+	<obj id="IGroupe.GRP_2" class-name="ithTphAnnuaire.IGroupe" nom="GRP_2">
+	  <fv nom="libelleInformatif" val="Groupe2"/>
+	  <fv nom="listeRoles">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="1" ref-chpl="IRole.RO-39"/>
+	  </fv>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="numeroTph" val="25402"/>
+	  <fv nom="text1" val="GRP_02_39"/>
+	  <fv nom="typeMembre" val="groupe"/>
+	</obj>
+	<obj id="IGroupe.GRP_3" class-name="ithTphAnnuaire.IGroupe" nom="GRP_3">
+	  <fv nom="libelleInformatif" val="Groupe3"/>
+	  <fv nom="listeRoles">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	  </fv>
+	  <fv nom="numeroIth" val="0"/>
+	  <fv nom="numeroTph" val="25403"/>
+	  <fv nom="text1" val="GRP_02_17"/>
+	  <fv nom="typeMembre" val="groupe"/>
+	</obj>
+	<obj id="ILoop.BCL1" class-name="ithTphCahiersDeVue.ILoop" nom="BCL1">
+	  <fv nom="libelle1" val="Grande"/>
+	  <fv nom="libelle2" val="boucle"/>
+	  <fv nom="number" val="31001"/>
+	  <fv nom="security" enum="TRUE"/>
+	</obj>
+	<obj id="ILoop.BCL2" class-name="ithTphCahiersDeVue.ILoop" nom="BCL2">
+	  <fv nom="libelle1" val="Petite"/>
+	  <fv nom="libelle2" val="boucle"/>
+	  <fv nom="number" val="31002"/>
+	  <fv nom="security" enum="FALSE"/>
+	</obj>
+	<obj id="IPageITH.ITH1" class-name="ithTphCahiersDeVue.IPageITH" nom="ITH1">
+	  <fv nom="libelle1" val="ITH_SBT"/>
+	  <fv nom="libelle2" val="XX"/>
+	  <fv nom="touche">
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	    <a i="2" ref-chpl="IRole.RO-39"/>
+	    <a i="3" ref-chpl="IRole.RO-50"/>
+	    <a i="11" ref-chpl="IRole.RO-05"/>
+	    <a i="14" ref-chpl="IRole.RO-70"/>
+	  </fv>
+	</obj>
+	<obj id="IPageITH.ITH2" class-name="ithTphCahiersDeVue.IPageITH" nom="ITH2">
+	  <fv nom="libelle1" val="ITH2"/>
+	  <fv nom="libelle2" val="XXX"/>
+	  <fv nom="touche">
+	    <a i="4" ref-chpl="IRole.RO-02"/>
+	  </fv>
+	</obj>
+	<obj id="IPageTPH.Page TPH" class-name="ithTphCahiersDeVue.IPageTPH" nom="Page TPH">
+	  <fv nom="libelle1" val="TPH2 to"/>
+	  <fv nom="libelle2" val="XXX"/>
+	  <fv nom="membres">
+	    <a i="0" ref-chpl="IGroupe.GRP_1"/>
+	    <a i="1" ref-chpl="IGroupe.GRP_2"/>
+	    <a i="2" ref-chpl="IGroupe.GRP_3"/>
+	    <a i="3" ref-chpl="IGroupe.GR-70-71"/>
+	    <a i="4" ref-chpl="IGroupe.GR-71-72"/>
+	    <a i="5" ref-chpl="IRole.RO-70"/>
+	    <a i="6" ref-chpl="IRole.RO-71"/>
+	    <a i="7" ref-chpl="IRole.RO-72"/>
+	    <a i="8" ref-chpl="ICorrespExterne.POC_7_LM0"/>
+	    <a i="10" ref-chpl="IRole.RO-02"/>
+	    <a i="11" ref-chpl="IRole.RO-17"/>
+	    <a i="12" ref-chpl="IRole.RO-39"/>
+	    <a i="14" ref-chpl="IRole.RO-50"/>
+	  </fv>
+	</obj>
+	<obj id="IPageTPH.Page TPH 2" class-name="ithTphCahiersDeVue.IPageTPH" nom="Page TPH 2">
+	  <fv nom="libelle1" val="pageTPH"/>
+	  <fv nom="libelle2" val="Mes Coll"/>
+	  <fv nom="membres">
+	    <a i="0" ref-chpl="ICei.TPH2_TOPOC17"/>
+	    <a i="1" ref-chpl="ICei.TPH2_TO_POC39"/>
+	    <a i="2" ref-chpl="ICei.TPH2_TO_POC50"/>
+	    <a i="3" ref-chpl="ICei.TPH2_TO_GRP1"/>
+	    <a i="4" ref-chpl="ICei.TPH17_TO_POC2"/>
+	    <a i="5" ref-chpl="ICei.TPH17_TO_POC39"/>
+	    <a i="6" ref-chpl="ICei.POC17_TO_POC50"/>
+	    <a i="7" ref-chpl="ICei.TPH39_TO_POC2"/>
+	    <a i="8" ref-chpl="ICei.TPH39_TO_POC17"/>
+	    <a i="9" ref-chpl="ICei.POC39_TO_POC50"/>
+	    <a i="10" ref-chpl="ICei.POC50_TO_POC2"/>
+	    <a i="11" ref-chpl="ICei.POC50_TO_POC17"/>
+	    <a i="12" ref-chpl="ICei.POC50_TO_POC39"/>
+	  </fv>
+	</obj>
+	<obj id="IPageTPH.Page TPH 3" class-name="ithTphCahiersDeVue.IPageTPH" nom="Page TPH 3">
+	  <fv nom="libelle1" val="maPage"/>
+	  <fv nom="libelle2" val="Antoine"/>
+	  <fv nom="membres">
+	    <a i="0" ref-chpl="IGroupe.GRP_1"/>
+	    <a i="1" ref-chpl="IGroupe.GRP_2"/>
+	    <a i="2" ref-chpl="IGroupe.GRP_3"/>
+	  </fv>
+	</obj>
+	<obj id="IPageTPH.Page TPH1" class-name="ithTphCahiersDeVue.IPageTPH" nom="Page TPH1">
+	  <fv nom="libelle1" val="TPH2 to"/>
+	  <fv nom="libelle2" val="XXX"/>
+	  <fv nom="membres">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="1" ref-chpl="IRole.RO-17"/>
+	    <a i="2" ref-chpl="IRole.RO-36"/>
+	    <a i="3" ref-chpl="IRole.RO-39"/>
+	    <a i="4" ref-chpl="IRole.RO-50"/>
+	    <a i="6" ref-chpl="IRole.RO-70"/>
+	    <a i="8" ref-chpl="IRole.RO-05"/>
+	    <a i="10" ref-chpl="ICorrespExterne.POC_1_LM0"/>
+	    <a i="11" ref-chpl="ICorrespExterne.POC_7_LM0"/>
+	    <a i="13" ref-chpl="ICei.CEI-LM0"/>
+	  </fv>
+	</obj>
+	<obj id="IParamGenTph.Paramètres généraux TPH" class-name="ithTphConfiguration.IParamGenTph" nom="Paramètres généraux TPH">
+	  <fv nom="blacklist" ref-chpl="IRestrictionsAppels.Restr-appels"/>
+	  <fv nom="cluArrivee" val="00000001"/>
+	  <fv nom="cluDepart" val="00000001"/>
+	  <fv nom="gfuAbsolu" val="00000001"/>
+	  <fv nom="gfuRelatifPreferentielGroupe" enum="1"/>
+	  <fv nom="gfuRelatifPreferentielRole" enum="0"/>
+	  <fv nom="permissionAppelEntrantGroupe" enum="TRUE"/>
+	  <fv nom="permissionAppelEntrantRole" enum="TRUE"/>
+	  <fv nom="permissionAppelSortantGroupe" enum="TRUE"/>
+	  <fv nom="permissionAppelSortantRole" enum="TRUE"/>
+	  <fv nom="permissionGfuAccessGroupe" ref-chpl="IGfu.cug_set_2"/>
+	  <fv nom="permissionGfuAccessRole" ref-chpl="IGfu.cug_set_1"/>
+	  <fv nom="priorite" enum="NonUrgent"/>
+	</obj>
+	<obj id="IParametresGeneraux.Paramètres généraux POC" class-name="pocConfiguration.IParametresGeneraux" nom="Paramètres généraux POC">
+	  <fv nom="diffusionSav" enum="1"/>
+	  <fv nom="etatVoieLorsAffectation" enum="2"/>
+	  <fv nom="libelleAbsencePoInit" val="-----"/>
+	  <fv nom="maxScreenBrightness" val="13"/>
+	  <fv nom="minScreenBrightness" val="3"/>
+	  <fv nom="modePageRubriqueITh" val="false"/>
+	  <fv nom="modePageRubriqueRdo" val="false"/>
+	  <fv nom="modePageRubriqueTph" val="false"/>
+	  <fv nom="tgvDetU" val="7"/>
+	  <fv nom="tgvDetV" val="8"/>
+	  <fv nom="typeAlternat" enum="S"/>
+	  <fv nom="volumeDefautCasque" val="120"/>
+	  <fv nom="volumeDefautCombine" val="80"/>
+	  <fv nom="volumeDefautEcouteVoiesDetresse" val="8"/>
+	  <fv nom="volumeDefautEcouteVoiesRadio" val="8"/>
+	  <fv nom="volumeDefautHpInterphone" val="127"/>
+	  <fv nom="volumeDefautHpRadio" val="127"/>
+	  <fv nom="volumeDefautInterphone" val="110"/>
+	  <fv nom="volumeDefautRadio" val="140"/>
+	  <fv nom="volumeDefautTelephone" val="110"/>
+	</obj>
+	<obj id="IPlanNumerotation.Plan de numérotation" class-name="ithTphConfiguration.IPlanNumerotation" nom="Plan de numérotation">
+	  <fv nom="numeroPNIA" val="0"/>
+	  <fv nom="planNumCeiText1" val="^.{1,10}$"/>
+	  <fv nom="planNumCeiText1InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumCeiText2" val="^.{1,10}$"/>
+	  <fv nom="planNumCeiText2InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumCorrespExtIth" val="XXXXX"/>
+	  <fv nom="planNumCorrespExtIthInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumCorrespExtText1" val="^.{1,10}$"/>
+	  <fv nom="planNumCorrespExtText1InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumCorrespExtText2" val="^.{1,10}$"/>
+	  <fv nom="planNumCorrespExtText2InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumCorrespExtTph" val="^X{10,11}$"/>
+	  <fv nom="planNumCorrespExtTphInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumGroupeIth" val="XXXXX"/>
+	  <fv nom="planNumGroupeIthInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumGroupeText1" val="^.{1,10}$"/>
+	  <fv nom="planNumGroupeText1InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumGroupeText2" val="^.{1,10}$"/>
+	  <fv nom="planNumGroupeText2InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumGroupeTph" val="254XX"/>
+	  <fv nom="planNumGroupeTphInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumGrpOverflow" val="25XXX"/>
+	  <fv nom="planNumGrpOverflowBusy" val="25XXX"/>
+	  <fv nom="planNumGrpOverflowBusyInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumGrpOverflowInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumGrpOverflowNa" val="25XXX"/>
+	  <fv nom="planNumGrpOverflowNaInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumLoopIth" val="310XX"/>
+	  <fv nom="planNumLoopIthInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumLoopText1" val="^.{1,10}$"/>
+	  <fv nom="planNumLoopText1InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumLoopText2" val="^.{1,10}$"/>
+	  <fv nom="planNumLoopText2InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumPhysiqueBcl" val="315XX"/>
+	  <fv nom="planNumPhysiqueBclInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumPhysiqueIth" val="355XX"/>
+	  <fv nom="planNumPhysiqueIthInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumPhysiqueTph" val="255XX"/>
+	  <fv nom="planNumPhysiqueTphInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumRoleIth" val="350XX"/>
+	  <fv nom="planNumRoleIthInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumRoleOverflow" val="25XXX"/>
+	  <fv nom="planNumRoleOverflowBusy" val="25XXX"/>
+	  <fv nom="planNumRoleOverflowBusyInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumRoleOverflowInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumRoleOverflowNa" val="25XXX"/>
+	  <fv nom="planNumRoleOverflowNaInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="planNumRoleText1" val="^.{1,10}$"/>
+	  <fv nom="planNumRoleText1InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumRoleText2" val="^.{1,10}$"/>
+	  <fv nom="planNumRoleText2InputRule" val="Chaîne de caractères d'une longueur entre 1 et 10"/>
+	  <fv nom="planNumRoleTph" val="250XX"/>
+	  <fv nom="planNumRoleTphInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="prefixeReseauPublic" val="0"/>
+	  <fv nom="prefixeReseauPublicInputRule" val="Nombre de 5 chiffres"/>
+	  <fv nom="sequanceATranslater" val="8"/>
+	  <fv nom="sequanceATranslaterValue" val="78"/>
+	</obj>
+	<obj id="IRegleView.RO-02" class-name="ithTphCahiersDeVue.IRegleView" nom="RO-02">
+	  <fv nom="cahierDeVueIth" ref-chpl="IViewITH.9001"/>
+	  <fv nom="cahierDeVueTPh" ref-chpl="IViewTPH.1001"/>
+	  <fv nom="roleObligatoire">
+	    <a i="0" ref-chpl="IRole.RO-02"/>
+	    <a i="59" ref-chpl="IRole.RO-36"/>
+	  </fv>
+	</obj>
+	<obj id="IRegleView.RO-17" class-name="ithTphCahiersDeVue.IRegleView" nom="RO-17">
+	  <fv nom="cahierDeVueIth" ref-chpl="IViewITH.9001"/>
+	  <fv nom="cahierDeVueTPh" ref-chpl="IViewTPH.1001"/>
+	  <fv nom="roleObligatoire">
+	    <a i="0" ref-chpl="IRole.RO-17"/>
+	  </fv>
+	</obj>
+	<obj id="IRegleView.RO-39" class-name="ithTphCahiersDeVue.IRegleView" nom="RO-39">
+	  <fv nom="cahierDeVueIth" ref-chpl="IViewITH.9001"/>
+	  <fv nom="cahierDeVueTPh" ref-chpl="IViewTPH.1001"/>
+	  <fv nom="roleObligatoire">
+	    <a i="0" ref-chpl="IRole.RO-39"/>
+	  </fv>
+	</obj>
+	<obj id="IRegleView.RO-50" class-name="ithTphCahiersDeVue.IRegleView" nom="RO-50">
+	  <fv nom="cahierDeVueIth" ref-chpl="IViewITH.9001"/>
+	  <fv nom="cahierDeVueTPh" ref-chpl="IViewTPH.1001"/>
+	  <fv nom="roleObligatoire">
+	    <a i="0" ref-chpl="IRole.RO-50"/>
+	  </fv>
+	</obj>
+	<obj id="IRegleViewDefault.default" class-name="ithTphCahiersDeVue.IRegleViewDefault" nom="default">
+	  <fv nom="cahierDeVueIth" ref-chpl="IViewITH.99999"/>
+	  <fv nom="cahierDeVueTPh" ref-chpl="IViewTPH.88888"/>
+	</obj>
+	<obj id="IRestrictionsAppels.Restr-appels" class-name="ithTphConfiguration.IRestrictionsAppels" nom="Restr-appels">
+	  <fv nom="numerosOuPatternsInterdits">
+	    <a i="1" val="78115026033"/>
+	  </fv>
+	</obj>
+	<obj id="IRole.RO-01" class-name="ithTphAnnuaire.IRole" nom="RO-01">
+	  <fv nom="libelleInformatif" val="RO-01"/>
+	  <fv nom="numeroIth" val="35001"/>
+	  <fv nom="numeroTph" val="25001"/>
+	  <fv nom="text1" val="RO-01"/>
+	  <fv nom="typeMembre" val="role"/>
+	</obj>
+	<obj id="IRole.RO-02" class-name="ithTphAnnuaire.IRole" nom="RO-02">
+	  <fv nom="libelleInformatif" val="RO-02"/>
+	  <fv nom="numeroIth" val="35002"/>
+	  <fv nom="numeroTph" val="25002"/>
+	  <fv nom="overflow1" val="25017"/>
+	  <fv nom="overflowBusy" val="25017"/>
+	  <fv nom="overflowNa" val="25017"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-02"/>
+	  <fv nom="typeMembre" val="role"/>
+	  <fv nom="vpoipOwner" ref-chpl="IVPoIP.SO-MD0_CDC-Salle_113-C/CCT1-C/CCT1-A-VPoIP-2"/>
+	</obj>
+	<obj id="IRole.RO-05" class-name="ithTphAnnuaire.IRole" nom="RO-05">
+	  <fv nom="libelleInformatif" val="RO-05"/>
+	  <fv nom="numeroIth" val="35005"/>
+	  <fv nom="numeroTph" val="25005"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-05"/>
+	  <fv nom="typeMembre" val="role"/>
+	</obj>
+	<obj id="IRole.RO-17" class-name="ithTphAnnuaire.IRole" nom="RO-17">
+	  <fv nom="libelleInformatif" val="RO-17"/>
+	  <fv nom="numeroIth" val="35017"/>
+	  <fv nom="numeroTph" val="25017"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-17"/>
+	  <fv nom="typeMembre" val="role"/>
+	  <fv nom="vpoipOwner" ref-chpl="IVPoIP.SO-MD0_CDC-Salle_113-C/CCT1-C/CCT1-C-VPoIP-17"/>
+	</obj>
+	<obj id="IRole.RO-36" class-name="ithTphAnnuaire.IRole" nom="RO-36">
+	  <fv nom="libelleInformatif" val="RO-36"/>
+	  <fv nom="numeroIth" val="35036"/>
+	  <fv nom="numeroTph" val="25036"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-36"/>
+	  <fv nom="typeMembre" val="role"/>
+	</obj>
+	<obj id="IRole.RO-39" class-name="ithTphAnnuaire.IRole" nom="RO-39">
+	  <fv nom="libelleInformatif" val="RO-39"/>
+	  <fv nom="numeroIth" val="35039"/>
+	  <fv nom="numeroTph" val="25039"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-39"/>
+	  <fv nom="typeMembre" val="role"/>
+	  <fv nom="vpoipOwner" ref-chpl="IVPoIP.SO-MD0_CDC-Salle_113-COM7-COM7-C-VPoIP-39"/>
+	</obj>
+	<obj id="IRole.RO-50" class-name="ithTphAnnuaire.IRole" nom="RO-50">
+	  <fv nom="libelleInformatif" val="RO-50"/>
+	  <fv nom="numeroIth" val="35050"/>
+	  <fv nom="numeroTph" val="25050"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-50"/>
+	  <fv nom="typeMembre" val="role"/>
+	  <fv nom="vpoipOwner" ref-chpl="IVPoIP.SO-MD0_CDC-Salle_113-COM8-COM8A-VPoIP-50"/>
+	</obj>
+	<obj id="IRole.RO-70" class-name="ithTphAnnuaire.IRole" nom="RO-70">
+	  <fv nom="libelleInformatif" val="RO-70"/>
+	  <fv nom="numeroIth" val="35070"/>
+	  <fv nom="numeroTph" val="25070"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-70"/>
+	  <fv nom="typeMembre" val="role"/>
+	</obj>
+	<obj id="IRole.RO-71" class-name="ithTphAnnuaire.IRole" nom="RO-71">
+	  <fv nom="libelleInformatif" val="RO-71"/>
+	  <fv nom="numeroIth" val="35071"/>
+	  <fv nom="numeroTph" val="25071"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-71"/>
+	  <fv nom="typeMembre" val="role"/>
+	</obj>
+	<obj id="IRole.RO-72" class-name="ithTphAnnuaire.IRole" nom="RO-72">
+	  <fv nom="libelleInformatif" val="RO-72"/>
+	  <fv nom="numeroIth" val="35072"/>
+	  <fv nom="numeroTph" val="25072"/>
+	  <fv nom="priorityExpl" enum="Emergency"/>
+	  <fv nom="priorityImpl" enum="NonUrgent"/>
+	  <fv nom="text1" val="RO-72"/>
+	  <fv nom="typeMembre" val="role"/>
+	</obj>
+	<obj id="IRubriqueITH.RuITH99999" class-name="ithTphCahiersDeVue.IRubriqueITH" nom="RuITH99999">
+	  <fv nom="libelle1" val="Rub"/>
+	  <fv nom="pages">
+	    <a i="0" ref-chpl="IPageITH.ITH2"/>
+	  </fv>
+	</obj>
+	<obj id="IRubriqueITH.Rubrique ITH" class-name="ithTphCahiersDeVue.IRubriqueITH" nom="Rubrique ITH">
+	  <fv nom="libelle1" val="Rub"/>
+	  <fv nom="pages">
+	    <a i="0" ref-chpl="IPageITH.ITH1"/>
+	    <a i="1" ref-chpl="IPageITH.ITH2"/>
+	  </fv>
+	</obj>
+	<obj id="IRubriqueTPH.RuTPH88888" class-name="ithTphCahiersDeVue.IRubriqueTPH" nom="RuTPH88888">
+	  <fv nom="libelle1" val="Rub"/>
+	  <fv nom="sousrubriques">
+	    <a i="0" ref-chpl="ISousRubriqueTPH.SbTPH88888"/>
+	  </fv>
+	</obj>
+	<obj id="IRubriqueTPH.Rubrique TPH" class-name="ithTphCahiersDeVue.IRubriqueTPH" nom="Rubrique TPH">
+	  <fv nom="libelle1" val="Rub"/>
+	  <fv nom="sousrubriques">
+	    <a i="0" ref-chpl="ISousRubriqueTPH.Sous-Rubrique TPH"/>
+	  </fv>
+	</obj>
+	<obj id="ISousRubriqueTPH.SbTPH88888" class-name="ithTphCahiersDeVue.ISousRubriqueTPH" nom="SbTPH88888">
+	  <fv nom="libelle1" val="SS-rub"/>
+	  <fv nom="pages">
+	    <a i="0" ref-chpl="IPageTPH.Page TPH"/>
+	  </fv>
+	</obj>
+	<obj id="ISousRubriqueTPH.Sous-Rubrique TPH" class-name="ithTphCahiersDeVue.ISousRubriqueTPH" nom="Sous-Rubrique TPH">
+	  <fv nom="libelle1" val="SS-rub"/>
+	  <fv nom="pages">
+	    <a i="0" ref-chpl="IPageTPH.Page TPH1"/>
+	    <a i="1" ref-chpl="IPageTPH.Page TPH 2"/>
+	    <a i="2" ref-chpl="IPageTPH.Page TPH 3"/>
+	  </fv>
+	</obj>
+	<obj id="IViewITH.9001" class-name="ithTphCahiersDeVue.IViewITH" nom="9001">
+	  <fv nom="boucles">
+	    <a i="0" ref-chpl="ILoop.BCL1"/>
+	    <a i="2" ref-chpl="ILoop.BCL2"/>
+	  </fv>
+	  <fv nom="rubriques">
+	    <a i="0" ref-chpl="IRubriqueITH.Rubrique ITH"/>
+	  </fv>
+	</obj>
+	<obj id="IViewITH.99999" class-name="ithTphCahiersDeVue.IViewITH" nom="99999">
+	  <fv nom="boucles">
+	    <a i="0" ref-chpl="ILoop.BCL1"/>
+	  </fv>
+	  <fv nom="rubriques">
+	    <a i="0" ref-chpl="IRubriqueITH.RuITH99999"/>
+	  </fv>
+	</obj>
+	<obj id="IViewTPH.1001" class-name="ithTphCahiersDeVue.IViewTPH" nom="1001">
+	  <fv nom="conf">
+	    <a i="0" ref-chpl="IConference.CONF1"/>
+	    <a i="1" ref-chpl="IConference.CONF2"/>
+	    <a i="2" ref-chpl="IConference.CONF3"/>
+	  </fv>
+	  <fv nom="rubriques">
+	    <a i="0" ref-chpl="IRubriqueTPH.Rubrique TPH"/>
+	  </fv>
+	</obj>
+	<obj id="IViewTPH.1002" class-name="ithTphCahiersDeVue.IViewTPH" nom="1002">
+	  <fv nom="conf">
+	    <a i="0" ref-chpl="IConference.CONF1"/>
+	    <a i="3" ref-chpl="IConference.CONF3"/>
+	  </fv>
+	  <fv nom="rubriques">
+	    <a i="0" ref-chpl="IRubriqueTPH.Rubrique TPH"/>
+	  </fv>
+	</obj>
+	<obj id="IViewTPH.88888" class-name="ithTphCahiersDeVue.IViewTPH" nom="88888">
+	  <fv nom="conf">
+	    <a i="0" ref-chpl="IConference.CONF1"/>
+	  </fv>
+	  <fv nom="rubriques">
+	    <a i="0" ref-chpl="IRubriqueTPH.RuTPH88888"/>
+	  </fv>
+	</obj>
+	</groupe-object-model>
+</configuration>
+</configurations>

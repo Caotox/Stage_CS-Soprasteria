@@ -1,0 +1,13 @@
+<obj id="port.ILienEth.{{nomLien}}" class-name="port.ILienEth" nom="{{nomLien}}">
+	  <fv nom="commentaire" val="{{lien.commentaire}}" />
+	  <fv nom="fonction" val="{{lien.fonction}}" />
+	  <fv nom="nomCourt" val="{{lien.nomCourt}}" />
+	  <fv nom="poidsPort1" enum="{{lien.poidsPort1}}" />
+
+	  <fv nom="poidsPort2" enum="{{lien.poidsPort2}}" />
+
+	  <fv nom="port1" ref="{{lien.referencePort1}}" />
+	  <fv nom="port2" ref="{{lien.referencePort2}}" />
+	  <fv nom="soustype" val="{{lien.sousType}}" />
+	</obj>
+	

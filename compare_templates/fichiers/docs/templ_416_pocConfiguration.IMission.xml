@@ -1,0 +1,6 @@
+<obj id="pocConfiguration.IMission.{{nomItem}}" class-name="pocConfiguration.IMission" nom="{{nomItem}}">
+	  <fv nom="commentaire" val="{{item.commentaire}}" />
+	  <fv nom="label" val="{{item.label}}" />
+	  <fv nom="views" ref="ithTphCahiersDeVue.IViewTPH.{{item.views}}" />
+	</obj>
+	

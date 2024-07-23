@@ -1,0 +1,97 @@
+<!-- date : 2023-08-25 10:10:40 -->
+<!-- dossier : d:\Users\procq\Documents\Projets_local\SCCA_local\conf_CMoIP\scca-templ-squelette-cmoip\templ-squelette-cmoip_2023-08-22_SCCA-2.0.3 -->
+<!-- squelette : t2_drex-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_1401serveurs.IClusterUCGeneriquePIU.xml -->
+<!-- classe : 1401 === serveurs.IClusterUCGeneriquePIU -->
+
+<obj id="" class-name="serveurs.IClusterUCGeneriquePIU" nom="{{ucGenCluster.nom}}">
+	  <fv nom="cible" enum="{{ucGenCluster.piuCible}}" />
+
+	  <fv nom="distributionAutorisee" val="{{ucGenCluster.piuDistribAutor}}" />
+
+<!--    Logiciel HR   -->
+	      <fv nom="logicielHrTable">
+{% for process in ucGenCluster.logicielsHr %}
+	        <a i="{{loop.index0}}">
+	          <obj id="" class-name="" nom="{{process.nom}}">
+				<fv nom="hrNameHrTable" val="{{process.texteMib}}"/>
+				<fv nom="hrParamNameHrTable" val="{{process.texteMibParam}}"/>
+	          </obj>
+	        </a>
+{% endfor %}
+	      </fv>
+
+<!--    Logiciel PR   -->
+	      <fv nom="logicielPrTable">
+{% for process in ucGenCluster.logicielsPr %}
+	        <a i="{{loop.index0}}">
+	    	  <obj id="" class-name="" nom="{{process.nom}}">
+	            <fv nom="prNamePrTable" val="{{process.texteMib}}"/>
+	    	  </obj>
+	        </a>
+{% endfor %}
+	      </fv>
+
+	  <fv nom="numid" val="{{ucGenCluster.piuNumId}}" />
+
+<!--    Partitions   -->
+	      <fv nom="Partition">
+{% for partition in ucGenCluster.partitions %}
+	        <a i="{{loop.index0}}">
+	          <obj id="" class-name="" nom="{{partition.nom}}">
+	            <fv nom="alarmeEtatOccupationDisque">
+	          <obj id="serveurs.IClusterUCGeneriquePIU.label.Partition.ucdavies.IPartitionConfigurableCluster$serveurs.IClusterUCGeneriquePIU$Partition.*$*.label_0.alarmeEtatOccupationDisque.mil.IPropertyBasedAlarmObject$serveurs.IClusterUCGeneriquePIU$Partition.*.alarmeEtatOccupationDisque$*.Etat occupation disque" class-name="mil.IPropertyBasedAlarmObject$serveurs.IClusterUCGeneriquePIU$Partition.*.alarmeEtatOccupationDisque$*" nom="Etat occupation disque">
+	                <fv nom="alarmAcousticalWarning" val="true" />
+	                <fv nom="alarmeActive" val="true" />
+	                <fv nom="alarmTimeDelay" val="0" />
+	              </obj>
+	            </fv>
+			    <fv nom="dskPathPartition" val="{{partition.texteMib}}"/>
+	          </obj>
+	        </a>
+{% endfor %}
+	      </fv>
+
+<!--    Propriétés dynamiques etat opérationnel   -->
+	      <fv nom="ProprieteDynamiqueEtatOperationnel">
+{% for propDyn in ucGenCluster.proprietesEtatOper %}
+	        <a i="{{loop.index0}}">
+	      	  <obj id="" class-name="" nom="{{propDyn.nom}}">
+	          <fv nom="textMibProprieteDynamiqueEtat" val="{{propDyn.texteMib}}"/>
+	      	  </obj>
+	        </a>
+{% endfor %}
+	      </fv>
+
+<!--    Propriétés dynamiques etat technique   -->
+	      <fv nom="ProprieteDynamiqueEtatTechnique">
+{% for propDyn in ucGenCluster.proprietesEtatTech %}
+	        <a i="{{loop.index0}}">
+			  <obj id="" class-name="" nom="{{propDyn.nom}}">
+	          <fv nom="textMibProprieteDynamiqueEtat" val="{{propDyn.texteMib}}"/>
+			  </obj>
+	        </a>
+{% endfor %}
+	      </fv>
+
+<!--    Propriétés dynamiques information   -->
+	      <fv nom="ProprieteDynamiqueInformation">
+{% for propDyn in ucGenCluster.proprietesEtatInfo %}
+	        <a i="{{loop.index0}}">
+	          <obj id="" class-name="" nom="{{propDyn.nom}}">
+	          <fv nom="textMibProprieteDynamiqueEtat" val="{{propDyn.texteMib}}"/>
+		      </obj>
+	        </a>
+{% endfor %}
+	      </fv>
+
+<!--    serveur 1 : {{ucGenCluster.serveur1Ident}}   -->
+<!--    serveur 2 : {{ucGenCluster.serveur2Ident}}   -->
+	  <fv nom="serveurUcGenerique1" ref="{{ucGenCluster.serveur1Ident}}" />
+	  <fv nom="serveurUcGenerique2" ref="{{ucGenCluster.serveur2Ident}}" />
+	  <fv nom="trigramme" val="{{ucGenCluster.piuTrigramme}}" />
+	  <fv nom="typeSite" enum="{{ucGenCluster.piuTypeSite}}" />
+
+	</obj>
+	

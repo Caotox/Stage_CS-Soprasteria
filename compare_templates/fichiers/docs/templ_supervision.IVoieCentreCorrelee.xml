@@ -1,0 +1,5 @@
+<obj id="supervision.IVoieCentreCorrelee.label" class-name="supervision.IVoieCentreCorrelee" nom="label">
+	  <fv nom="farCer" ref="" />
+	  <fv nom="farCex" ref="" />
+	</obj>
+	

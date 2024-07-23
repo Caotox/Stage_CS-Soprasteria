@@ -1,0 +1,21 @@
+{% set allStacks = configCMoIP.reseau.allStacks %}
+
+{% for nomStack,stack in configCMoIP.reseau.items() -%}
+{% if stack.protoCMoIP == "IStackOf2Switch" %}
+{% include 'templ_613_reseau.IStackOf2SwitchSnmp.xml' %}
+{% else %}
+RESEAU SNMP : ERREUR protoCMoIP inconnu [{{stack.protoCMoIP}}]
+{% endif %}
+{% endfor %}
+
+{% for nomStack,stack in configCMoIP.get("reseauCie", {}).items() -%}
+{% if stack.protoCMoIP == "IStackOf2Switch" %}
+{% include 'templ_614_reseau.IStackOf2SwitchCie.xml' %}
+{% else %}
+RESEAU CIE : ERREUR protoCMoIP inconnu [{{stack.protoCMoIP}}]
+{% endif %}
+{% endfor %}
+
+{%- for nomLien, lien in configCMoIP.listeLiens.items() -%}
+{% include 'templ_port.ILienEth.xml' %}
+{% endfor -%}

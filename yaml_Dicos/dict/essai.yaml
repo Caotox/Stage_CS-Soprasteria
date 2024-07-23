@@ -1,0 +1,35 @@
+hw-swc-n-1:
+  adresseIP:            172.12.10.31
+  adresseIPScriptAudit: 172.13.10.31
+  targetEquipmentIP:    172.13.10.31
+  reference:    C2960X-24TS-L
+  eqtType: SW2960x
+  hostName: St2960
+  stackGenerique: true
+  commentaire: ''
+  infobulle: ''
+  localisation: Salle Technique CLA
+  nomCourt: com1
+  typeEquipement: N/A
+  nbPortsStack: 2
+  listeSwitchs:
+    switch1:
+      __Inclure3__ : { fichier: include.yaml, cle: C3650-98TS }
+      __Inclure1__: { fichier: include.yaml, cle: C3650-48TS }
+      nom: hw-swcn-1_1
+      hostname: hw-swcn-1_1
+      nomCourt: cn1-1
+      indexChargeCPU: 11
+      indexSwitch: 1000
+      toto:
+        t1: 1
+        t2: aqaaa
+        t3 : 9
+       
+    switch2:
+      __Inclure1__: { fichier: include.yaml, cle: C3650-24TS }
+      nom: cometh-1_sw2
+      hostname: com1sw2
+      nomCourt: com1sw2
+      indexChargeCPU: 12
+      indexSwitch: 2000

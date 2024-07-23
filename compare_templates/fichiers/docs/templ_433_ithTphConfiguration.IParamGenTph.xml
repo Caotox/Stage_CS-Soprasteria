@@ -1,0 +1,34 @@
+<obj id="ithTphConfiguration.IParamGenTph.{{nomParam}}" class-name="ithTphConfiguration.IParamGenTph" nom="{{nomParam}}">
+	  <fv nom="blacklist" ref="null" />
+	  <fv nom="cluArrivee" val="{{param.cluArrivee}}" />
+	  <fv nom="cluDepart" val="{{param.cluDepart}}" />
+	  <fv nom="confeventSubscribeTimeout" val="60" />
+	  <fv nom="gfuAbsolu" val="{{param.gfuAbsolu}}" />
+{% if param.gfuRelatifPreferentielGroupe %}
+	  <fv nom="gfuRelatifPreferentielGroupe" enum="{{param.gfuRelatifPreferentielGroupe}}" />
+{% endif %}
+{% if param.gfuRelatifPreferentielRole %}
+	  <fv nom="gfuRelatifPreferentielRole" enum="{{param.gfuRelatifPreferentielRole}}" />
+{% endif %}
+
+	  <fv nom="overflowMax" val="1" />
+	  <fv nom="permissionAppelEntrantGroupe" enum="{{param.permissionAppelEntrantGroupe}}" />
+
+	  <fv nom="permissionAppelEntrantRole" enum="{{param.permissionAppelEntrantRole}}" />
+
+	  <fv nom="permissionAppelSortantGroupe" enum="{{param.permissionAppelSortantGroupe}}" />
+
+	  <fv nom="permissionAppelSortantRole" enum="{{param.permissionAppelSortantRole}}" />
+
+{% if param.permissionGfuAccessGroupe %}
+	  <fv nom="permissionGfuAccessGroupe" ref="{{param.permissionGfuAccessGroupe}}" />
+{% endif %}
+{% if param.permissionGfuAccessRole %}
+	  <fv nom="permissionGfuAccessRole" ref="{{param.permissionGfuAccessRole}}" />
+{% endif %}
+	  <fv nom="priorite" enum="{{param.priorite}}" />
+
+	  <fv nom="rtpEnd" val="32768" />
+	  <fv nom="rtpStart" val="16384" />
+	</obj>
+	

@@ -1,0 +1,7 @@
+{%- for nomVpoip,vpoip in a42_pocEquipement_manager.get_IVPoIP().items() -%}
+{% include 'templ_pocEquipement.IVPoIP.xml' %}
+{% endfor %}
+
+{%- for nomAudioProfile,audioProfile in a42_pocEquipement_manager.get_IAudioProfiles().items() -%}
+{% include 'templ_pocEquipement.IAudioProfiles.xml' %}
+{% endfor %}

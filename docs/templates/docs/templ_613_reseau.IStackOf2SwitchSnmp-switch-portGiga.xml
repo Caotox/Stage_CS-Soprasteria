@@ -1,0 +1,77 @@
+	      <fv nom="{{nomPort}}">
+	        <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}" class-name="port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}" nom="{{port.nom}}">
+	          <fv nom="alarmeCpsIfPortSecurityEnable">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.alarmeCpsIfPortSecurityEnable.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeCpsIfPortSecurityEnable.Etat sécurité pour alarme" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeCpsIfPortSecurityEnable" nom="Etat sécurité pour alarme">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeetatCauseDesactivation">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.alarmeetatCauseDesactivation.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeetatCauseDesactivation.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeetatCauseDesactivation" nom="mil-propertyBasedAlarmObject">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeEtatOperationnel">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.alarmeEtatOperationnel.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeEtatOperationnel.Etat opérationnel" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeEtatOperationnel" nom="Etat opérationnel">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeEtatPort">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.alarmeEtatPort.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeEtatPort" nom="Etat port">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="false"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	              <fv nom="faultLabel" val="Alarme non utilisée"/>
+	              <fv nom="graviteAlarme" enum="TERMINE"/>
+				  <!-- valeur de l'énumeration : INFO(Info);TERMINE(Terminé);PROBABLE(Probable);MAINTENANCE(Maintenance);ATTENTE_MAINTENANCE(Attente maintenance);CRITIQUE(Critique);MAJEUR(Majeur);INDISPONIBLE(Indisponible);MINEUR(Mineur);INDETERMINE(Indéterminé); -->
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeTraficBroadcast">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.alarmeTraficBroadcast.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeTraficBroadcast.Trafic broadcast" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeTraficBroadcast" nom="Trafic broadcast">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="alarmeTraficMulticast">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.alarmeTraficMulticast.mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeTraficMulticast.Trafic multicast" class-name="mil.IPropertyBasedAlarmObject$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.alarmeTraficMulticast" nom="Trafic multicast">
+	              <fv nom="alarmAcousticalWarning" val="true"/>
+	              <fv nom="alarmeActive" val="true"/>
+	              <fv nom="alarmTimeDelay" val="0"/>
+	            </obj>
+	          </fv>
+	          <fv nom="commentaire" val="{{port.commentaire}}"/>
+	          <fv nom="etatInit" enum="1"/>
+			  <!-- valeur de l'énumeration : 1(En service);2(Non géré);3(Hors service); -->
+	          <fv nom="flagAddressMacIntrusion" val="{{port.flagAddressMacIntrusion}}"/>
+	          <fv nom="flagTraficBroadcast" val="{{port.flagTraficBroadcast}}"/>
+	          <fv nom="flagTraficMulticast" val="{{port.flagTraficMulticast}}"/>
+			  {% if port.indexSaisie %}
+	          <fv nom="indexSaisie" val="{{port.indexSaisie}}"/>
+			  {% endif %}
+	          <fv nom="indexSaisieHide" val="0"/>
+	          <fv nom="interdireVerrouillage" val="{{port.interdireVerrouillage}}"/>
+	          <fv nom="internalName" val="{{port.internalName}}"/>
+	          <fv nom="nomCourt" val="{{port.nomCourt}}"/>
+	          <fv nom="nonUtilise" val="{{port.nonUtilise}}"/>
+	          <fv nom="numeroDePortInterne" val="0"/>
+	          <fv nom="owner" ref="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}"/>
+			  {% if port.portReference %}
+	          <fv nom="portReference" ref="{{port.portReference}}"/>
+			  {% endif %}
+	          <fv nom="rechercheIndex" val="true"/>
+	          <fv nom="Script">
+	            <obj id="reseau.IStackOf2SwitchSnmp.{{nomStack}}.{{idSwitch}}.reseau.ISwitchInStackOf2SwitchSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{switch.nom}}.{{nomPort}}.port.IPortSwitchInStackSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.{{port.nom}}.Script.control.IScriptActionSwitchPortMg2sSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.Script.label" class-name="control.IScriptActionSwitchPortMg2sSnmp$reseau.IStackOf2SwitchSnmp${{idSwitch}}.{{nomPort}}.Script" nom="label">
+	              <fv nom="nomLancerScriptClosePort" val="{{global.nomLancerScriptClosePort}}"/>
+	              <fv nom="nomScriptFindMacAdress" val="{{global.nomScriptFindMacAdress}}"/>
+	            </obj>
+	          </fv>
+	          <fv nom="sousType" enum="eth"/>
+			  <!-- valeur de l'énumeration : eth(Eth);fastethernet(Fast Ethernet);S0(S0);E1(E1);T2(T2);comSerie(ComSerie);PER(PER);TOR(TOR);BF(BF);FO(FO);stationtor(Station tor);j2ky(j2ky);T2_SYNCHRO(T2_SYNCHRO);T2_DREX(T2_DREX);T2_TPH(T2_TPH);T2_RNIS(T2_RNIS);E1-MCS-CI-CD(E1-MCS-CI-CD);E1-MCS-CEX-CI(E1-MCS-CEX-CI);E1-RS-RS(E1-RS-RS);E1-RS-MCS(E1-RS-MCS);E1-RS-VG(E1-RS-VG);E1-RT-CI-CD(E1-RT-CI-CD); -->
+	        </obj>
+	      </fv>

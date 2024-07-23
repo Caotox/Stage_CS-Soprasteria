@@ -1,0 +1,1 @@
+mg2s.ICabine,mg2s.ISiteConfigExterne,mg2s.IConfigExterne,pocEquipement.IVPoIP,cmoip.ICmoipSnmp,mg2s.ISiteCDCSnmp,srsa.edcdc.IPlanRemplacementAActiver,mg2s.IFarCexSnmp 

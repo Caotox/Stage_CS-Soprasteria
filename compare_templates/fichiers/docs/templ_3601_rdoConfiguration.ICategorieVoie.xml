@@ -1,0 +1,4 @@
+<obj id="rdoConfiguration.ICategorieVoie.{{nomItem}}" class-name="rdoConfiguration.ICategorieVoie" nom="{{nomItem}}">
+	  <fv nom="numLogique" val="{{item.numLogique}}" />
+	</obj>
+	

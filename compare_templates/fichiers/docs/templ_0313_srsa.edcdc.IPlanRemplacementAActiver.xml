@@ -1,0 +1,11 @@
+<!-- date : 2023-09-14 15:42:11 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_0313srsa.edcdc.IPlanRemplacementAActiver.xml -->
+<!-- classe : 0313 === srsa.edcdc.IPlanRemplacementAActiver -->
+
+<obj id="srsa.edcdc.IPlanRemplacementAActiver.PlanRem" class-name="srsa.edcdc.IPlanRemplacementAActiver" nom="PlanRem">
+	  <fv nom="aActiver" ref="srsa.edcdc.IPlanRemplacement.{{item.aActiver}}"/>
+	</obj>
+	

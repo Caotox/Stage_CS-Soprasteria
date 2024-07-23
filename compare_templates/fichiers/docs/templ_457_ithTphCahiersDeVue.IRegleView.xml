@@ -1,0 +1,26 @@
+<obj id="ithTphCahiersDeVue.IRegleView.{{nomRegle}}" class-name="ithTphCahiersDeVue.IRegleView" nom="{{nomRegle}}">
+	  <fv nom="cahierDeVueIth" ref="ithTphCahiersDeVue.IViewITH.{{regle.cahierVueIth}}" />
+	  <fv nom="cahierDeVueTPh" ref="ithTphCahiersDeVue.IViewTPH.{{regle.cahierVueTph}}" />
+	  <fv nom="profilRdo" ref="rdoConfiguration.IProfilRadioCla2k.{{regle.profilRadio}}" />
+	  <fv nom="roleObligatoire">
+{%- for item in regle.rolesObligatoires %}
+	    <a i="{{loop.index0}}" ref="ithTphAnnuaire.IRole.{{item}}" />
+{%- endfor %}
+	  </fv>
+	  <fv nom="typeRoleObligatoire">
+{%- for item in regle.typesObligatoires %}
+	    <a i="{{loop.index0}}" ref="ithTphAnnuaire.ITypeRole.{{item}}" />
+{%- endfor %}
+	  </fv>
+	  <fv nom="roleInterdit">
+{%- for item in regle.rolesInterdits %}
+	    <a i="{{loop.index0}}" ref="ithTphAnnuaire.IRole.{{item}}" />
+{%- endfor %}
+	  </fv>
+	  <fv nom="typeRoleInterdit">
+{%- for item in regle.typesInterdits %}
+	    <a i="{{loop.index0}}" ref="ithTphAnnuaire.ITypeRole.{{item}}" />
+{%- endfor %}
+	  </fv>
+	</obj>
+	

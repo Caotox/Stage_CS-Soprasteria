@@ -1,0 +1,84 @@
+<!-- date : 2023-11-27 16:20:13 -->
+<!-- dossier : D:\Users\procq\Documents\Projets\squelettes_CMoIP\srsaip_squelettes\version_2023-11-21_srsaip_2.1.0-p1 -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : CMoIP-srsaip 2.1.0-p1 -->
+<!-- fichier : templ_505mg2s.ISiteCERCie.xml -->
+<!-- classe : 505 === mg2s.ISiteCERCie -->
+
+<obj id="mg2s.ISiteCERCie.{{nomSite}}" class-name="mg2s.ISiteCERCie" nom="{{nomSite}}">
+	  <fv nom="alarmeEtatDisponibilite">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.alarmeEtatDisponibilite.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatDisponibilite.Alarme Etat disponibilité site CER CIE" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatDisponibilite" nom="Alarme Etat disponibilité site CER CIE">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatExploitation">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.alarmeEtatExploitation.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatExploitation.Etat exploitation du site" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatExploitation" nom="Etat exploitation du site">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceRnis">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.alarmeEtatRessourceRnis.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceRnis.Alarme Etat ressource RNIS" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceRnis" nom="Alarme Etat ressource RNIS">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceSaturn">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.alarmeEtatRessourceSaturn.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceSaturn.Alarme Etat ressource Saturn" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceSaturn" nom="Alarme Etat ressource Saturn">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceUhf">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.alarmeEtatRessourceUhf.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceUhf.Alarme Etat ressource UHF" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceUhf" nom="Alarme Etat ressource UHF">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatRessourceVhf">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.alarmeEtatRessourceVhf.mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceVhf.Alarme Etat ressource VHF" class-name="mil.IPropertyBasedAlarmObject$mg2s.ISiteCERCie$alarmeEtatRessourceVhf" nom="Alarme Etat ressource VHF">
+	      <fv nom="alarmAcousticalWarning" val="true"/>
+	      <fv nom="alarmeActive" val="true"/>
+	      <fv nom="alarmTimeDelay" val="0"/>
+	    </obj>
+	  </fv>
+	  <fv nom="cmoipDistant" ref="{{cmoipDistant}}"/>
+	  <fv nom="comportement" enum="{{site.comportement}}"/>
+	  <!-- valeur de l'énumeration : 1(COMPORTEMENT1);2(COMPORTEMENT2);3(COMPORTEMENT3); -->
+	  <fv nom="critique" val="true"/>
+	  <fv nom="farSite" ref="{{referenceFarLocale}}"/>
+	  <fv nom="ipChiffreur" val="{{site.ipChiffreur}}"/>
+	  <fv nom="ipCmoip" val="{{site.ipCmoip}}"/>
+	  <fv nom="ipSwitch" val="{{site.ipSwitch}}"/>
+	  <fv nom="ipSwitch2" val="{{site.ipSwitch2}}"/>
+	  <fv nom="nomCourt" val="{{site.nomCourt}}"/>
+	  <fv nom="nomCourtOps" val="{{site.nomCourtOps}}"/>
+	  <fv nom="nomLogiqueDistant" val="{{site.nomLogiqueDistant}}"/>
+	  <fv nom="nomScriptLigneVieInterSite" val="{{site.nomScriptLigneVieInterSite}}"/>
+	  <fv nom="numid" val="{{site.numid}}"/>
+	  <fv nom="region" val="{{site.region}}"/>
+	  <fv nom="ressourceRNISMax" val="{{site.ressourceRNISMax}}"/>
+	  <fv nom="ressourceRNISSeuil" val="{{site.ressourceRNISSeuil}}"/>
+	  <fv nom="scriptLigneVieInterSite" val="{{site.scriptLigneVieInterSite}}"/>
+	  <fv nom="silencieuxEVF" val="{{site.silencieuxEVF}}"/>
+	  <fv nom="siteInfobulle" val="{{site.siteInfobulle}}"/>
+	  <fv nom="sitePIU">
+	    <obj id="mg2s.ISiteCERCie.{{nomSite}}.sitePIU.mg2s.ISitePIUCie$mg2s.ISiteCERCie$sitePIU.{{nomSite}}" class-name="mg2s.ISitePIUCie$mg2s.ISiteCERCie$sitePIU" nom="{{nomSite}}">
+	      <fv nom="cmoipDistant" ref="{{cmoipDistant}}"/>
+	      <fv nom="nomLogiqueDistant" val="{{site.nomLogiqueDistant}}"/>
+	      <fv nom="typeSite" enum="{{site.typeSite}}"/>
+		  <!-- valeur de l'énumeration : CDC(CDC);CEX_COSCA(CEX_COSCA);COSCA(COSCA);CEX_CMCC(CEX_CMCC);CMCC(CMCC);CER(CER);CE_CR(CE_CR); -->
+	    </obj>
+	  </fv>
+	  <fv nom="targetEquipmentIP" val="{{site.targetEquipmentIP}}"/>
+	  <fv nom="timeoutCreerSilencieux" val="{{site.timeoutCreerSilencieux}}"/>
+	  <fv nom="timeoutLancerScriptLigneVieInterSite" val="{{site.timeoutLancerScriptLigneVieInterSite}}"/>
+	  <fv nom="trigramme" val="{{site.trigramme}}"/>
+	</obj>
+	

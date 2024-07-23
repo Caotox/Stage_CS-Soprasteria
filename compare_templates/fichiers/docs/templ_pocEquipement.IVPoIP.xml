@@ -1,0 +1,672 @@
+<obj id="pocEquipement.IVPoIP.{{nomVpoip}}" class-name="pocEquipement.IVPoIP" nom="{{nomVpoip}}">
+	  <fv nom="adresseIPScriptAudit" val="{{vpoip.adresseScriptAuditTmf}}" />
+	  <fv nom="alarmeCarteTemp">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeCarteTemp.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCarteTemp.Etat température en entrée MIAe" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCarteTemp" nom="Etat température en entrée MIAe">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCnxMiaeAState">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeCnxMiaeAState.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCnxMiaeAState.Etat de la liaison vers le premier switch" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCnxMiaeAState" nom="Etat de la liaison vers le premier switch">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCnxMiaeBState">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeCnxMiaeBState.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCnxMiaeBState.Etat de la liaison vers le premier switch" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCnxMiaeBState" nom="Etat de la liaison vers le premier switch">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeCpuTemp">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeCpuTemp.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCpuTemp.Etat température CPU" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeCpuTemp" nom="Etat température CPU">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatConfigurationAppliquee">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeEtatConfigurationAppliquee.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatConfigurationAppliquee.Etat conf. appliquée" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatConfigurationAppliquee" nom="Etat conf. appliquée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatDerniereConfigAppliquee">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeEtatDerniereConfigAppliquee.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatDerniereConfigAppliquee.Etat Dernière conf. appliquée" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatDerniereConfigAppliquee" nom="Etat Dernière conf. appliquée">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatLigneVie">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatLigneVie.Etat ligne de vie" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatLigneVie" nom="Etat ligne de vie">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeEtatSynthAdmin">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeEtatSynthAdmin.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatSynthAdmin.Etat de synthèse de l'état administratif" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeEtatSynthAdmin" nom="Etat de synthèse de l'état administratif">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeLogicielPOC">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeLogicielPOC.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeLogicielPOC.Etat logiciel POC" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeLogicielPOC" nom="Etat logiciel POC">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMiaeGauStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeMiaeGauStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeGauStatus.Etat logiciel gestion audio" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeGauStatus" nom="Etat logiciel gestion audio">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMiaeInetdStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeMiaeInetdStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeInetdStatus.Etat Inetd" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeInetdStatus" nom="Etat Inetd">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMiaeNtpStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeMiaeNtpStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeNtpStatus.Etat NTP" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeNtpStatus" nom="Etat NTP">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMiaeSmcrouteStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeMiaeSmcrouteStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeSmcrouteStatus.Etat logiciel gestion routage" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeSmcrouteStatus" nom="Etat logiciel gestion routage">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeMiaeSyslogStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeMiaeSyslogStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeSyslogStatus.Etat Syslog" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeMiaeSyslogStatus" nom="Etat Syslog">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmePileBios">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmePileBios.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmePileBios.Etat pile du bios" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmePileBios" nom="Etat pile du bios">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeRsPttStuckStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeRsPttStuckStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeRsPttStuckStatus.Alarme sur état bloqué ou non de l'alternat de l'opérateur sur la position" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeRsPttStuckStatus" nom="Alarme sur état bloqué ou non de l'alternat de l'opérateur sur la position">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceApp">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceApp.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceApp.Etat service interfaceur" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceApp" nom="Etat service interfaceur">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceAtisRaiz">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceAtisRaiz.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceAtisRaiz.Etat service Atis/Raiz" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceAtisRaiz" nom="Etat service Atis/Raiz">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceBoucle">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceBoucle.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceBoucle.Etat service boucles" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceBoucle" nom="Etat service boucles">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceGau">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceGau.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceGau.Etat service audio" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceGau" nom="Etat service audio">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceGonio">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceGonio.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceGonio.Etat service gonio" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceGonio" nom="Etat service gonio">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceIhm">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceIhm.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceIhm.Etat service IHM" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceIhm" nom="Etat service IHM">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceInterphone">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceInterphone.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceInterphone.Etat service interphone" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceInterphone" nom="Etat service interphone">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceMaintenance">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceMaintenance.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceMaintenance.Etat service maintenance" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceMaintenance" nom="Etat service maintenance">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceNtpdTmf">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceNtpdTmf.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceNtpdTmf.Etat service NTP TMF" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceNtpdTmf" nom="Etat service NTP TMF">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceRadio">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceRadio.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceRadio.Etat service radio" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceRadio" nom="Etat service radio">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceSshdTmf">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceSshdTmf.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceSshdTmf.Etat service SSHD TMF" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceSshdTmf" nom="Etat service SSHD TMF">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceTelephone">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceTelephone.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceTelephone.Etat service telephone" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceTelephone" nom="Etat service telephone">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceVpaTmf">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceVpaTmf.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceVpaTmf.Etat service complément SNMP TMF" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceVpaTmf" nom="Etat service complément SNMP TMF">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeServiceVroip">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeServiceVroip.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceVroip.Etat service enregistrement" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeServiceVroip" nom="Etat service enregistrement">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeSynchroHoraire">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeSynchroHoraire.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeSynchroHoraire.Etat pile du bios" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeSynchroHoraire" nom="Etat pile du bios">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeTmfSyslogStatus">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.alarmeTmfSyslogStatus.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeTmfSyslogStatus.Etat Syslog" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$alarmeTmfSyslogStatus" nom="Etat Syslog">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="altIpAddressSupervisedHost" val="" />
+	  <fv nom="cheminScriptAudit" val="{{global.cheminScriptAudit}}" />
+	  <fv nom="cluArriveeVp" val="00000000" />
+	  <fv nom="cluDepartVp" val="00000000" />
+	  <fv nom="cmoipLocal" ref="{{serveurPIU}}" />
+	  <fv nom="cnxMiaeAnonUtilise" val="{{vpoip.nonUtilisePort1}}" />
+	  <fv nom="cnxMiaeBnonUtilise" val="{{vpoip.nonUtilisePort2}}" />
+	  <fv nom="commentaire" val="" />
+	  <fv nom="cpuAcquisitionMiae">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.cpuAcquisitionMiae.ucdavies.ISystemStatsVpoip$pocEquipement.IVPoIP$cpuAcquisitionMiae.SystemStats" class-name="ucdavies.ISystemStatsVpoip$pocEquipement.IVPoIP$cpuAcquisitionMiae" nom="SystemStats">
+	      <fv nom="alarmeCpuState">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.cpuAcquisitionMiae.ucdavies.ISystemStatsVpoip$pocEquipement.IVPoIP$cpuAcquisitionMiae.SystemStats.alarmeCpuState.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$cpuAcquisitionMiae.alarmeCpuState.Etat charge CPU" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$cpuAcquisitionMiae.alarmeCpuState" nom="Etat charge CPU">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="coreNumber" val="1" />
+	      <fv nom="cpuLoadAlertLevel" val="70" />
+	      <fv nom="cpuLoadCriticalLevel" val="80" />
+	      <fv nom="flagCpuLoadPercent" val="false" />
+	      <fv nom="ticksPerSecond" val="100" />
+	    </obj>
+	  </fv>
+	  <fv nom="cpuAcquisitionTmf">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.cpuAcquisitionTmf.ucdavies.ISystemStatsVpoipTMF$pocEquipement.IVPoIP$cpuAcquisitionTmf.SystemStats" class-name="ucdavies.ISystemStatsVpoipTMF$pocEquipement.IVPoIP$cpuAcquisitionTmf" nom="SystemStats">
+	      <fv nom="alarmeCpuState">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.cpuAcquisitionTmf.ucdavies.ISystemStatsVpoipTMF$pocEquipement.IVPoIP$cpuAcquisitionTmf.SystemStats.alarmeCpuState.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$cpuAcquisitionTmf.alarmeCpuState.Etat charge CPU" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$cpuAcquisitionTmf.alarmeCpuState" nom="Etat charge CPU">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatTempTMF">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.cpuAcquisitionTmf.ucdavies.ISystemStatsVpoipTMF$pocEquipement.IVPoIP$cpuAcquisitionTmf.SystemStats.alarmeEtatTempTMF.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$cpuAcquisitionTmf.alarmeEtatTempTMF.Etat température du CPU" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$cpuAcquisitionTmf.alarmeEtatTempTMF" nom="Etat température du CPU">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="coreNumber" val="2" />
+	      <fv nom="cpuLoadAlertLevel" val="70" />
+	      <fv nom="cpuLoadCriticalLevel" val="80" />
+	      <fv nom="flagCpuLoadPercent" val="false" />
+	      <fv nom="ticksPerSecond" val="100" />
+	    </obj>
+	  </fv>
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="eqId" val="0" />
+	  <fv nom="eqtType" enum="VPoIP" />
+
+	  <fv nom="etatInit" enum="1" />
+
+	  <fv nom="flagPileBios" val="true" />
+	  <fv nom="flagSeCxEtatMaint" val="true" />
+	  <fv nom="flagTelConfiguration" val="true" />
+	  <fv nom="handlerSnmpMiae">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.handlerSnmpMiae.pocEquipement.ISupervisionHandlerMg2s$pocEquipement.IVPoIP$handlerSnmpMiae.{{vpoip.nomMiae}}" class-name="pocEquipement.ISupervisionHandlerMg2s$pocEquipement.IVPoIP$handlerSnmpMiae" nom="{{vpoip.nomMiae}}">
+	      <fv nom="adresseIPScriptAudit" val="{{vpoip.adresseScriptAuditMiae}}" />
+	      <fv nom="altIpAddressSupervisedHost" val="" />
+	      <fv nom="cheminScriptAudit" val="{{global.cheminScriptAudit}}" />
+	      <fv nom="cmoipLocal" ref="{{serveurPIU}}" />
+	      <fv nom="commentaire" val="" />
+	      <fv nom="critique" val="false" />
+	      <fv nom="critiqueSite" val="false" />
+	      <fv nom="eqId" val="0" />
+	      <fv nom="eqtType" enum="MIAe" />
+
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="hostName" val="" />
+	      <fv nom="infobulle" val="" />
+	      <fv nom="intervalLifelineErreur" val="1000" />
+	      <fv nom="intervalLifelineOk" val="1000" />
+	      <fv nom="IntervalPollingErreur" val="1000" />
+	      <fv nom="ipAddressSupervisedHost" val="{{vpoip.adresseSupMiae}}" />
+	      <fv nom="isSnmpDate" val="false" />
+	      <fv nom="isSnmpNumSer" val="false" />
+	      <fv nom="maxTryNumber" val="2" />
+	      <fv nom="maxTryNumberLifeLine" val="2" />
+	      <fv nom="maxVarbindsPerPduRequest" val="20" />
+	      <fv nom="nbrTestAvantBasculeIP" val="2" />
+	      <fv nom="nomCourt" val="{{vpoip.nomMiae}}" />
+	      <fv nom="parentPhysique" val="{{vpoip.localisation}}" />
+	      <fv nom="portSnmp" val="163" />
+	      <fv nom="portTrapSnmp" val="11164" />
+	      <fv nom="tempoLifeline" val="" />
+	      <fv nom="timeout" val="1000" />
+	      <fv nom="timeoutInventaire" val="" />
+	      <fv nom="timeoutLifeLine" val="400" />
+	      <fv nom="typeEquipement" val="N/A" />
+	      <fv nom="typeInventaire" enum="2" />
+
+	      <fv nom="typeOS" enum="LDB" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="hostName" val="{{nomVpoip}}" />
+	  <fv nom="hostname" val="{{nomVpoip}}" />
+	  <fv nom="ihmmode" enum="{{vpoip.ihmmode}}" />
+
+	  <fv nom="infobulle" val="{{vpoip.infobulle}}" />
+	  <fv nom="integrityChecker" ref="{{global.integrityChecker}}" />
+	  <fv nom="intervalLifelineErreur" val="1000" />
+	  <fv nom="intervalLifelineOk" val="1000" />
+	  <fv nom="IntervalPollingErreur" val="1000" />
+	  <fv nom="ipAddressCmoip" val="{{vpoip.ipAddressCmoip}}" />
+	  <fv nom="ipAddressSupervisedHost" val="{{vpoip.adresseSupTmf}}" />
+	  <fv nom="ipAddressTsoip" val="{{vpoip.adresseTsoip}}" />
+	  <fv nom="ipAddressVlanRsoip" val="{{vpoip.adresseRsoip}}" />
+	  <fv nom="ipAddressVlanVpoip" val="{{vpoip.adresseVpoip}}" />
+	  <fv nom="isSnmpDate" val="true" />
+	  <fv nom="isSnmpNumSer" val="false" />
+	  <fv nom="libelleInformatif" val="" />
+	  <fv nom="listeCertificat">
+	  {%- for cert in vpoip.listeCertificats %}
+	    <a i="{{loop.index0}}" ref="securite.ICertificat.{{cert}}"/>
+		{%- endfor %}
+	  </fv>
+	  <fv nom="listeCRL">
+	  {%- for crl in vpoip.listeCrl %}
+	  <a i="{{loop.index0}}" ref="securite.ICertificatRevocationList.{{crl}}"/>
+	  {%- endfor %}
+	  </fv>
+	  <fv nom="logiqueDeComportement" enum="1" />
+
+	  <fv nom="maxTryNumber" val="5" />
+	  <fv nom="maxTryNumberLifeLine" val="4" />
+	  <fv nom="maxVarbindsPerPduRequest" val="20" />
+	  <fv nom="mcrDuPO" ref="" />
+	  <fv nom="memoryAcquisitionMiae">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionMiae.ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae.Memory" class-name="ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae" nom="Memory">
+	      <fv nom="alarmeEtatOccupationDisque">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionMiae.ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae.Memory.alarmeEtatOccupationDisque.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationDisque.Etat occupation racine" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationDisque" nom="Etat occupation racine">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationShm">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionMiae.ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae.Memory.alarmeEtatOccupationShm.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationShm.Etat occupation partition SHM" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationShm" nom="Etat occupation partition SHM">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationTmp">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionMiae.ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae.Memory.alarmeEtatOccupationTmp.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationTmp.Etat occupation partition tmp" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationTmp" nom="Etat occupation partition tmp">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationVar">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionMiae.ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae.Memory.alarmeEtatOccupationVar.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationVar.Etat occupation partition var" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeEtatOccupationVar" nom="Etat occupation partition var">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeMemStateReal">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionMiae.ucdavies.IMemoryMiae$pocEquipement.IVPoIP$memoryAcquisitionMiae.Memory.alarmeMemStateReal.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeMemStateReal.Etat mémoire vive" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionMiae.alarmeMemStateReal" nom="Etat mémoire vive">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="flagMemBuffer" val="false" />
+	      <fv nom="flagMemCached" val="false" />
+	      <fv nom="flagMemTotalFree" val="false" />
+	      <fv nom="memAlertLevel" val="70" />
+	      <fv nom="memCriticalLevel" val="95" />
+	      <fv nom="storageAlertLevel" val="65" />
+	      <fv nom="storageCriticalLevel" val="95" />
+	    </obj>
+	  </fv>
+	  <fv nom="memoryAcquisitionTmf">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory" class-name="ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf" nom="Memory">
+	      <fv nom="alarmeEtatOccupationConfig">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory.alarmeEtatOccupationConfig.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationConfig.Etat occupation partition config" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationConfig" nom="Etat occupation partition config">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationDisque">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory.alarmeEtatOccupationDisque.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationDisque.Etat occupation racine" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationDisque" nom="Etat occupation racine">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationTmp">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory.alarmeEtatOccupationTmp.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationTmp.Etat occupation partition tmp" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationTmp" nom="Etat occupation partition tmp">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationUsr">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory.alarmeEtatOccupationUsr.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationUsr.Etat occupation partition usr" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationUsr" nom="Etat occupation partition usr">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeEtatOccupationVar">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory.alarmeEtatOccupationVar.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationVar.Etat occupation partition var" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeEtatOccupationVar" nom="Etat occupation partition var">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="alarmeMemStateReal">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.memoryAcquisitionTmf.ucdavies.IMemoryVpoip$pocEquipement.IVPoIP$memoryAcquisitionTmf.Memory.alarmeMemStateReal.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeMemStateReal.Etat mémoire vive" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$memoryAcquisitionTmf.alarmeMemStateReal" nom="Etat mémoire vive">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="flagMemBuffer" val="false" />
+	      <fv nom="flagMemCached" val="false" />
+	      <fv nom="flagMemTotalFree" val="false" />
+	      <fv nom="memAlertLevel" val="70" />
+	      <fv nom="memCriticalLevel" val="95" />
+	      <fv nom="storageAlertLevel" val="65" />
+	      <fv nom="storageCriticalLevel" val="95" />
+	    </obj>
+	  </fv>
+	  <fv nom="mrole" ref="ithTphAnnuaire.{{vpoip.mrole}}" />
+	  <fv nom="nbrTestAvantBasculeIP" val="2" />
+	  <fv nom="necessiteMaintenanceDuReboot" val="false" />
+	  <fv nom="necessiteMaintenanceScriptArret" val="false" />
+	  <fv nom="nomCourt" val="{{vpoip.nomCourt}}" />
+	  <fv nom="nomDuReboot" val="Redémarrer" />
+	  <fv nom="nomDuScan" val="Scan antivirus" />
+	  <fv nom="nomDuStop" val="Arrêter" />
+	  <fv nom="nomIntegrity" val="Scan d'intégrité" />
+	  <fv nom="nomPourConfiguration" val="{{vpoip.nomPourLaConf}}" />
+	  <fv nom="nomScriptPhoto" val="Prendre une photo" />
+	  <fv nom="numberBoucle" val="{{vpoip.numeroBcl}}" />
+	  <fv nom="numeroIth" val="{{vpoip.numeroIth}}" />
+	  <fv nom="numeroTph" val="{{vpoip.numeroTph}}" />
+	  <fv nom="operationEnCoursAntivirus" val="false" />
+	  <fv nom="operationEnCoursIntegrity" val="false" />
+	  {% if vpoip.parentLogique1 %}
+	      <fv nom="parentLogique1" ref="{{vpoip.parentLogique1}}" />
+		  {% endif %}
+		  {% if vpoip.parentLogique2 %}
+	      <fv nom="parentLogique2" ref="{{vpoip.parentLogique2}}" />
+		  {% endif %}
+	  <fv nom="parentPhysique" val="{{vpoip.localisation}}" />
+	  <fv nom="plageAttenuation" val="0" />
+	  <fv nom="port1VersSwitch">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.port1VersSwitch.port.IPortEthernetSnmp$pocEquipement.IVPoIP$port1VersSwitch.portA" class-name="port.IPortEthernetSnmp$pocEquipement.IVPoIP$port1VersSwitch" nom="portA">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.port1VersSwitch.port.IPortEthernetSnmp$pocEquipement.IVPoIP$port1VersSwitch.portA.alarmeEtatPort.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$port1VersSwitch.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$port1VersSwitch.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="portA" />
+	      <fv nom="nomCourt" val="eth1A" />
+	      <fv nom="nonUtilise" val="{{vpoip.nonUtilisePort1}}" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="port2VersSwitch">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.port2VersSwitch.port.IPortEthernetSnmp$pocEquipement.IVPoIP$port2VersSwitch.portB" class-name="port.IPortEthernetSnmp$pocEquipement.IVPoIP$port2VersSwitch" nom="portB">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.port2VersSwitch.port.IPortEthernetSnmp$pocEquipement.IVPoIP$port2VersSwitch.portB.alarmeEtatPort.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$port2VersSwitch.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$port2VersSwitch.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="portB" />
+	      <fv nom="nomCourt" val="portB" />
+	      <fv nom="nonUtilise" val="{{vpoip.nonUtilisePort2}}" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="portFOVersSwitch">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.portFOVersSwitch.port.IPortEthernetSnmp$pocEquipement.IVPoIP$portFOVersSwitch.port" class-name="port.IPortEthernetSnmp$pocEquipement.IVPoIP$portFOVersSwitch" nom="port">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.portFOVersSwitch.port.IPortEthernetSnmp$pocEquipement.IVPoIP$portFOVersSwitch.port.alarmeEtatPort.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$portFOVersSwitch.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$portFOVersSwitch.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="eth1" />
+	      <fv nom="nomCourt" val="Port" />
+	      <fv nom="nonUtilise" val="true" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="portSnmp" val="161" />
+	  <fv nom="portTrapSnmp" val="-1" />
+	  <fv nom="portVersMIAe">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.portVersMIAe.port.IPortEthernetSnmp$pocEquipement.IVPoIP$portVersMIAe.TMF.eth0" class-name="port.IPortEthernetSnmp$pocEquipement.IVPoIP$portVersMIAe" nom="TMF.eth0">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.portVersMIAe.port.IPortEthernetSnmp$pocEquipement.IVPoIP$portVersMIAe.TMF.eth0.alarmeEtatPort.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$portVersMIAe.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$portVersMIAe.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="eth0" />
+	      <fv nom="nomCourt" val="eth0" />
+	      <fv nom="nonUtilise" val="false" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="portVersTMF">
+	    <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.portVersTMF.port.IPortEthernetSnmp$pocEquipement.IVPoIP$portVersTMF.MIAe.eth0" class-name="port.IPortEthernetSnmp$pocEquipement.IVPoIP$portVersTMF" nom="MIAe.eth0">
+	      <fv nom="alarmeEtatPort">
+	        <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.portVersTMF.port.IPortEthernetSnmp$pocEquipement.IVPoIP$portVersTMF.MIAe.eth0.alarmeEtatPort.mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$portVersTMF.alarmeEtatPort.Etat port" class-name="mil.IPropertyBasedAlarmObject$pocEquipement.IVPoIP$portVersTMF.alarmeEtatPort" nom="Etat port">
+	          <fv nom="alarmAcousticalWarning" val="true" />
+	          <fv nom="alarmeActive" val="false" />
+	          <fv nom="alarmTimeDelay" val="0" />
+	        </obj>
+	      </fv>
+	      <fv nom="commentaire" val="" />
+	      <fv nom="etatInit" enum="1" />
+
+	      <fv nom="indexSaisie" val="" />
+	      <fv nom="indexSaisieHide" val="0" />
+	      <fv nom="internalName" val="eth0" />
+	      <fv nom="nomCourt" val="eth0" />
+	      <fv nom="nonUtilise" val="false" />
+	      <!--<fv nom="portReference" ref="" />-->
+	      <fv nom="priseEnCompteLVEquipementDistant" val="false" />
+	      <fv nom="rechercheIndex" val="true" />
+	      <fv nom="sousType" enum="eth" />
+
+	    </obj>
+	  </fv>
+	  <fv nom="PriseEnCompteEtatLogiciel_POC" val="{{vpoip.PriseEnCompteEtatLogiciel_POC}}" />
+	  <fv nom="PriseEnCompteSeCxEtatAtisRaiz" val="{{vpoip.PriseEnCompteSeCxEtatAtisRaiz}}" />
+	  <fv nom="PriseEnCompteSeCxEtatGonio" val="{{vpoip.PriseEnCompteSeCxEtatGonio}}" />
+	  <fv nom="profilAudio" ref="{{vpoip.profilAudio}}" />
+	  <fv nom="ProprieteDynamiqueInformation">
+	    <a i="0">
+	      <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.ProprieteDynamiqueInformation.ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*.label_0" class-name="ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*" nom="label_0">
+	        <fv nom="nbrChampsMib" val="1" />
+	        <fv nom="textMibProprieteDynamiqueEtat" val="" />
+	      </obj>
+	    </a>
+	    <a i="1">
+	      <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.ProprieteDynamiqueInformation.ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*.label_1" class-name="ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*" nom="label_1">
+	        <fv nom="nbrChampsMib" val="1" />
+	        <fv nom="textMibProprieteDynamiqueEtat" val="" />
+	      </obj>
+	    </a>
+	    <a i="2">
+	      <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.ProprieteDynamiqueInformation.ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*.label_2" class-name="ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*" nom="label_2">
+	        <fv nom="nbrChampsMib" val="1" />
+	        <fv nom="textMibProprieteDynamiqueEtat" val="" />
+	      </obj>
+	    </a>
+	    <a i="3">
+	      <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.ProprieteDynamiqueInformation.ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*.label_3" class-name="ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*" nom="label_3">
+	        <fv nom="nbrChampsMib" val="1" />
+	        <fv nom="textMibProprieteDynamiqueEtat" val="" />
+	      </obj>
+	    </a>
+	    <a i="4">
+	      <obj id="pocEquipement.IVPoIP.{{nomVpoip}}.ProprieteDynamiqueInformation.ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*.label_4" class-name="ucdavies.IProprietesDynamiquesEtatSansAlarmesVpoipSnmp$pocEquipement.IVPoIP$ProprieteDynamiqueInformation.*$*" nom="label_4">
+	        <fv nom="nbrChampsMib" val="1" />
+	        <fv nom="textMibProprieteDynamiqueEtat" val="" />
+	      </obj>
+	    </a>
+	  </fv>
+	  <fv nom="scriptPhoto" val="{{global.scriptPhoto}}" />
+	  <fv nom="scriptReboot" val="/sysca/etc/adm_redemarrer.sh" />
+	  <fv nom="scriptScanAntivirus" val="{{global.scriptScanAntivirus}}" />
+	  <fv nom="scriptScanIntegrity" val="{{global.scriptScanIntegrity}}" />
+	  <fv nom="scriptStop" val="/sysca/etc/adm_arreter.sh" />
+	  <fv nom="serviceAtisRaizCritique" val="{{vpoip.serviceAtisRaizCritique}}" />
+	  <fv nom="serviceBoucleCritique" val="{{vpoip.serviceBoucleCritique}}" />
+	  <fv nom="serviceInterphoneCritique" val="{{vpoip.serviceInterphoneCritique}}" />
+	  <fv nom="serviceRadioCritique" val="{{vpoip.serviceRadioCritique}}" />
+	  <fv nom="serviceTelephoneCritique" val="{{vpoip.serviceTelephoneCritique}}" />
+	  <fv nom="serviceVRoIPCritique" val="{{vpoip.serviceVRoIPCritique}}" />
+	  <fv nom="targetEquipmentIP" val="{{vpoip.targetEquipmentIP}}" />
+	  <fv nom="tempCarteAlertLevel" val="70" />
+	  <fv nom="tempCarteCriticalLevel" val="80" />
+	  <fv nom="tempCpuAlertLevel" val="70" />
+	  <fv nom="tempCpuCriticalLevel" val="80" />
+	  <fv nom="tempoLifeline" val="" />
+	  <fv nom="text1" val="{{vpoip.text1}}" />
+	  <fv nom="text2" val="{{vpoip.text2}}" />
+	  <fv nom="timeout" val="1000" />
+	  <fv nom="timeoutAntivirus" val="22000" />
+	  <fv nom="timeoutIntegrite" val="22000" />
+	  <fv nom="timeoutInventaire" val="" />
+	  <fv nom="timeoutLifeLine" val="400" />
+	  <fv nom="timeoutMaintenance" val="22000" />
+	  <fv nom="timeoutScriptPhoto" val="22000" />
+	  <fv nom="timeoutStop" val="22000" />
+	  <fv nom="typeEquipement" val="VPoIP" />
+	  <fv nom="typeInventaire" enum="2" />
+
+	  <fv nom="typeMembre" val="vp" />
+	  <fv nom="typeOS" enum="SEDUCS" />
+
+	  <fv nom="virusChecker" ref="{{global.virusChecker}}" />
+	  <fv nom="workflowActivationPartiel" val="true" />
+	</obj>
+	

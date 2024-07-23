@@ -1,0 +1,25 @@
+<!-- date : 2023-09-14 15:42:11 -->
+<!-- dossier : D:\Users\procq\Documents\Projets_local\squelettes_CMoIP\srsaip_squelettes\version_2023-09-14_srsaip_2.2.0-snapshot -->
+<!-- squelette : srsa-ip-skeleton-cmoip.xml -->
+<!-- sw_cmoip_version : ????? -->
+<!-- fichier : templ_0302srsa.edcdc.shared.IPageTov.xml -->
+<!-- classe : 0302 === srsa.edcdc.shared.IPageTov -->
+
+<obj id="srsa.edcdc.shared.IPageTov.{{nomItem}}" class-name="srsa.edcdc.shared.IPageTov" nom="{{nomItem}}">
+	  <fv nom="dispositionCvrClavier">
+{% for ssItem in item.dispositionCvrClavier %}
+	    <a i="{{loop.index0}}" ref="srsa.edcdc.shared.ICvr.{{ssItem}}"/>
+{% endfor %}
+<!--type =  srsa.edcdc.shared.ICvr  index-max = 18 -->
+	  </fv>
+	  <fv nom="libelle1" val="{{item.libelle1}}"/>
+	  <fv nom="libelle2" val="{{item.libelle2}}"/>
+	  <fv nom="numero" val="{{item.numero}}"/>
+	  <fv nom="page">
+{% for ssItem in item.page %}
+	    <a i="{{loop.index0}}" ref="rdoConfiguration.ITouchePageTOV.{{ssItem}}"/>
+{% endfor %}
+<!--type =  rdoConfiguration.ITouchePageTOV  index-max = 128 -->
+	  </fv>
+	</obj>
+	

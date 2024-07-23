@@ -1,0 +1,6 @@
+<obj id="rdoConfiguration.IPageTOV.{{nomItem}}" class-name="rdoConfiguration.IPageTOV" nom="{{nomItem}}">
+	  <fv nom="libelle1" val="{{item.libelle1}}" />
+	  <fv nom="libelle2" val="{{item.libelle2}}" />
+	  <fv nom="numero" val="{{item.numero}}" />
+	</obj>
+	

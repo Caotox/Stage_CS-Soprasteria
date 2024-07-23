@@ -1,0 +1,43 @@
+<!-- 433 TPG-Paramètres généraux -->
+{% for nomParam,param in configCMoIP.paramGenerauxTPH.items() -%}
+{% include 'templ_433_ithTphConfiguration.IParamGenTph.xml' %}
+{% endfor %}
+
+<!-- 434 Plan de numérotation -->
+{% set plan=configCMoIP.planNumerotation %}
+{% set nomPlan="planNumerotation" %}
+{% if plan.plans %}
+{% include 'templ_434_ithTphConfiguration.IPlanNumerotation.xml' %}
+{% endif %}
+
+<!-- 436 Profil téléphone -->
+{% for nomProfil,profil in configCMoIP.profilTel.items() -%}
+{% include 'templ_ithTphAnnuaire.ITelProfil.xml' %}
+{% endfor %}
+
+<!-- 437 Domaines externes -->
+{% set domainesExternes = configCMoIP.domainesExternes -%}
+{% include 'templ_437_ithTphConfiguration.IDomains.xml' %}
+
+<!-- 438 Conférences Meet-Me -->
+{% for nomConfMM,confMM in configCMoIP.confMeetMe.get(siteLocal, {}).items() -%}
+{% include 'templ_438_ithTphConfiguration.IConferenceMeetMe.xml' %}
+{% endfor %}
+
+<!-- 439 Faisceau -->
+{% for nomFaisceau,faisceau in configCMoIP.faisceaux.items() -%}
+{% include 'templ_439_ithTphConfiguration.IFaisceau.xml' %}
+{% endfor %}
+
+<!-- 432 liste GFU -->
+{% for nomGfu,gfu in configCMoIP.listeGfu.items() -%}
+{% include 'templ_432_ithTphConfiguration.IGfu.xml' %}
+{% endfor %}
+
+<!-- 431 index GFU -->
+{% for nomGfuIndex,gfuIndex in configCMoIP.listeIndexGfu.items() -%}
+{% include 'templ_431_ithTphConfiguration.IGfuIndex.xml' %}
+{% endfor %}
+
+<!-- 435 Restrictions d'appels -->
+{% include 'templ_435_ithTphConfiguration.IRestrictionsAppels.xml' %}

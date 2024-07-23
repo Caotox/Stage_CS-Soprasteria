@@ -1,0 +1,39 @@
+<!-- ITH-Boucle -->
+{% for nomBoucle,boucle in configCMoIP.listeBouclesIth.items() -%}
+{% include 'templ_451_ithTphCahiersDeVue.ILoop.xml' %}
+{% endfor %}
+
+<!-- ITH-Pages -->
+{% for nomPageIth,pageIth in configCMoIP.listePagesIth.items() -%}
+{% include 'templ_452_ithTphCahiersDeVue.IPageITH.xml' %}
+{% endfor %}
+
+<!-- ITH-CahierDeVue -->
+{% for nomCahierIth,cahierIth in configCMoIP.listeCahiersVueIth.items() -%}
+{% include 'templ_453_ithTphCahiersDeVue.IViewITH.xml' %}
+{% endfor %}
+
+<!-- TPH-Conférences -->
+{% for nomConference,conference in configCMoIP.listeConferences.items() -%}
+{% include 'templ_454_ithTphCahiersDeVue.IConference.xml' %}
+{% endfor %}
+
+<!-- TPH-Pages -->
+{% for nomPageTph,pageTph in configCMoIP.listePagesTph.items() -%}
+{% include 'templ_455_ithTphCahiersDeVue.IPageTPH.xml' %}
+{% endfor %}
+
+<!-- TPH-CahierDeVue -->
+{% for nomCahierTph,cahierTph in configCMoIP.listeCahiersVueTph.items() -%}
+{% include 'templ_456_ithTphCahiersDeVue.IViewTPH.xml' %}
+{% endfor %}
+
+<!-- ITH-TPH-Règles d'affectation 
+    ITH-TPH-Règles d'affectation par défaut -->
+{% for nomRegle,regle in configCMoIP.listeRegles.items() -%}
+{%- if nomRegle == "DEFAUT" -%}
+{% include 'templ_458_ithTphCahiersDeVue.IRegleViewDefault.xml' %}
+{% else -%}
+{% include 'templ_457_ithTphCahiersDeVue.IRegleView.xml' %}
+{% endif -%}
+{% endfor -%}

@@ -1,0 +1,7 @@
+{%- for key,equip in configCMoIP.listeEquipPing.items() -%}
+{% include 'templ_equipPing.xml' %}
+{% endfor %}
+
+{%- for key,atelier in configCMoIP.ateliersEnergie.items() -%}
+{% include 'templ_mg2s.IAtelierEnergieV7.xml' %}
+{% endfor %}

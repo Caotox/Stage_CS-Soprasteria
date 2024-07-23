@@ -1,0 +1,33 @@
+<obj id="ithTphAnnuaire.IGroupe.{{nomGroupe}}" class-name="ithTphAnnuaire.IGroupe" nom="{{nomGroupe}}">
+{% if groupe.gfuRelatifPreferentielGroupe %}
+	  <fv nom="gfuRelatifPreferentielGroupe" enum="{{groupe.gfuRelatifPreferentielGroupe}}" />
+{% endif %}
+
+	  <fv nom="identifiantUriSip" val="{{groupe.identifiantUriSip}}" />
+	  <fv nom="libelleInformatif" val="{{groupe.libelleInformatif}}" />
+
+	  <fv nom="listeRoles">
+{%- for role in groupe.listeRoles %}
+	    <a i="{{loop.index0}}" ref="ithTphAnnuaire.IRole.{{role}}" />
+{%- endfor %}
+	  </fv>
+
+	  <fv nom="numeroATS" val="{{groupe.numeroATS}}" />
+	  <fv nom="numeroIth" val="{{groupe.numeroIth}}" />
+	  <fv nom="numeroPNIA" val="{{groupe.numeroPNIA}}" />
+	  <fv nom="numeroTph" val="{{groupe.numeroTph}}" />
+
+{%- for numeroDebord in groupe.listeDebordRoutage %}
+	  <fv nom="overflow{{loop.index}}" val="{{numeroDebord}}"/>
+{%- endfor %}
+
+	  <fv nom="overflowBusy" val="{{groupe.overflowBusy}}" />
+	  <fv nom="overflowNa" val="{{groupe.overflowNa}}" />
+{% if groupe.permissionGfuAccessGroupe %}
+	  <fv nom="permissionGfuAccessGroupe" ref="{{groupe.permissionGfuAccessGroupe}}" />
+{% endif %}
+	  <fv nom="text1" val="{{groupe.libelle1}}" />
+	  <fv nom="text2" val="{{groupe.libelle2}}" />
+	  <fv nom="typeMembre" val="groupe" />
+	</obj>
+	

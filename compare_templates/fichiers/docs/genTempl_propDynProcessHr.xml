@@ -1,0 +1,16 @@
+	      <obj id="" class-name="" nom="{{process.nom}}">
+	        <fv nom="hrNameHrTable" val="{{process.texteMib}}"/>
+	        <fv nom="alarmeEtatLogicielHrtableCalcul">
+	          <obj id="" class-name="" nom="Etat Logiciel Hrtable">
+	            <fv nom="alarmeActive" val="{{process.alarmeActive}}"/>
+	            <fv nom="alarmAcousticalWarning" val="{{process.alarmeSonore}}"/>
+	            <fv nom="alarmTimeDelay" val="0"/>
+	          </obj>
+	        </fv>
+	        <fv nom="nomParamDynamiqueHrTable" val="{{process.texteMibParamDyn}}"/>
+	        <fv nom="textMibStatutHrTableMaitre" val="{{process.texteMaitre}}"/>
+	        <fv nom="PoidsLogicielHrTable" val="{{process.poids}}"/>
+	        <fv nom="hrParamNameHrTable" val="{{process.texteMibParam}}"/>
+	        <fv nom="textMibStatutHrTableEsclave" val="{{process.texteEsclave}}"/>
+	        <fv nom="nomParamDynamiqueStatutHrTable" val="{{process.texteMibParamStatus}}"/>
+	      </obj>

@@ -1,0 +1,68 @@
+<obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}" class-name="mg2s.IVRoIPNoeudSnmp" nom="{{noeud.nom}}">
+	  <fv nom="alarmeVroipNoeudDrbdStatus">
+	    <obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}.alarmeVroipNoeudDrbdStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudDrbdStatus.Etat Partition Drbd" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudDrbdStatus" nom="Etat Partition Drbd">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipNoeudInodeStatus">
+	    <obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}.alarmeVroipNoeudInodeStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudInodeStatus.Etat Inode" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudInodeStatus" nom="Etat Inode">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipNoeudRecorderAStatus">
+	    <obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}.alarmeVroipNoeudRecorderAStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudRecorderAStatus.Etat Recorder A" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudRecorderAStatus" nom="Etat Recorder A">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipNoeudRecorderBStatus">
+	    <obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}.alarmeVroipNoeudRecorderBStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudRecorderBStatus.Etat Recorder B" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudRecorderBStatus" nom="Etat Recorder B">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipNoeudSafeAStatus">
+	    <obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}.alarmeVroipNoeudSafeAStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudSafeAStatus.Etat Safe A" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudSafeAStatus" nom="Etat Safe A">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="alarmeVroipNoeudStatus">
+	    <obj id="mg2s.IVRoIPNoeudSnmp.{{noeud.nom}}.alarmeVroipNoeudStatus.mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudStatus.Etat du noeud" class-name="mil.IPropertyBasedAlarmObject$mg2s.IVRoIPNoeudSnmp$alarmeVroipNoeudStatus" nom="Etat du noeud">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="false" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="commentaire" val="" />
+	  <fv nom="cote" ref="{{noeud.nomDuCote}}" />
+	  <fv nom="coteDuNoeud" enum="{{noeud.coteDuNoeud}}" />
+
+	  <fv nom="critique" val="false" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="etatInit" enum="1" />
+
+	  <fv nom="hostName" val="" />
+	  <fv nom="indexNoeud" val="{{noeud.indexNoeud}}" />
+	  <fv nom="infobulle" val="" />
+	  <fv nom="nomCourt" val="{{noeud.nomCourt}}" />
+	  <fv nom="nomNoeud" val="{{noeud.nom}}" />
+	  <fv nom="parentPhysique" val="{{noeud.localisation}}" />
+	  <fv nom="serveurVRoIP" ref="mg2s.IVRoIPServeurSnmp.{{noeud.serveurNoeud}}" />
+	  <fv nom="storageAlertLevel" val="{{noeud.storageAlertLevel}}" />
+	  <fv nom="storageCriticalLevel" val="{{noeud.storageCriticalLevel}}" />
+	  <fv nom="txDrbdAlertLevel" val="{{noeud.txDrbdAlertLevel}}" />
+	  <fv nom="txDrbdCriticalLevel" val="{{noeud.txDrbdCriticalLevel}}" />
+	  <fv nom="txInodeAlertLevel" val="{{noeud.txInodeAlertLevel}}" />
+	  <fv nom="txInodeConsideration" val="true" />
+	  <fv nom="txInodeCriticalLevel" val="{{noeud.txInodeCriticalLevel}}" />
+	  <fv nom="typeEquipement" val="VRoIP" />
+	</obj>
+	

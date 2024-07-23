@@ -1,0 +1,51 @@
+<obj id="mg2s.IConfigExterne.{{nomConfigExterne}}" class-name="mg2s.IConfigExterne" nom="{{nomConfigExterne}}">
+	  <fv nom="atisDroit" val="{{configExterne.atisDroit}}" />
+	  <fv nom="choixCentreDroit" val="{{configExterne.choixCentreDroit}}" />
+	  <fv nom="couplageDroit" val="{{configExterne.couplageDroit}}" />
+	  <fv nom="ecoutePoDroit" val="{{configExterne.ecoutePoDroit}}" />
+	  <fv nom="emplacement">
+{% for nomEmplacement, emplacement in configExterne.emplacements.items() %}
+	    <a i="{{loop.index0}}">
+	      <obj id="mg2s.IConfigExterne.{{nomConfigExterne}}.emplacement.mg2s.IEmplacement$mg2s.IConfigExterne$emplacement.*$*.{{nomEmplacement}}" class-name="mg2s.IEmplacement$mg2s.IConfigExterne$emplacement.*$*" nom="{{nomEmplacement}}">
+	        <fv nom="numeroEmplacement" val="{{emplacement.numeroEmplacement}}" />
+	        <fv nom="typeEmplacement" enum="{{emplacement.typeEmplacement}}" />
+
+	      </obj>
+	    </a>
+{% endfor %}
+	  </fv>
+	  <fv nom="equipements">
+{% for nomEquipement, equipement in configExterne.equipements.items() %}
+	    <a i="{{loop.index0}}">
+	      <obj id="mg2s.IConfigExterne.{{nomConfigExterne}}.equipements.mg2s.IEquipConfigExterne$mg2s.IConfigExterne$equipements.*$*.{{nomEquipement}}" class-name="mg2s.IEquipConfigExterne$mg2s.IConfigExterne$equipements.*$*" nom="{{nomEquipement}}">
+	        <fv nom="nomCourtPO" val="{{equipement.nomCourtPO}}" />
+	        <fv nom="numIdEquipement" val="{{equipement.numIdEquipement}}" />
+	        <fv nom="numIdSite" val="{{equipement.numIdSite}}" />
+	        <!-- <fv nom="type" enum="" /> -->
+
+	      </obj>
+	    </a>
+{% endfor %}
+
+	  </fv>
+	  <fv nom="modeAlternat" enum="{{configExterne.modeAlternat}}" />
+
+	  <fv nom="raizDroit" val="{{configExterne.raizDroit}}" />
+	  <fv nom="referenceCosca">
+{% for referenceCosca in configExterne.referencesCosca %}
+	    <a i="{{loop.index0}}" val="{{referenceCosca}}" />
+{% endfor %}
+	  </fv>
+	  <fv nom="selFreqDroit" val="{{configExterne.selFreqDroit}}" />
+	  <fv nom="streamSustainDelayInMs" val="{{configExterne.streamSustainDelayInMs}}" />
+	  <fv nom="tempoBlocageAlt" val="{{configExterne.tempoBlocageAlt}}" />
+	  <fv nom="tempoFinAppelAvion" val="{{configExterne.tempoFinAppelAvion}}" />
+	  <fv nom="tempoFinCouplage" val="{{configExterne.tempoFinCouplage}}" />
+	  <fv nom="tempoMessageFurtif" val="{{configExterne.tempoMessageFurtif}}" />
+	  <fv nom="todDroit" val="{{configExterne.todDroit}}" />
+	  <fv nom="typeProfil" enum="{{configExterne.typeProfil}}" />
+
+	  <fv nom="voieDetDroit" val="{{configExterne.voieDetDroit}}" />
+	  <fv nom="voieSavDroit" val="{{configExterne.voieSavDroit}}" />
+	</obj>
+	

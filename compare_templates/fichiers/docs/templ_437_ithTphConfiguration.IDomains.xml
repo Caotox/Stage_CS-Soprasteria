@@ -1,0 +1,19 @@
+<obj id="ithTphConfiguration.IDomains.Domaines par numéro" class-name="ithTphConfiguration.IDomains" nom="Domaines par numéro">
+{% if domainesExternes.listeDomaines %}
+
+{% for nomDomaine, domaine in domainesExternes.listeDomaines.items() %}
+
+	  <fv nom="ldigitsDomain">
+	  	<a i="{{loop.index0}}">
+			<obj id="ithTphConfiguration.IDomains.Domaines par numéro.ldigitsDomain.ithTphConfiguration.ILdigitsDomain$ithTphConfiguration.IDomains$ldigitsDomain.*$*.label_{{loop.index0}}"
+				class-name="ithTphConfiguration.ILdigitsDomain$ithTphConfiguration.IDomains$ldigitsDomain.*$*" nom="label_{{loop.index0}}">
+				<fv nom="domain" val="{{nomDomaine}}"/>
+				<fv nom="currentPrefix" val="{{domaine.oldPrefix}}"/>
+				<fv nom="newPrefix" val="{{domaine.newPrefix}}"/>
+			</obj>
+		</a>
+	  </fv>
+{% endfor %}
+{% endif %}
+	</obj>
+	

@@ -1,0 +1,57 @@
+<!-- mg2s_iSite -->
+<!-- mg2s_Region -->
+
+{% set farReferences=a130_mg2s_IFar_manager.get_farReferences() %}
+{% set farLocale=a130_mg2s_IFar_manager.get_farLocale() %}
+{% set referenceFarLocale=a130_mg2s_IFar_manager.get_referenceFarLocale() %}
+
+{% for nomRegion, region in a50_mg2s_iSite_manager.get_Region().items() -%}
+{% include 'templ_mg2s.Region.xml' %}
+{% endfor %}
+
+<!-- mg2s_iSiteCDC -->
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCDCSnmp().items() -%}
+{% include 'templ_502_mg2s.ISiteCDCSnmp.xml' %}
+{% endfor %}
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCDCCie().items() -%}
+{% include 'templ_mg2s.ISiteCDCCie.xml' %}
+{% endfor %}
+
+<!-- mg2s_iSiteCER -->
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCERSnmp().items() -%}
+{% include 'templ_mg2s.ISiteCERSnmp.xml' %}
+{% endfor %}
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCERCie().items() -%}
+{% set cmoipDistant=a50_mg2s_iSite_manager.get_ICMoIPDistantReference(nomSite=nomSite) %}
+<!--  ###### {{cmoipDistant}} ##### -->
+{% include 'templ_505_mg2s.ISiteCERCie.xml' %}
+{% endfor %}
+
+<!-- mg2s_iSiteCOSCA -->
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCOSCASnmp().items() -%}
+{% include 'templ_mg2s.ISiteCOSCASnmp.xml' %}
+{% endfor %}
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCOSCACie().items() -%}
+{% include 'templ_mg2s.ISiteCOSCACie.xml' %}
+{% endfor %}
+
+<!-- mg2s_iSiteCMCC -->
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCMCCSnmp().items() -%}
+{% include 'templ_mg2s.ISiteCMCCSnmp.xml' %}
+{% endfor %}
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCMCCCie().items() -%}
+{% include 'templ_mg2s.ISiteCMCCCie.xml' %}
+{% endfor %}
+
+<!-- mg2s_iSiteCC -->
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCCSnmp().items() -%}
+{% include 'templ_mg2s.ISiteCCSnmp.xml' %}
+{% endfor %}
+{% for nomSite, site in a50_mg2s_iSite_manager.get_iSiteCCCie().items() -%}
+{% include 'templ_mg2s.ISiteCCCie.xml' %}
+{% endfor %}
+
+<!-- ICMoIPDistant -->
+{% for nomSite, site in a50_mg2s_iSite_manager.get_ICMoIPDistant().items() -%}
+{% include 'templ_512_cmoip.ICMoIPDistant.xml' %}
+{% endfor %}

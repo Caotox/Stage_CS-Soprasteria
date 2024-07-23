@@ -1,0 +1,11 @@
+	      <obj id="" class-name="" nom="{{propDyn.nom}}">
+	        <fv nom="nbrChampsMib" val="{{propDyn.nbrChampsMib}}"/>
+	        <fv nom="textMibProprieteDynamiqueEtat" val="{{propDyn.textMibPropDynInfo}}"/>
+	        <fv nom="alarmeEtatProprieteDynamiqueEtat">
+	          <obj id="" class-name="" nom="Alarme sur l'Etat de la Propriété Dynamique d'état">
+	            <fv nom="alarmeActive" val="{{propDyn.alarmeActive}}"/>
+	            <fv nom="alarmAcousticalWarning" val="{{propDyn.alarmeSonore}}"/>
+	            <fv nom="alarmTimeDelay" val="0"/>
+	          </obj>
+	        </fv>
+		  </obj>

@@ -1,0 +1,14 @@
+	      <obj id="" class-name="" nom="{{process.nom}}">
+	        <fv nom="PoidsLogicielPrTable" val="{{process.poids}}"/>
+	        <fv nom="textMibStatutPrTableMaitre" val="{{process.texteMaitre}}"/>
+	        <fv nom="prNamePrTable" val="{{process.texteMib}}"/>
+	        <fv nom="nomParamDynamiquePrTable" val="{{process.texteMibParamDyn}}"/>
+	        <fv nom="textMibStatutPrTableEsclave" val="{{process.texteEsclave}}"/>
+	        <fv nom="alarmeEtatLogicielPrtableCalcul">
+	          <obj id="" class-name="" nom="Etat Logiciel Prtable">
+	            <fv nom="alarmeActive" val="{{process.alarmeActive}}"/>
+	            <fv nom="alarmAcousticalWarning" val="{{process.alarmeSonore}}"/>
+	            <fv nom="alarmTimeDelay" val="0"/>
+	          </obj>
+	        </fv>
+	      </obj>

@@ -1,0 +1,16 @@
+<obj id="pocConfiguration.IEnregIpTsoipSettingsConf.{{nomItem}}" class-name="pocConfiguration.IEnregIpTsoipSettingsConf" nom="{{nomItem}}">
+	  <fv nom="adresseIpEnregistreur1" val="{{item.adresseIpEnregistreur1}}" />
+	  <fv nom="adresseIpEnregistreur2" val="{{item.adresseIpEnregistreur2}}" />
+	  <fv nom="cheminRtspEnregistreur1" val="{{item.cheminRtspEnregistreur1}}" />
+	  <fv nom="cheminRtspEnregistreur2" val="{{item.cheminRtspEnregistreur2}}" />
+	  <fv nom="commentaire" val="{{item.commentaire}}" />
+	  <fv nom="portRtspEnregistreur1" val="{{item.portRtspEnregistreur1}}" />
+	  <fv nom="portRtspEnregistreur2" val="{{item.portRtspEnregistreur2}}" />
+	  <fv nom="taillePaquetsEnregistreur1" enum="{{item.taillePaquetsEnregistreur1}}" />
+
+	  <fv nom="taillePaquetsEnregistreur2" enum="{{item.taillePaquetsEnregistreur2}}" />
+
+	  <fv nom="tempoSurvEnregistreur1" val="{{item.tempoSurvEnregistreur1}}" />
+	  <fv nom="tempoSurvEnregistreur2" val="{{item.tempoSurvEnregistreur2}}" />
+	</obj>
+	
