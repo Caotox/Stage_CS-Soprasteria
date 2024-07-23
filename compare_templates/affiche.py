@@ -14,11 +14,6 @@ Argument 2 : nom du fichier yaml. Exemple : srsa.yaml
 Exemple d'utilisation : 
 python affiche.py squelette.xml srsa.yaml
 
-(Argument 2 : path des fichiers template. Exemple : /docs/template/)
-
-Exemple d'utilisation : 
-python affiche.py squelette.xml docs/template/
-
 """
 #squelette = "squelette.xml" # --> A mettre en commentaire si programme en dynamique
 #template = "genTempl_propDynPartition.xml"
@@ -31,10 +26,7 @@ if len(sys.argv) != 3:
     print("Vous devez donner en premier argument le nom du fichier squelette et en deuxième argument le path qui mène aux fichiers templates.")
     sys.exit()
 
-espace = True # Variables servant à adapter l'affichage pour qu'il soit plus lisible
 diff=False
-
-
 def read_yaml_to_dict(yamlfile):  # Fonction de transformation d'un fichier YAML en dictionnaire
     with open(yamlfile, 'r', encoding='utf-8') as file:  # ouverture du fichier YAML
         try:
@@ -52,6 +44,8 @@ for p in yaml_dict.keys():
         for v in yaml_dict[p].keys():
             print("Classes à exclure : " + v )
 
+print("\n")
+
 arbre1 = ET.parse(squelette) # Ouverture du fichier
 # = ET.parse(template)
 
@@ -67,6 +61,7 @@ LT = []
 
 #nbr_fichiers=0
 
+trouve=False
 
 #for n in root1.iter(): # Parcours de la racine du fichier squelette
 for n in root1 :
@@ -101,7 +96,7 @@ for n in L1 : # n prendra les valeurs de L1 à chaque itération, donc de chaque
         #fichier =  ET.parse(next(glob.iglob(f".{path}*{n}*.xml")))
         #fichier = ET.parse(next(glob.iglob(f".{var}*{n}*.xml")))
 
-        """
+        """ --> Ancienne ouverture des fichiers templates associés
         fichier = ET.parse(next(glob.iglob(f".{path}{n}.xml"))) # On cherche d'abord si le fichier est identique au class-name
         if not fichier : # On continue à chercher tant qu'aucun fichier template n'a été trouvé
             fichier = ET.parse(next(glob.iglob(f".{path}{n}*.xml"))) # Puis si il y a eu un ajout après
@@ -110,7 +105,7 @@ for n in L1 : # n prendra les valeurs de L1 à chaque itération, donc de chaque
                 if not fichier :
                     notthere = True
         """
-        """
+        """ --> Ancienne récupération des attributs "nom" se trouvant dans les fichiers templates respectifs
         for a, w in yaml_dict.items(): # Parcours du dictionnaire (couple clé / valeur)
             if a == n and w != "exclure": # Si la clé correspond à n, donc l'itération du class-name faisant référence à un nom de template
                 fichier = ET.parse(a+".xml") # On récupère puis ouvre ce template
@@ -124,52 +119,53 @@ for n in L1 : # n prendra les valeurs de L1 à chaque itération, donc de chaque
         # --> comparaison parallèle
         #nbr_fichiers=nbr_fichiers+1
         """
-        for a,w in yaml_dict["Inclure"].items() :
-            if a == n :
-                fichier=ET.parse(w)
-        rootfile = fichier.getroot()
-        for i in rootfile.iter() :
-            for j in i.findall("fv") :
-                LT.append(j.get("nom"))
-                for l in j.findall("obj") :
-                    for k in l.iter() :
-                        for b in k.findall("fv") :
-                            L2.append(b.get("nom"))
-            for p in i.findall("obj"):
+        for a,w in yaml_dict["Inclure"].items() : # On parcours les fichiers avec la clé Inclure, pour ne pas traiter les fichiers à exclure
+            if a == n : # Si la clé est égale à n donc à l'instance de L1 qui correspond à une classe, donc si a est la classe actuellement traitée
+                trouve=True
+                fichier=ET.parse(w) # Alors on ouvre le fichier
+        rootfile = fichier.getroot() # Et on récupère la racine
+        for i in rootfile.iter() : # On parcours ensuite cette racine
+            for j in i.findall("fv") : # Parcours des éléments ayant un attribut "nom" qui nous intéresse
+                LT.append(j.get("nom")) # On ajoute la valeur de l'attribut dans LT
+                for l in j.findall("obj") : # On cherche les objets pour également parcourir leurs éléments
+                    for k in l.iter() : # On parcours l'objet
+                        for b in k.findall("fv") : # Puis les éléments ayant un attribut nom
+                            L2.append(b.get("nom")) # Qu'on ajoute également
+            for p in i.findall("obj"): # On répète l'opération pour les objets se trouvant au niveau de la racine, et non pas dans un élément fv
                 for c in p.iter() :
                     for f in c.findall("fv") :
                         L2.append(f.get("nom"))
+        if trouve == False :
+            print("Pour la classe " + n + ", pas de fichiers template associés")
     except :
         # message personnalisé
         # On stop la boucle
-        print("oui")
         continue
 
     #print(LT) # Instruction d'affichage des éléments récupérés pour débugage
     #print("\n")
     #print(L2)
     #print("\n")
-    """
-    if notthere == True :
-        print(" template"+str(n)+" absent")
-    else :
-    """
+
     for v in L2 : # On compare de chaque côté pour savoir quels éléments sont manquants et de quels côtés
         if v not in LT :
-            print(v+" pas dans le fichier template "+str(n)+".xml .") # Affichage
+            #print(v+" pas dans le fichier template "+str(n)+".xml .") # Affichage
+            print(v+" manquant dans le fichier template "+str(n)+".xml")
             diff=True
     for v in LT :
         if v not in L2 :
-            print(v+" pas dans le fichier squelette " +squelette+".")
+            #print(v+" pas dans le fichier squelette " +squelette+".")
+            print(v+" en trop dans le fichier template "+str(n)+".xml")
             diff=True
     if diff == False :
-        print(" template "+str(n)+" identique aux informations du squelette " +squelette+".")
-    if espace == True and diff==True:
-        print("\n\n")
-        espace=True
-        diff=False
-    else :
-        espace = True
+        print("template "+str(n)+" identique aux informations du squelette " +squelette+".")
+        print("\n")
     # Réinitialisation des listes pour les autres instances, sans ça, les comparaisons se feraient sur tous les
     # éléments initiaux plus ceux qui se sont ajoutés au fur et à mesure et ce jusqu'à la fin du programme. Cela
     # déclencherait aussi une comparaison sur des éléments n'ayant pas de différences
+    L2 = []
+    LT = []
+    trouve=False
+    if diff ==True :
+        print("\n")
+

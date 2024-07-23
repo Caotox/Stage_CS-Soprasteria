@@ -1,0 +1,5 @@
+<obj id="template2" class-name="cmoip.ICMoIPDistant">
+	<fv nom="status" val="inactive"/> 
+	<fv nom="ipAddress2" val="192.168.0.1"/>
+	<fv nom="port" val="9090"/>
+</obj>

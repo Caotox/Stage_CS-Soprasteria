@@ -1,0 +1,10 @@
+# Fichier YAML de test
+
+Inclure :
+    cmoip.ICMoIPDistant2 : cmoip.ICMoIPDistant2.xml
+    cmoip.ICMoIPDistant.CMoIPDO : cmoip.ICMoIPDistant.CMoIPDo.xml
+
+Exclure :
+    classe test : fichier test.xml
+
+

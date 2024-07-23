@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations version="2">
+  <configuration tag="Configuration Squelette" description="Conf outils servant de référence pour connaître l&apos;ensemble de propriété disponnible sur chaque objet, configuration non fonctionnel." nom="Conf. Applicable 02/07/2024 12:10:09.745">
+    <groupe-object-model>
+        <obj id="cmoip.ICMoIPDistant.CMoIPDi" class-name="cmoip.ICMoIPDistant2" nom="CMoIPDi">
+            <fv nom="alarmeEtatLigneVie">
+                <obj id="cmoip.ICMoIPDistant.CMoIPDi.alarmeEtatLigneVie.mil.IPropertyBasedAlarmObject$cmoip.ICMoIPDistant$alarmeEtatLigneVie.mil-propertyBasedAlarmObject" class-name="mil.IPropertyBasedAlarmObject$cmoip.ICMoIPDistant$alarmeEtatLigneVie" nom="mil-propertyBasedAlarmObject">
+                    <fv nom="alarmAcousticalWarning" val="true"/>
+                    <fv nom="alarmeActive" val="true"/>
+                    <fv nom="alarmTimeDelay" val="0"/>
+                </obj>
+            </fv>
+            <fv nom="altIpAddressSupervisedHost" val="null"/>
+            <fv nom="etatCanal" enum="null"/>
+            <fv nom="intervalleMessageDeVie" val="10000"/>
+            <fv nom="intervalLifelineErreur" val="1000"/>
+            <fv nom="intervalLifelineOk" val="1000"/>
+            <fv nom="IntervalPollingErreur" val="1000"/>
+            <fv nom="ipAddressSupervisedHost" val="109.250.100.1"/>
+            <fv nom="maxSimultaneousExec" val="100"/>
+            <fv nom="maxTryNumber" val="2"/>
+            <fv nom="maxTryNumberLifeLine" val="2"/>
+            <fv nom="nbrTestAvantBasculeIP" val="2"/>
+            <fv nom="nomLogiqueDistant" val=""/>
+            <fv nom="portHierarchie" val="5666"/>
+            <fv nom="securedConnexion" val="false"/>
+            <fv nom="serveurHierarchie" val="false"/>
+            <fv nom="serveurPiuCie" ref="null"/>
+            <fv nom="tempoLifeline" val="null"/>
+            <fv nom="timeOutExec" val="30000"/>
+            <fv nom="timeOutHello" val="10000"/>
+        </obj>
+        <obj id="cmoip.ICMoIPDistant.CMoIPDo" class-name="cmoip.ICMoIPDistant.CMoIPDO" nom="CMoIPDo">
+            <fv nom="status" val="active"/>
+            <fv nom="ipAddress" val="192.168.0.1"/>
+            <fv nom="port" val="8080"/>
+        </obj>
+</groupe-object-model>
+</configuration>
+</configurations>
