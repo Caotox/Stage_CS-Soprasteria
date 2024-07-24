@@ -5,7 +5,6 @@ Programmes contenus dans le module :
 Fonction : xml_compre(fichier_new, fichier_old)
 Argument 1 (fichier_new) : fichier XML récent
 Argument 2 (fichier_old) : fichier XML ancien
-Exemple d'utilisation : python v2xmlParser.py nouveau.xml ancien.xml
 
 - Affichage de fichiers XML
 Fonction 1 : modele(fichier, attribut_modele, valeur_modele) --> Récupération d'un modèle graphique
@@ -23,9 +22,9 @@ modele_test=modele(exemple.xml, class-name, cmoIP.ISiteConfig)
 graphique(modele_test, comoIP.ISiteConfigExterne, class-name, -c)
 
 - Comparaison du fichier squelette et des fichiers templates associés
+Fonction :
 Argument 1 (squelette) : fichier squelette
 Argument 2 (yamlfile) : fichier YAML
-Exemple d'utilisation : python affiche.py squelette.py test.yaml
 
 - Autres ? (- création d'un fichier XML à partir de certains éléments issus d'un fichier XML d'origine
             - fichier de gestion de fichiers YAML)
