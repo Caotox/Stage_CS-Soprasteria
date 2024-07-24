@@ -6,7 +6,7 @@ import yaml
 """
 Doc :
 
-Compare les attributs "nom" du fichier squelette et des fichiers templates associés
+Compare la conformité des fichiers templates associés à un fichier squelette
 
 Argument 1 : nom du fichier squelette. Exemple : squelette.xml
 Argument 2 : nom du fichier yaml. Exemple : srsa.yaml
