@@ -1,3 +1,4 @@
 25/07/2024 : 
 - Détermination des modifications à apporter à xmlParser.py (comparaison des fichiers XML), rédaction dans la doc
 - Correction de la récupération des attributs non lors de la lecture des fichiers template : ajout de conditions pour entrer dans les objets ou balises fv parentes
+
