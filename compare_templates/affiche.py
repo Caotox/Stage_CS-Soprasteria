@@ -25,7 +25,8 @@ squelette = sys.argv[1] # --> Enlever le commentaire afin d'utiliser la version 
 yamlfile = sys.argv[2]
 
 if len(sys.argv) != 3:
-    print("Vous devez donner en premier argument le nom du fichier squelette et en deuxième argument le fichier YAML associé.")
+    print("Vous devez donner en premier argument le nom du fichier squelette et en deuxième argument le nom du fichier YAML associé. "
+          "(Pour les deux arguments, le nom correspond en réalité au chemin vers les fichiers correspondants depuis le répertoire courant)")
     sys.exit()
 
 diff=False
