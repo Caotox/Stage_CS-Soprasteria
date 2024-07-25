@@ -14,6 +14,8 @@ Argument 2 : nom du fichier yaml. Exemple : srsa.yaml
 Exemple d'utilisation : 
 python affiche.py squelette.xml srsa.yaml
 
+Dans le fichier template, le format est :
+nom_de_la_classe : chemin depuis le répertoire où le programme s'exécute vers le fichier template correspondant
 """
 #squelette = "squelette.xml" # --> A mettre en commentaire si programme en dynamique
 #template = "genTempl_propDynPartition.xml"
