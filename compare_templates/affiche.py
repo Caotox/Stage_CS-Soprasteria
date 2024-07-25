@@ -14,8 +14,8 @@ Argument 2 : nom du fichier yaml. Exemple : srsa.yaml
 Exemple d'utilisation : 
 python affiche.py squelette.xml srsa.yaml
 
-Dans le fichier template, le format est :
-nom_de_la_classe : chemin depuis le répertoire où le programme s'exécute vers le fichier template correspondant
+Format du fichier template :
+nom_de_la_classe : chemin vers le template correspondant, depuis le répertoire dans lequel le programme s'exécute
 """
 #squelette = "squelette.xml" # --> A mettre en commentaire si programme en dynamique
 #template = "genTempl_propDynPartition.xml"
@@ -25,7 +25,7 @@ squelette = sys.argv[1] # --> Enlever le commentaire afin d'utiliser la version 
 yamlfile = sys.argv[2]
 
 if len(sys.argv) != 3:
-    print("Vous devez donner en premier argument le nom du fichier squelette et en deuxième argument le path qui mène aux fichiers templates.")
+    print("Vous devez donner en premier argument le nom du fichier squelette et en deuxième argument le fichier YAML associé.")
     sys.exit()
 
 diff=False

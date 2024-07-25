@@ -3,7 +3,11 @@ import sys
 import time
 
 """
-v1.
+v1. --> Notes de modifications à apporter au programme
+Le problème vient du fait que dans le cas où les deux éléments se trouvant aux indices n+1 sont différents alors les deux indices avancent en même temps
+En réalité, il faut comparer les deux éléments et les faire avancer chacun de leur côté en fonction de l'ordre de supériorité (> ou <) jusqu'à ce que cet ordre s'inverse
+On fera alors avancer l'autre élément là encore jusqu'à ce que l'ordre s'inverse, et ce jusqu'à la fin du programme. 
+
 Affichage de comparaison intelligente de deux fichiers XML
 
 Argument 1 : nom du programme. Exemple : xml-Parser.py
