@@ -1195,23 +1195,6 @@
 				<fv nom="parentPhysique" val="parentPhysique" />
 				<fv nom="typeEquipement" val="N/A" />
 			</obj>
-			<obj id="mg2s.ILiaisonVpnSnmp.SO-CGCCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-SE-LMV_CDC-Salle_Tech-BMCS_CHIFF-CHIFF-Cluster" class-name="mg2s.ILiaisonVpnSnmp" nom="SO-CGCCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-SE-LMV_CDC-Salle_Tech-BMCS_CHIFF-CHIFF-Cluster">
-				<fv nom="DestinationVNP" val="33.102.4.1" />
-				<fv nom="SourceVPN" val="33.102.74.1" />
-				<fv nom="alarmeEtatLiaisonVPN">
-					<obj id="mg2s.ILiaisonVpnSnmp.SO-CGCCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-SE-LMV_CDC-Salle_Tech-BMCS_CHIFF-CHIFF-Cluster.alarmeEtatLiaisonVPN.mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
-						<fv nom="alarmeActive" val="true" />
-						<fv nom="alarmAcousticalWarning" val="true" />
-						<fv nom="alarmTimeDelay" val="0" />
-					</obj>
-				</fv>
-				<fv nom="critique" val="true" />
-				<fv nom="critiqueSite" val="false" />
-				<fv nom="etatInit" enum="1" />
-				<fv nom="nomCourt" val="CGC_CE-LMV_CDC" />
-				<fv nom="parentPhysique" val="parentPhysique" />
-				<fv nom="typeEquipement" val="N/A" />
-			</obj>
 			<obj id="mg2s.ILiaisonVpnSnmp.SO-CGCCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-CO-CMP_CDC-Salle_Tech_ARS-BMCS_CHIFF-CHIFF-Cluster" class-name="mg2s.ILiaisonVpnSnmp" nom="SO-CGCCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-CO-CMP_CDC-Salle_Tech_ARS-BMCS_CHIFF-CHIFF-Cluster">
 				<fv nom="DestinationVNP" val="33.102.117.1" />
 				<fv nom="SourceVPN" val="33.102.74.1" />
@@ -18397,23 +18380,6 @@
 				<fv nom="critiqueSite" val="false" />
 				<fv nom="etatInit" enum="1" />
 				<fv nom="nomCourt" val="CGC_CR-LM2_CDC" />
-				<fv nom="parentPhysique" val="parentPhysique" />
-				<fv nom="typeEquipement" val="N/A" />
-			</obj>
-			<obj id="mg2s.ILiaisonVpnSnmp.SO-CGCCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-SE-LMV_CDC-Salle_Tech-BMCS_CHIFF-CHIFF-Cluster" class-name="mg2s.ILiaisonVpnSnmp" nom="SO-CGCCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-SE-LMV_CDC-Salle_Tech-BMCS_CHIFF-CHIFF-Cluster">
-				<fv nom="DestinationVNP" val="33.102.4.1" />
-				<fv nom="SourceVPN" val="33.102.53.1" />
-				<fv nom="alarmeEtatLiaisonVPN">
-					<obj id="mg2s.ILiaisonVpnSnmp.SO-CGCCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-SE-LMV_CDC-Salle_Tech-BMCS_CHIFF-CHIFF-Cluster.alarmeEtatLiaisonVPN.mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
-						<fv nom="alarmeActive" val="true" />
-						<fv nom="alarmAcousticalWarning" val="true" />
-						<fv nom="alarmTimeDelay" val="0" />
-					</obj>
-				</fv>
-				<fv nom="critique" val="true" />
-				<fv nom="critiqueSite" val="false" />
-				<fv nom="etatInit" enum="1" />
-				<fv nom="nomCourt" val="CGC_CR-LMV_CDC" />
 				<fv nom="parentPhysique" val="parentPhysique" />
 				<fv nom="typeEquipement" val="N/A" />
 			</obj>

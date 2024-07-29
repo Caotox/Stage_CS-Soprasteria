@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<configuration tag="Configuration de base SLN-CER" description="VERSION : ADMLOCAL_profils_MG2S_IVQ_OPS_s242604" nom="Conf. Applicable 27/06/2024 12:02:40.628">
+<configurations version="3">
+  <configuration tag="Configuration de base SLN-CER" description="VERSION : ADMLOCAL_profils_MG2S_IVQ_OPS_s242604" nom="Conf. Applicable 27/06/2024 12:02:40.628">
     <groupe-object-model>
 	<obj id="ISiteCERSnmp.CE-SLNCER" class-name="mg2s.ISiteCERSnmp" nom="CE-SLNCER">
 	  <fv nom="alarmeEtatDisponibilite">
@@ -6698,6 +6699,23 @@
 	  <fv nom="DestinationVNP" val="33.102.65.1" />
 	  <fv nom="etatInit" enum="1" />
 	  <fv nom="nomCourt" val="SLN_CE-SLN_CR" />
+	  <fv nom="parentPhysique" val="parentPhysique" />
+	  <fv nom="SourceVPN" val="33.102.92.1" />
+	  <fv nom="typeEquipement" val="N/A" />
+	</obj>
+	<obj id="ILiaisonVpnSnmp.CE-SLNCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLN_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1" class-name="mg2s.ILiaisonVpnSnmp" nom="CE-SLNCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLN_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1">
+	  <fv nom="alarmeEtatLiaisonVPN">
+	    <obj id="ILiaisonVpnSnmp.CE-SLNCER-CE-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLN_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1.alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="true" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="critique" val="true" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="DestinationVNP" val="33.102.37.1" />
+	  <fv nom="etatInit" enum="1" />
+	  <fv nom="nomCourt" val="SLN_CE-SLN_COSCA" />
 	  <fv nom="parentPhysique" val="parentPhysique" />
 	  <fv nom="SourceVPN" val="33.102.92.1" />
 	  <fv nom="typeEquipement" val="N/A" />
@@ -15801,6 +15819,23 @@
 	  <fv nom="SourceVPN" val="33.102.65.1" />
 	  <fv nom="typeEquipement" val="N/A" />
 	</obj>
+	<obj id="ILiaisonVpnSnmp.CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-OEC_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1" class-name="mg2s.ILiaisonVpnSnmp" nom="CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-OEC_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1">
+	  <fv nom="alarmeEtatLiaisonVPN">
+	    <obj id="ILiaisonVpnSnmp.CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-OEC_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1.alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="true" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="critique" val="true" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="DestinationVNP" val="33.102.110.1" />
+	  <fv nom="etatInit" enum="1" />
+	  <fv nom="nomCourt" val="SLN_CR-OEC_COSCA" />
+	  <fv nom="parentPhysique" val="parentPhysique" />
+	  <fv nom="SourceVPN" val="33.102.65.1" />
+	  <fv nom="typeEquipement" val="N/A" />
+	</obj>
 	<obj id="ILiaisonVpnSnmp.CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLNCER-CE-LOCAL-BGEST-CHIFF_ETH_T8" class-name="mg2s.ILiaisonVpnSnmp" nom="CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLNCER-CE-LOCAL-BGEST-CHIFF_ETH_T8">
 	  <fv nom="alarmeEtatLiaisonVPN">
 	    <obj id="ILiaisonVpnSnmp.CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLNCER-CE-LOCAL-BGEST-CHIFF_ETH_T8.alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
@@ -15814,6 +15849,23 @@
 	  <fv nom="DestinationVNP" val="33.102.92.1" />
 	  <fv nom="etatInit" enum="1" />
 	  <fv nom="nomCourt" val="SLN_CR-SLN_CE" />
+	  <fv nom="parentPhysique" val="parentPhysique" />
+	  <fv nom="SourceVPN" val="33.102.65.1" />
+	  <fv nom="typeEquipement" val="N/A" />
+	</obj>
+	<obj id="ILiaisonVpnSnmp.CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLN_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1" class-name="mg2s.ILiaisonVpnSnmp" nom="CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLN_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1">
+	  <fv nom="alarmeEtatLiaisonVPN">
+	    <obj id="ILiaisonVpnSnmp.CE-SLNCER-CR-LOCAL-BGEST-CHIFF_ETH_T8-CE-SLN_COSCA-LOCAL-BMCS_COSCA-CHIFF_ETH_T9-1.alarmeEtatLiaisonVPN.Etat de la liaison VPN" class-name="mil.IPropertyBasedAlarmObject$mg2s.ILiaisonVpnSnmp$alarmeEtatLiaisonVPN" nom="Etat de la liaison VPN">
+	      <fv nom="alarmAcousticalWarning" val="true" />
+	      <fv nom="alarmeActive" val="true" />
+	      <fv nom="alarmTimeDelay" val="0" />
+	    </obj>
+	  </fv>
+	  <fv nom="critique" val="true" />
+	  <fv nom="critiqueSite" val="false" />
+	  <fv nom="DestinationVNP" val="33.102.37.1" />
+	  <fv nom="etatInit" enum="1" />
+	  <fv nom="nomCourt" val="SLN_CR-SLN_COSCA" />
 	  <fv nom="parentPhysique" val="parentPhysique" />
 	  <fv nom="SourceVPN" val="33.102.65.1" />
 	  <fv nom="typeEquipement" val="N/A" />
@@ -60175,3 +60227,4 @@
 	</obj>
 	</groupe-object-model>
 </configuration>
+</configurations>
