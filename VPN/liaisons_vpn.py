@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import sys
 """Documentation :
-Programme de suppression d'objets en fonction de leurs attributs class-name et nom.
+Programme de suppression d'objets en fonction de leurs attributs "class-name" et "nom".
 
 Utilisation :
 Argument 1 : nom du programme. Exemple : liaison_vpn.py
