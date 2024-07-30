@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
-<configuration tag="Configuration de base SLN-CER" description="VERSION : ADMLOCAL_profils_MG2S_IVQ_OPS_s242604" nom="Conf. Applicable 27/06/2024 12:02:40.628">
+<?xml version='1.0' encoding='UTF-8'?>
+<configurations version="3">
+  <configuration tag="Configuration de base SLN-CER" description="VERSION : ADMLOCAL_profils_MG2S_IVQ_OPS_s242604" nom="Conf. Applicable 27/06/2024 12:02:40.628">
     <groupe-object-model>
 	<obj id="ISiteCERSnmp.CE-SLNCER" class-name="mg2s.ISiteCERSnmp" nom="CE-SLNCER">
 	  <fv nom="alarmeEtatDisponibilite">
@@ -60175,3 +60176,4 @@
 	</obj>
 	</groupe-object-model>
 </configuration>
+</configurations>
