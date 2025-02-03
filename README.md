@@ -1,8 +1,6 @@
-XML Processing Tool
+# Installation
 
-Installation
-
-Clone the repository:
+## Clone the repository:
 
 ```bash
 git clone https://github.com/Caotox/Stage_CS-Soprasteria
@@ -14,57 +12,55 @@ Then, in your Python file, import the necessary functions:
 from final.final import *
 ```
 
-Functions
+## Functions
 
-1. xml_compare
+### 1. xml_compare
 
 Smart comparison of two XML files.
 
-Usage:
+**Usage:**
 
 ```python
 xml_compare(xml_file1, xml_file2)
 ```
 
-Returns:
+**Returns:**
 
 A progressive print of all differences, allowing a step-by-step modification of the XML file.
 
-2. modele
+### 2. modele
 
 XML file visualization. Helps retrieve a specific node in the XML file.
 
-Usage:
+**Usage:**
 
 ```python
 modele(file, attribute, value)
 ```
 
-attribute: The element used for comparison in the XML file (e.g., class-name, value, etc.).
+*attribute:* The element used for comparison in the XML file (e.g., class-name, value, etc.).
 
-value: The value of the specified attribute to search for.
+*value:* The value of the specified attribute to search for.
 
-Returns:
+**Returns:**
 
 The retrieved node and a formatted print of that node.
 
-3. graphique
+### 3. graphique
 
 Displays an XML file in an adapted format based on specific parameters.
 
-Usage:
+**Usage:**
 
 ```python
 graphique(node, argument, attribute, parameter)
 ```
 
-argument: The value of the desired attribute.
+*argument:* The value of the desired attribute.
 
-attribute: The attribute used for comparison (e.g., class-name, value, etc.).
+*attribute:* The attribute used for comparison (e.g., class-name, value, etc.).
 
-parameter: Defines the pathing and display behavior.
-
-Parameters:
+*parameter:* Defines the pathing and display behavior.
 
 -e: Strict Equality (Equal) - Searches for elements where the specified attribute is exactly equal to the given argument.
 
@@ -80,15 +76,15 @@ Parameters:
 
 -nX: X-Level Descendants (N-level Descendants) - Searches for descendants at level X of elements where the specified attribute is equal to the given argument.
 
-Returns:
+**Returns:**
 
 A formatted display of the XML file, customized based on the given parameter.
 
-License
+### License
 
 This project is open-source. Feel free to use and modify it as needed.
 
-Author
+### Author
 
 Developed by Caotox.
 
