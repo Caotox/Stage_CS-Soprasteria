@@ -2,7 +2,7 @@
 Doc :
 Programmes contenus dans le module :
 - Comparaison de fichiers XML
-Fonction : xml_compre(fichier_new, fichier_old)
+Fonction : xml_compare(fichier_new, fichier_old)
 Argument 1 (fichier_new) : fichier XML récent
 Argument 2 (fichier_old) : fichier XML ancien
 
