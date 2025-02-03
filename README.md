@@ -7,30 +7,77 @@ Then in the python file you want to use the functions type :
 from /final/final.py import *
 ```
 
-## Functions :
-1. xml_compare : smart comparaison of two xml files
-example : xml_compare(xml-file1, xml-file2)
-returns : a proggressive print of all differences, enabling a step by step modification of the xml-file
+Functions
 
-2. modele : xml file visualisation, can be served as a way to get a specific node of the xml file
-example : modele(file, attribute, value)
-  -> attribute : element of comparaison in the xml file (class-name, value...)
-  -> value : value of the said attribute we want to get
-returns : the node the program recovered, and an adapted print of that node
+1. xml_compare
 
-3. graphique : an adapted display of an xml file depending on certain parameters
-example : graphique(node, argument, attribute, parameter)
-  -> argument : value of the wanted attribute
-  -> attribute : attribute to compare (example : class-name, value...)
-  -> parameter : will define the pathing and display
-*-e: Strict Equality (Equal) - Searches for elements whose specified attribute is exactly equal to the given argument.
--c: Contains (Contain) - Searches for elements whose specified attribute contains, starts with, ends with, or is equal to the given argument.
--r: Recursive Descendants (Recursive) - Searches recursively for descendant elements whose specified attribute is equal to the given argument.
--p: Direct Parent (Parent) - Searches for the direct parent of elements whose specified attribute is equal to the given argument.
--s: Siblings (Siblings) - Searches for sibling elements of those whose specified attribute is equal to the given argument.
--a: Ancestors (Ancestors) - Searches for all ancestor elements whose specified attribute is equal to the given argument.
--nX: X-Level Descendants (N-level Descendants) - Searches for descendants at level X of elements whose specified attribute is equal to the given argument.*
-returns : an adapted display, depending on the parameter given
+Smart comparison of two XML files.
+
+Usage:
+
+xml_compare(xml_file1, xml_file2)
+
+Returns:
+
+A progressive print of all differences, allowing a step-by-step modification of the XML file.
+
+2. modele
+
+XML file visualization. Helps retrieve a specific node in the XML file.
+
+Usage:
+
+modele(file, attribute, value)
+
+attribute: The element used for comparison in the XML file (e.g., class-name, value, etc.).
+
+value: The value of the specified attribute to search for.
+
+Returns:
+
+The retrieved node and a formatted print of that node.
+
+3. graphique
+
+Displays an XML file in an adapted format based on specific parameters.
+
+Usage:
+
+graphique(node, argument, attribute, parameter)
+
+argument: The value of the desired attribute.
+
+attribute: The attribute used for comparison (e.g., class-name, value, etc.).
+
+parameter: Defines the pathing and display behavior.
+
+Parameters:
+
+-e: Strict Equality (Equal) - Searches for elements where the specified attribute is exactly equal to the given argument.
+
+-c: Contains (Contain) - Searches for elements where the specified attribute contains, starts with, ends with, or is equal to the given argument.
+
+-r: Recursive Descendants (Recursive) - Searches recursively for descendant elements where the specified attribute is equal to the given argument.
+
+-p: Direct Parent (Parent) - Searches for the direct parent of elements where the specified attribute is equal to the given argument.
+
+-s: Siblings (Siblings) - Searches for sibling elements of those where the specified attribute is equal to the given argument.
+
+-a: Ancestors (Ancestors) - Searches for all ancestor elements where the specified attribute is equal to the given argument.
+
+-nX: X-Level Descendants (N-level Descendants) - Searches for descendants at level X of elements where the specified attribute is equal to the given argument.
+
+Returns:
+
+A formatted display of the XML file, customized based on the given parameter.
+
+License
+
+This project is open-source. Feel free to use and modify it as needed.
+
+Author
+
+Developed by Caotox.
 
 
 
