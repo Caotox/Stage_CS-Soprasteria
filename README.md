@@ -88,3 +88,25 @@ This project is open-source. Feel free to use and modify it as needed.
 
 Developed by Caotox.
 
+-----------------------------------------------------------------------------------------------
+
+## Internship Report: Developer in Air Traffic Control
+
+### Management and Maintenance of CMoIP Platform Objects
+
+Supervision and correction of various objects on the CMoIP platform, ensuring quality and compliance with established configuration standards.
+
+### Development of Tools for Automating and Handling XML and YAML Files
+
+Utilized Python to create custom tools designed to simplify the management and manipulation of XML and YAML files, addressing the specific needs of project teams.
+
+### Development of Automated Scripts for Correcting Client Configurations
+
+Used Bash to develop and implement automated scripts for correcting configurations, allowing clients to efficiently manage errors detected during testing phases. These scripts help identify anomalies, reduce resolution time, and improve deliverable quality.
+
+### Execution of Tests and Proposal of Solutions and Fixes
+
+Conducted thorough tests on configurations, identified malfunctions, and implemented appropriate solutions. Proposed targeted fixes to optimize XML configuration files and improve project reliability.
+
+
+
