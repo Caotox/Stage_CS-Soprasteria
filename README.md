@@ -9,7 +9,7 @@ git clone https://github.com/Caotox/Stage_CS-Soprasteria
 Then, in your Python file, import the necessary functions:
 
 ```python
-from final.final import *
+from final/final import *
 ```
 
 ## Functions
