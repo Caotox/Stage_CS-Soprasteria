@@ -93,7 +93,7 @@ Projet open source, n'hésitez pas à y ajouter des modifications !
 
 ### Auteur
 
-Développe par Caotox.
+Développé par Caotox.
 
 -----------------------------------------------------------------------------------------------
 
